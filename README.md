@@ -2,11 +2,12 @@
 
 Portafolio profesional que presenta experiencia y competencias en Aseguramiento de Calidad (QA) y Automatización de Pruebas.
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/94343c05-3529-4546-a379-b03c5852f6b2" />
+
+
 ## Tecnologías y Herramientas
 
 - **Automatización de Pruebas**: Playwright
-- **Lenguajes de Programación**: TypeScript
-- **Bases de Datos**: SQL
 - **Herramientas de API Testing**: Postman, Swagger
 - **Plataformas DevOps**: Azure DevOps
 
@@ -19,8 +20,8 @@ Portafolio profesional que presenta experiencia y competencias en Aseguramiento 
 
 ## Demostración en Vivo
 
-Para ver el portafolio completo, visite: [andersonacp25.github.io/Portafolio-Anderson-Castillo](https://andersonacp25.github.io/Portafolio-Anderson-Castillo/)
+Para ver el portafolio completo, visite: [Ver Portafolio Completo](https://andersonacp25.github.io/Portafolio-Anderson-Castillo/)
 
 ---
 
-*Última actualización: 2024*
+*Última actualización: 2026*
