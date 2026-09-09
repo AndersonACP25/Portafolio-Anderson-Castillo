@@ -1,23 +1,26 @@
-# QA Automation Portfolio
+# Portafolio Profesional - Anderson Castillo
 
-Portfolio of Anderson Castillo.
+Portafolio profesional que presenta experiencia y competencias en Aseguramiento de Calidad (QA) y Automatización de Pruebas.
 
-## Technologies
+## Tecnologías y Herramientas
 
-* Playwright
-* TypeScript
-* SQL
-* Postman
-* Swagger
-* Azure DevOps
+- **Automatización de Pruebas**: Playwright
+- **Lenguajes de Programación**: TypeScript
+- **Bases de Datos**: SQL
+- **Herramientas de API Testing**: Postman, Swagger
+- **Plataformas DevOps**: Azure DevOps
 
-## Features
+## Características Destacadas
 
-* Responsive Design
-* English / Spanish Support
-* GitHub Pages Deployment
-* Modern UI
+- Diseño Responsivo y Adaptable
+- Soporte Multiidioma (Español / Inglés)
+- Despliegue en GitHub Pages
+- Interfaz Moderna y Profesional
 
-## Live Demo
+## Demostración en Vivo
 
-[Link to Portfolio](https://andersonacp25.github.io/Portafolio-Anderson-Castillo/)
+Para ver el portafolio completo, visite: [andersonacp25.github.io/Portafolio-Anderson-Castillo](https://andersonacp25.github.io/Portafolio-Anderson-Castillo/)
+
+---
+
+*Última actualización: 2024*
