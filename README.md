@@ -2,7 +2,7 @@
 
 Portafolio profesional que presenta experiencia y competencias en Aseguramiento de Calidad (QA) y Automatización de Pruebas.
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/94343c05-3529-4546-a379-b03c5852f6b2" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/254f2b84-9674-4202-a779-2b4d85fd0f5f" />
 
 
 ## Tecnologías y Herramientas
