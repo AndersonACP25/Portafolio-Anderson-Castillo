@@ -28,6 +28,12 @@ qaTestGE es un proyecto personal en desarrollo que busca reunir la gestión de c
 
 El portafolio incluye capturas del diseñador y del acceso, enlaces a evidencia pública y una explicación de los límites actuales. La IA apoya el desarrollo; la conexión a proveedores para generar casos dentro del producto sigue pendiente.
 
+## Caso de estudio: consultas SQL reutilizables
+
+Durante varias semanas investigué relaciones entre tablas y preparé consultas para validaciones recurrentes. Las comprobé por partes y documenté en la Wiki de Azure DevOps su propósito, condiciones de uso y alternativas, junto con el contexto de procedimientos almacenados utilizados en flujos específicos.
+
+Este recurso compartido apoyó a QA, desarrollo y Product Owner en validación de historias, certificación, regresión y pases a producción, reduciendo la necesidad de reconstruir consultas. El caso describe una mejora cualitativa, sin atribuir porcentajes de ahorro o rendimiento no medidos y sin publicar consultas internas.
+
 ## Inteligencia artificial aplicada
 
 Actualmente amplío mi experiencia práctica en desarrollo asistido por IA. Utilizo MCP, skills, agentes y subagentes, ingeniería de prompts e instrucciones de proyecto para organizar el trabajo y conectar flujos entre herramientas de IA.
