@@ -120,7 +120,7 @@
             >Proyectos</a
           >
           <a href="#about" class="header__link" data-translate="nav_about"
-            >Sobre Mí</a
+            >Enfoque</a
           >
           <a
             href="#experience"
@@ -302,10 +302,16 @@
                 <ul class="project-card__details">
                   <li data-translate="qa_scope">Alcance: API autenticada, pasos de prueba, adjuntos y exportaciones PDF/Excel.</li>
                   <li data-translate="qa_quality">Calidad: pruebas con Vitest y validaciones CI de formato, lint, tipos y compilación.</li>
-                  <li data-translate="qa_ai">Enfoque de desarrollo: construido con soporte estructurado de IA, utilizando agentes/subagentes, skills, conexiones MCP e instrucciones del proyecto, con revisión y validación de los cambios generados.</li>
-                  <li data-translate="qa_status">Estado: aplicación web implementada. La IA apoya el flujo de desarrollo; las funciones de IA dentro de la aplicación aún no están implementadas.</li>
+                  <li data-translate="qa_ai">Enfoque de desarrollo: defino funcionalidades y arquitectura, dirijo roles especializados de IA y valido la implementación.</li>
+                  <li data-translate="qa_status">Estado: proyecto personal en desarrollo activo. El diseñador utiliza ejemplos editables; la conexión a proveedores de IA sigue pendiente.</li>
                 </ul>
                 <div class="project-card__actions">
+                  <a
+                    data-translate="qa_case_link"
+                    class="project-link"
+                    href="#case-study-qatestge"
+                    >Ver el caso de desarrollo asistido por IA</a
+                  >
                   <a
                     class="project-link"
                     href="https://github.com/AndersonACP25/qaTestGE"
@@ -451,10 +457,133 @@
           </details>
         </div>
       </section>
+      <section class="section" id="case-study-qatestge">
+        <div class="section__container">
+          <p data-translate="qa_case_eyebrow" class="eyebrow">CASO DE ESTUDIO · PROYECTO PERSONAL</p>
+          <h2 data-translate="qa_case_title" class="section__title">qaTestGE: dirigir la IA y validar el producto</h2>
+          <p data-translate="qa_case_intro" class="section__text">Un espacio de trabajo QA que nace de un flujo fragmentado entre Gems de Gemini y proyectos de ChatGPT. Dirijo el producto y su implementación con asistencia de IA; el desarrollo continúa.</p>
+          <div class="qa-case-facts">
+            <span data-translate="qa_case_status" class="skill-tag"
+              >En desarrollo</span
+            >
+            <p data-translate="qa_case_fact">Dirección humana · Asistencia de IA · Validación QA</p>
+          </div>
+          <details class="case-details">
+            <summary data-translate="qa_case_read">Explorar el caso de qaTestGE</summary>
+            <div class="case-body">
+              <div class="case-block">
+                <h3 data-translate="qa_case_problem_title">Problema y usuarios</h3>
+                <p data-translate="qa_case_problem">Utilizaba asistentes separados para preparar casos límite, UAT, sanity y otras categorías de prueba. Mi objetivo es reunir diseño de casos, bugs, tags, ejecuciones manuales y exportaciones en un espacio para profesionales QA. La generación asistida por IA y el feedback más rápido son objetivos del producto, no capacidades ya entregadas.</p>
+              </div>
+              <div class="case-block">
+                <h3 data-translate="qa_case_role_title">Mi rol y la colaboración con IA</h3>
+                <p data-translate="qa_case_role">Defino funcionalidades, arquitectura, bugs por resolver y contexto de trabajo. La IA ayuda a convertir esas decisiones en código. Utilizo OpenCode y Codex, skills reutilizables y prompts con Rol, Contexto, Requisitos y Salida; mantengo la responsabilidad de evaluar la implementación.</p>
+                <p data-translate="qa_case_roles">Organizo la asistencia en roles de arquitectura/orquestación, búsqueda de bugs, backend, frontend, revisión de código, testing, UI y UX. Son responsabilidades de desarrollo asignadas a asistentes de IA, no agentes autónomos integrados en el producto.</p>
+              </div>
+              <div class="case-block">
+                <h3 data-translate="qa_case_context_title">Contexto, memoria y recuperación</h3>
+                <p data-translate="qa_case_context">AGENTS.md recoge reglas del proyecto y MEMORY.md conserva contexto de trabajo. Uso una conexión MCP con Obsidian y estoy iniciando un flujo de RAG/segundo cerebro mientras migro mis apuntes. Forma parte de mi proceso de desarrollo, no de una función de búsqueda o RAG ofrecida por qaTestGE.</p>
+              </div>
+              <div class="case-block">
+                <h3 data-translate="qa_case_defect_title">Una corrección real: los casos necesitan múltiples pasos</h3>
+                <p data-translate="qa_case_defect">El primer diseñador trataba cada caso como un único paso. Durante un recorrido local de extremo a extremo detecté que eso no representaba un procedimiento de prueba QA. Aclaré el requisito mediante un prompt más preciso y corregí el diseño para admitir una secuencia de acciones y resultados esperados.</p>
+                <p data-translate="qa_case_defect_result">El repositorio actual modela los pasos como una lista con acción y resultado esperado y documenta hasta 100 pasos por caso guardado. La captura muestra ejemplos editables y guardado explícito; no demuestra generación mediante IA.</p>
+              </div>
+              <div class="case-block">
+                <h3 data-translate="qa_case_validation_title">Arquitectura y validación</h3>
+                <p data-translate="qa_case_validation">La implementación actual utiliza React, TypeScript y Vite, con API Express y PostgreSQL mediante pg, siguiendo una separación de estilo MVC. Utilizo ESLint y Prettier para consistencia y pruebas unitarias antes de aceptar cambios. El repositorio también contiene pruebas de API con Vitest/Supertest y validaciones CI.</p>
+                <p data-translate="qa_case_validation_flow">Para validar manualmente simulo el trabajo diario de QA: crear un bug y comprobar que el flujo sea comprensible, accesible desde el workspace y coherente con el caso de uso. El linting y el formato favorecen la mantenibilidad; por sí solos no garantizan seguridad.</p>
+              </div>
+              <div class="case-block">
+                <h3 data-translate="qa_case_current_title">Implementado actualmente</h3>
+                <p data-translate="qa_case_current">Gestión de bugs, casos con múltiples pasos, evidencias y tags; ejecuciones manuales; registro/login y configuración de cuenta. Los bugs y casos individuales se exportan a PDF, Excel y Markdown, mientras el diseñador exporta sus ejemplos editables a Excel/PDF. ExcelJS, jsPDF y SwaggerUI apoyan las exportaciones y la documentación de API.</p>
+              </div>
+              <div class="case-block">
+                <h3 data-translate="qa_case_limits_title">Límites y próximos pasos</h3>
+                <p data-translate="qa_case_limits">La conexión a proveedores de IA mediante API keys no está implementada. El diseñador no analiza la descripción ni genera propuestas con IA, y las ejecuciones son registros manuales, no un motor de ejecución automatizada. La configuración de cuenta no equivale a un módulo de administración de equipos/usuarios.</p>
+                <p data-translate="qa_case_next">Mis prioridades actuales son las suites y la gestión de usuarios/proyectos. SonarQube y las pruebas de rendimiento con k6 son mejoras previstas; no las presento como controles completados ni atribuyo todavía una mejora de productividad medida.</p>
+              </div>
+              <div class="case-block">
+                <h3 data-translate="qa_case_evidence_title">Capturas y evidencia pública</h3>
+                <div class="case-gallery">
+                  <figure class="case-figure">
+                    <a
+                      href="./assets/projects/qatestge-designer.webp"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      data-translate-aria="qa_designer_open"
+                      aria-label="Abrir la captura del diseñador de casos"
+                      ><img
+                        src="./assets/projects/qatestge-designer.webp"
+                        alt=""
+                        width="1440"
+                        height="810"
+                    /></a>
+                    <figcaption data-translate="qa_designer_caption">Diseñador de casos: ejemplos editables, múltiples pasos y aviso visible de que la IA no está conectada. Abre la captura para examinarla.</figcaption>
+                  </figure>
+                  <figure class="case-figure">
+                    <a
+                      href="./assets/projects/qatestge-login.webp"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      data-translate-aria="qa_login_open"
+                      aria-label="Abrir la captura de inicio de sesión"
+                      ><img
+                        src="./assets/projects/qatestge-login.webp"
+                        alt=""
+                        width="1440"
+                        height="661"
+                    /></a>
+                    <figcaption data-translate="qa_login_caption">Pantalla actual de acceso con login y registro. Captura proporcionada por el autor del proyecto.</figcaption>
+                  </figure>
+                </div>
+                <div class="project-card__actions">
+                  <a
+                    data-translate="qa_case_model"
+                    class="project-link"
+                    href="https://github.com/AndersonACP25/qaTestGE/blob/main/backend/src/models/test-case.model.ts"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Ver el modelo de casos con múltiples pasos ↗</a
+                  ><a
+                    data-translate="qa_case_docs"
+                    class="project-link"
+                    href="https://github.com/AndersonACP25/qaTestGE"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Ver funcionalidades y límites actuales ↗</a
+                  ><a
+                    data-translate="qa_case_testing"
+                    class="project-link"
+                    href="https://github.com/AndersonACP25/qaTestGE/blob/main/docs/TESTING.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Ver documentación de pruebas ↗</a
+                  >
+                </div>
+              </div>
+            </div>
+          </details>
+        </div>
+      </section>
       <section id="about" class="section">
         <div class="section__container">
-          <h2 class="section__title" data-translate="about_title">Sobre Mí</h2>
-          <p class="section__text" data-translate="about_text">Combino pruebas manuales, automatización web, validación de API y SQL para investigar incidencias y crear pruebas mantenibles. También aplico desarrollo asistido por IA en proyectos personales, con agentes, instrucciones reutilizables y contexto estructurado, mientras continúo desarrollando estas habilidades.</p>
+          <h2 class="section__title" data-translate="about_title">Cómo trabajo</h2>
+          <p class="section__text" data-translate="about_text">Parto del problema de QA, defino el comportamiento esperado y reviso el resultado mediante flujos reales. En proyectos personales también dirijo implementaciones asistidas por IA, manteniendo bajo mi responsabilidad los requisitos, la revisión y la validación.</p>
+          <div class="approach-grid">
+            <article class="approach-card">
+              <h3 data-translate="approach_risk">Entender el contexto</h3>
+              <p data-translate="approach_risk_text">Traducir requisitos y necesidades del trabajo diario de QA en escenarios y criterios de aceptación claros.</p>
+            </article>
+            <article class="approach-card">
+              <h3 data-translate="approach_validate">Validar el flujo completo</h3>
+              <p data-translate="approach_validate_text">Recorrer el producto como usuario e investigar los fallos antes de decidir si corresponde reportar un defecto o corregir una prueba.</p>
+            </article>
+            <article class="approach-card">
+              <h3 data-translate="approach_ai">Revisar lo generado por IA</h3>
+              <p data-translate="approach_ai_text">Aportar contexto estructurado, cuestionar supuestos y contrastar la implementación con el caso de uso esperado.</p>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -1392,27 +1521,27 @@ Utils/
             <div class="education-topics">
               <div class="education-topic">
                 <h4 data-translate="edu_programming">Programación y desarrollo web</h4>
-                <p data-translate="edu_programming_text">Fundamentos y práctica de programación con HTML, CSS, JavaScript y PHP, junto con Java, C# y C++.</p>
+                <p data-translate="edu_programming_text">Práctica con HTML, CSS, JavaScript y PHP, junto con Java, C# y C++. Estas bases conectan la construcción de interfaces, la lógica de programación y la implementación del comportamiento de una aplicación.</p>
               </div>
               <div class="education-topic">
                 <h4 data-translate="edu_logic">Lógica y algoritmos</h4>
-                <p data-translate="edu_logic_text">Algoritmos computacionales y razonamiento lógico para descomponer problemas, definir pasos y construir soluciones.</p>
+                <p data-translate="edu_logic_text">Algoritmos computacionales y razonamiento lógico: descomponer un problema en entradas, pasos de procesamiento y salidas, y expresar una solución mediante una secuencia clara de acciones.</p>
               </div>
               <div class="education-topic">
                 <h4 data-translate="edu_design">Datos y diseño de sistemas</h4>
-                <p data-translate="edu_design_text">SQL, modelado relacional, análisis y diseño de sistemas, documentos de diseño de software (SDD), MVC y diagramas de componentes, secuencia y flujo.</p>
+                <p data-translate="edu_design_text">SQL y modelado relacional para representar datos y relaciones. El análisis y diseño de sistemas utiliza SDD, MVC y diagramas de componentes, secuencia y flujo para describir estructura, interacciones y procesos.</p>
               </div>
               <div class="education-topic">
                 <h4 data-translate="edu_environments">Sistemas y entornos informáticos</h4>
-                <p data-translate="edu_environments_text">Trabajo con WSL, máquinas virtuales y un proyecto con proxy; uso de Bash, CMD de Windows y PowerShell.</p>
+                <p data-translate="edu_environments_text">Práctica con WSL, máquinas virtuales y un proyecto con proxy, conectando entornos de ejecución y comunicación de aplicaciones. Bash, CMD de Windows y PowerShell apoyan el trabajo desde terminal.</p>
               </div>
               <div class="education-topic">
                 <h4 data-translate="edu_computing">Fundamentos de computación</h4>
-                <p data-translate="edu_computing_text">Fundamentos del hardware y software de una PC, sus componentes y su relación dentro de un sistema informático.</p>
+                <p data-translate="edu_computing_text">Fundamentos del hardware y software de una PC: reconocer el papel de los componentes físicos, el sistema operativo y las aplicaciones, y cómo trabajan en conjunto dentro de un entorno informático.</p>
               </div>
               <div class="education-topic">
                 <h4 data-translate="edu_tools">Colaboración y herramientas de API</h4>
-                <p data-translate="edu_tools_text">Control de versiones con Git y GitHub e interacción con API mediante Postman y Swagger.</p>
+                <p data-translate="edu_tools_text">Git y GitHub para control de versiones y colaboración; Postman y Swagger para interactuar con API y comprender solicitudes, respuestas y operaciones documentadas.</p>
               </div>
             </div>
           </div>

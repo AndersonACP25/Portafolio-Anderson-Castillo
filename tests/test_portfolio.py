@@ -53,6 +53,20 @@ class PortfolioTests(unittest.TestCase):
         self.assertIn('350 casos de prueba manuales', (ROOT / 'README.md').read_text())
         self.assertIn('400 pruebas automatizadas', (ROOT / 'README.md').read_text())
 
+    def test_ai_case_and_evidence(self):
+        for language, filename in [('en', 'index.html'), ('es', 'es.html')]:
+            text = json.loads((ROOT / 'locales' / f'{language}.json').read_text())
+            page = (ROOT / filename).read_text()
+            self.assertIn('id="case-study-qatestge"', page)
+            self.assertIn('href="#case-study-qatestge"', page)
+            self.assertIn(text['qa_case_status'], page)
+            self.assertIn(text['qa_case_title'], page)
+            self.assertIn('pg', text['qa_case_validation'])
+            self.assertNotIn('Prisma', text['qa_case_validation'])
+            for name in ['qatestge-designer', 'qatestge-login']:
+                self.assertTrue((ROOT / 'assets/projects' / f'{name}.webp').is_file())
+                self.assertIn(f'./assets/projects/{name}.webp', page)
+
     def test_renderer_rejects_placeholder_nodes(self):
         with tempfile.TemporaryDirectory() as directory:
             destination = Path(directory)

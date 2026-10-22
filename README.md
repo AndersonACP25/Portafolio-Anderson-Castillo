@@ -22,6 +22,12 @@ En un equipo de dos QA, asumí la mayor parte del diseño e implementación de u
 
 El portafolio presenta este caso de forma anónima, con el contexto, las decisiones técnicas, los resultados y los aprendizajes.
 
+## Caso de estudio: qaTestGE con asistencia de IA
+
+qaTestGE es un proyecto personal en desarrollo que busca reunir la gestión de casos, bugs, tags, ejecuciones manuales y exportaciones en un mismo espacio. Defino requisitos y arquitectura, dirijo asistentes especializados y valido la implementación mediante pruebas y recorridos de uso. Un hallazgo concreto fue corregir el diseñador para que los casos admitieran múltiples pasos, en lugar de uno solo.
+
+El portafolio incluye capturas del diseñador y del acceso, enlaces a evidencia pública y una explicación de los límites actuales. La IA apoya el desarrollo; la conexión a proveedores para generar casos dentro del producto sigue pendiente.
+
 ## Inteligencia artificial aplicada
 
 Actualmente amplío mi experiencia práctica en desarrollo asistido por IA. Utilizo MCP, skills, agentes y subagentes, ingeniería de prompts e instrucciones de proyecto para organizar el trabajo y conectar flujos entre herramientas de IA.
