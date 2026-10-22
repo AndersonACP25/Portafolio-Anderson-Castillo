@@ -16,7 +16,7 @@ const translations = {
     metric_quality: "Early Defect Detection",
     about_title: "About Me",
     about_text:
-      "I combine manual testing, web automation, API validation and SQL to investigate issues and build maintainable test coverage. My public projects also explore the development of tools that support day-to-day QA work.",
+      "I combine manual testing, web automation, API validation and SQL to investigate issues and build maintainable test coverage. I also apply AI-assisted development in personal projects, using agents, reusable instructions and structured context while continuing to develop these skills.",
     experience_title: "Experience",
     skills_title: "Skills",
     framework_title: "Automation Framework",
@@ -66,7 +66,7 @@ const translations = {
     qa_quality:
       "Quality: Vitest tests and CI checks for formatting, lint, types and builds.",
     qa_status:
-      "Status: implemented web application; AI integration is not implemented.",
+      "Status: implemented web application. AI assists the development workflow; AI-powered features inside the app are not implemented.",
     qa_source: "Explore qaTestGE code ↗",
     testing_docs: "Read testing documentation ↗",
     project_cash:
@@ -117,6 +117,31 @@ const translations = {
       "Repository evidence: backend/frontend documentation, UML diagrams and k6 test scripts.",
     ars_source: "Explore ARSFuturo code ↗",
     ars_docs: "Read project documentation ↗",
+    qa_ai:
+      "Development approach: built with structured AI assistance, using agents/subagents, skills, MCP connections and project instructions, with review and validation of the generated changes.",
+    ai_title: "Applied AI in projects",
+    ai_intro:
+      "Hands-on experience in personal projects, with ongoing learning in AI-assisted development and workflow orchestration.",
+    ai_agents: "Agents & subagents",
+    ai_prompt: "Prompt engineering",
+    ai_workflow: "AI workflow orchestration",
+    ai_context: "Project instructions & context",
+    ai_memory: "Knowledge & context management",
+    ai_secondbrain: "Second brain with Obsidian",
+    databases: "Databases",
+    smoke: "Smoke testing",
+    regression: "Regression testing",
+    api_testing: "API testing",
+    edge_cases: "Edge cases & boundary values",
+    ui_ux: "UI/UX testing",
+    integration: "Integration testing",
+    sanity: "Sanity testing",
+    exploratory: "Exploratory testing",
+    components: "Component testing",
+    functional: "Functional testing",
+    e2e: "End-to-end testing",
+    negative: "Negative testing",
+    retesting: "Retesting & defect verification",
   },
   es: {
     nav_about: "Sobre Mí",
@@ -135,7 +160,7 @@ const translations = {
     metric_quality: "Detección Temprana de Defectos",
     about_title: "Sobre Mí",
     about_text:
-      "Combino pruebas manuales, automatización web, validación de API y SQL para investigar incidencias y crear pruebas mantenibles. En mis proyectos públicos también exploro el desarrollo de herramientas para el trabajo diario de QA.",
+      "Combino pruebas manuales, automatización web, validación de API y SQL para investigar incidencias y crear pruebas mantenibles. También aplico desarrollo asistido por IA en proyectos personales, con agentes, instrucciones reutilizables y contexto estructurado, mientras continúo desarrollando estas habilidades.",
     experience_title: "Experiencia",
     skills_title: "Habilidades",
     framework_title: "Framework de Automatización",
@@ -186,7 +211,7 @@ const translations = {
     qa_quality:
       "Calidad: pruebas con Vitest y validaciones CI de formato, lint, tipos y compilación.",
     qa_status:
-      "Estado: aplicación web implementada; la integración de IA no está implementada.",
+      "Estado: aplicación web implementada. La IA apoya el flujo de desarrollo; las funciones de IA dentro de la aplicación aún no están implementadas.",
     qa_source: "Explorar código de qaTestGE ↗",
     testing_docs: "Ver documentación de pruebas ↗",
     project_cash:
@@ -238,5 +263,30 @@ const translations = {
       "Evidencia del repositorio: documentación de backend/frontend, diagramas UML y scripts de pruebas con k6.",
     ars_source: "Explorar código de ARSFuturo ↗",
     ars_docs: "Ver documentación del proyecto ↗",
+    qa_ai:
+      "Enfoque de desarrollo: construido con soporte estructurado de IA, utilizando agentes/subagentes, skills, conexiones MCP e instrucciones del proyecto, con revisión y validación de los cambios generados.",
+    ai_title: "IA aplicada en proyectos",
+    ai_intro:
+      "Experiencia práctica en proyectos personales y aprendizaje continuo en desarrollo asistido por IA y orquestación de flujos de trabajo.",
+    ai_agents: "Agentes y subagentes",
+    ai_prompt: "Ingeniería de prompts",
+    ai_workflow: "Orquestación de flujos entre IA",
+    ai_context: "Instrucciones y contexto del proyecto",
+    ai_memory: "Gestión del conocimiento y contexto",
+    ai_secondbrain: "Segundo cerebro con Obsidian",
+    databases: "Bases de datos",
+    smoke: "Pruebas de humo",
+    regression: "Pruebas de regresión",
+    api_testing: "Pruebas de API",
+    edge_cases: "Casos límite y valores frontera",
+    ui_ux: "Pruebas de UI/UX",
+    integration: "Pruebas de integración",
+    sanity: "Pruebas de sanidad (Sanity)",
+    exploratory: "Pruebas exploratorias",
+    components: "Pruebas de componentes",
+    functional: "Pruebas funcionales",
+    e2e: "Pruebas de extremo a extremo",
+    negative: "Pruebas negativas",
+    retesting: "Repruebas y verificación de correcciones",
   },
 };

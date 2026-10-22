@@ -1,54 +1,41 @@
-# Portafolio profesional · Anderson Castillo
+# Anderson Castillo · QA Automation Engineer
 
-Portafolio estático de QA Automation Engineer con proyectos públicos, experiencia, habilidades y formación. HTML, CSS y JavaScript sin proceso de compilación.
+Soy Anderson Castillo, profesional de aseguramiento de calidad de software con más de cuatro años de experiencia. Combino pruebas manuales, automatización web, validación de API y análisis de datos para detectar problemas, mejorar la cobertura de pruebas y contribuir a entregas de mayor calidad.
 
-## Desarrollo local
+Este portafolio presenta mi trayectoria, logros, habilidades, proyectos y formación. Está disponible en español e inglés y refleja mi interés por unir la calidad del software, el desarrollo y el uso práctico de la inteligencia artificial.
 
-```bash
-python -m http.server 8000
-```
+## Mi experiencia
 
-Abrir http://localhost:8000. El sitio también puede abrirse desde `index.html`.
+Trabajo como QA Automation Engineer en XpertCode desde mayo de 2022. Mi experiencia incluye diseño y ejecución de pruebas, automatización, organización de suites y pasos compartidos, seguimiento de defectos y documentación de la validación de historias de usuario.
 
-## Contenido y mantenimiento
+Entre mis resultados destacan:
 
-- `index.html`: estructura semántica y texto de respaldo en inglés, legible sin JavaScript.
-- `css/variables.css`: colores y tokens del diseño.
-- `css/styles.css`: componentes y adaptación a móvil.
-- `js/translations.js`: textos EN/ES. Los títulos oficiales de cursos y nombres de tecnologías conservan su nombre original.
-- `js/language-manager.js`: idioma persistido cuando el almacenamiento está disponible y navegación móvil con cierre por Escape.
-- `assets/cv/cv-anderson-castillo.pdf`: CV descargable; respetar mayúsculas y minúsculas de la ruta.
+- Más de **400 casos de prueba automatizados personalmente durante dos años** en mi empleo.
+- Más de **1200 bugs reportados** durante mi trayectoria laboral, con el conteo confirmado mediante una consulta en Azure DevOps.
+- Reducción de la regresión de **10 a 5 días** mediante automatización de módulos.
+- Creación de consultas SQL documentadas y reutilizables para agilizar las validaciones de QA.
 
-### Fuentes de los proyectos
+## Inteligencia artificial aplicada
 
-Las descripciones se basan en los README públicos de [qaTestGE](https://github.com/AndersonACP25/qaTestGE) [ARSFuturo](https://github.com/kleibergpm/INF-5250-arsfuturo) y [CASHFAST](https://github.com/AndersonACP25/ProyectoFinalRemesa-CASHFAST). Las portadas son composiciones tipográficas, no capturas del producto. qaTestGE enlaza su documentación de pruebas; no se afirma que disponga de integración IA funcional o demo desplegada.
+Actualmente amplío mi experiencia práctica en desarrollo asistido por IA. Utilizo MCP, skills, agentes y subagentes, ingeniería de prompts e instrucciones de proyecto para organizar el trabajo y conectar flujos entre herramientas de IA.
 
-### Información editorial pendiente
+También exploro metodologías como RAG y la organización de conocimiento mediante un segundo cerebro en Obsidian. Mi enfoque combina aprendizaje continuo, contexto estructurado, revisión de los cambios y validación de los resultados.
 
-Datos confirmados por Anderson el 22/10/2026:
+## Proyectos destacados
 
-- 400+ casos automatizados personalmente durante dos años en su empleo.
-- 1200+ bugs reportados durante su trayectoria laboral; cantidad confirmada por el propietario mediante una consulta en Azure DevOps. No se publica la consulta ni se afirma una auditoría independiente.
-- Regresión reducida de 10 a 5 días mediante automatización de módulos: reducción del 50%.
-- Experiencia QA desde mayo de 2022, cargo QA Automation Engineer en XpertCode.
-- Suites y pasos compartidos, documentos de certificación de HU y consultas SQL documentadas para QA. No se atribuyen tareas CI/CD al empleo ni logros adicionales no confirmados.
-- UASD en curso, graduación estimada 2028 y búsqueda de trabajo remoto en QA Manual y Automation; CV vigente.
-- ARSFuturo: colaboración como desarrollador Full-Stack en un equipo de cuatro según su README. No se atribuyen funcionalidades específicas exclusivamente a Anderson sin evidencia adicional.
+- **[qaTestGE](https://github.com/AndersonACP25/qaTestGE):** plataforma para organizar bugs, casos de prueba, ejecuciones manuales y evidencias. Desarrollada con soporte estructurado de IA; esa asistencia forma parte de su proceso de desarrollo.
+- **[ARSFuturo](https://github.com/kleibergpm/INF-5250-arsfuturo):** proyecto académico en equipo para la gestión de una Administradora de Riesgos de Salud, en el que participo como desarrollador Full-Stack.
+- **[CASHFAST](https://github.com/AndersonACP25/ProyectoFinalRemesa-CASHFAST):** proyecto académico orientado a la gestión de remesas.
 
-Los cursos se presentan como formación y credenciales. Añadir enlaces individuales de verificación cuando el propietario los proporcione. El título «Responsive Web Design» corrige la errata original; confirmar que coincide con la credencial. No se incorporan reportes corporativos, capturas privadas ni un repositorio público de automatización inexistente.
+## Formación y objetivos
 
-## Verificación de cambios
+Estudio Licenciatura en Informática en la Universidad Autónoma de Santo Domingo, con graduación estimada en 2028. Continúo formándome en calidad de software, desarrollo e inteligencia artificial aplicada.
 
-- Probar en 320, 375, 768, 1024 y 1440 px, sin desplazamiento horizontal.
-- Abrir/cerrar el menú con teclado; Escape devuelve el foco al botón.
-- Navegar a una sección desde el menú y comprobar el cierre y la posición del título.
-- Cambiar EN/ES, recargar y comprobar persistencia y atributo `html[lang]`.
-- Comprobar que los textos siguen disponibles si se desactiva JavaScript.
-- Descargar CV y revisar los enlaces a proyectos.
-- Revisar foco visible y reducción de movimiento.
+Busco oportunidades de trabajo remoto en **QA Manual y QA Automation**, donde pueda aportar mi experiencia y seguir creciendo profesionalmente.
 
-## Publicación
+## Conoce mi trabajo
 
-GitHub Pages usa la rama configurada en el repositorio. Los cambios en una rama de mejora deben revisarse mediante Pull Request antes de integrarse en `master`.
-
-[Ver portafolio](https://andersonacp25.github.io/Portafolio-Anderson-Castillo/)
+- [Ver portafolio](https://andersonacp25.github.io/Portafolio-Anderson-Castillo/)
+- [LinkedIn](https://www.linkedin.com/in/anderson-castillo-8ba0a021a/)
+- [GitHub](https://github.com/AndersonACP25)
+- [Contacto por correo](mailto:anderson250514@gmail.com)
