@@ -21,11 +21,19 @@ Abrir http://localhost:8000. El sitio también puede abrirse desde `index.html`.
 
 ### Fuentes de los proyectos
 
-Las descripciones se basan en los README públicos de [qaTestGE](https://github.com/AndersonACP25/qaTestGE) y [CASHFAST](https://github.com/AndersonACP25/ProyectoFinalRemesa-CASHFAST). Las portadas son composiciones tipográficas, no capturas del producto. qaTestGE enlaza su documentación de pruebas; no se afirma que disponga de integración IA funcional o demo desplegada.
+Las descripciones se basan en los README públicos de [qaTestGE](https://github.com/AndersonACP25/qaTestGE) [ARSFuturo](https://github.com/kleibergpm/INF-5250-arsfuturo) y [CASHFAST](https://github.com/AndersonACP25/ProyectoFinalRemesa-CASHFAST). Las portadas son composiciones tipográficas, no capturas del producto. qaTestGE enlaza su documentación de pruebas; no se afirma que disponga de integración IA funcional o demo desplegada.
 
 ### Información editorial pendiente
 
-Se conservan los datos profesionales del portafolio original: 400+ casos automatizados, 50% de reducción de regresión, experiencia desde mayo de 2022 y graduación estimada en 2028. Antes de añadir más detalle, confirmar con Anderson el período, alcance y método de cálculo de las métricas. No se inventan resultados de proyectos ni datos de clientes.
+Datos confirmados por Anderson el 22/10/2026:
+
+- 400+ casos automatizados personalmente durante dos años en su empleo.
+- 1200+ bugs reportados durante su trayectoria laboral; cantidad confirmada por el propietario mediante una consulta en Azure DevOps. No se publica la consulta ni se afirma una auditoría independiente.
+- Regresión reducida de 10 a 5 días mediante automatización de módulos: reducción del 50%.
+- Experiencia QA desde mayo de 2022, cargo QA Automation Engineer en XpertCode.
+- Suites y pasos compartidos, documentos de certificación de HU y consultas SQL documentadas para QA. No se atribuyen tareas CI/CD al empleo ni logros adicionales no confirmados.
+- UASD en curso, graduación estimada 2028 y búsqueda de trabajo remoto en QA Manual y Automation; CV vigente.
+- ARSFuturo: colaboración como desarrollador Full-Stack en un equipo de cuatro según su README. No se atribuyen funcionalidades específicas exclusivamente a Anderson sin evidencia adicional.
 
 Los cursos se presentan como formación y credenciales. Añadir enlaces individuales de verificación cuando el propietario los proporcione. El título «Responsive Web Design» corrige la errata original; confirmar que coincide con la credencial. No se incorporan reportes corporativos, capturas privadas ni un repositorio público de automatización inexistente.
 

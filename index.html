@@ -29,9 +29,9 @@
     <title>Anderson Castillo | QA Automation Engineer</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/reset.css" />
@@ -120,6 +120,9 @@
               software quality through manual and automated testing. Specialized
               in Playwright, TypeScript, API Testing and SQL validation.
             </p>
+            <p data-translate="availability" class="hero__availability">
+              Seeking remote opportunities in Manual QA and Test Automation.
+            </p>
             <div class="hero__actions">
               <a
                 href="#projects"
@@ -128,7 +131,7 @@
                 >View projects</a
               >
               <a
-                download
+                download=""
                 href="./assets/cv/cv-anderson-castillo.pdf"
                 class="button button--secondary"
                 data-translate="resume"
@@ -189,7 +192,26 @@
             <article class="metric-card">
               <h3 class="metric-card__value">400+</h3>
               <p class="metric-card__label" data-translate="metric_cases">
-                Automated Test Cases
+                Test cases automated
+              </p>
+              <p
+                data-translate="metric_cases_detail"
+                class="metric-card__detail"
+              >
+                Personally automated over two years in my current role.
+              </p>
+            </article>
+            <article class="metric-card">
+              <h3 class="metric-card__value">1200+</h3>
+              <p data-translate="metric_bugs" class="metric-card__label">
+                Bugs reported
+              </p>
+              <p
+                data-translate="metric_bugs_detail"
+                class="metric-card__detail"
+              >
+                Throughout my QA career; count confirmed through an Azure DevOps
+                query.
               </p>
             </article>
             <article class="metric-card">
@@ -197,11 +219,23 @@
               <p class="metric-card__label" data-translate="metric_regression">
                 Regression Time Reduction
               </p>
+              <p
+                data-translate="metric_regression_detail"
+                class="metric-card__detail"
+              >
+                Regression reduced from 10 days to 5 through module automation.
+              </p>
             </article>
             <article class="metric-card">
               <h3 class="metric-card__value">4+</h3>
               <p class="metric-card__label" data-translate="metric_experience">
                 Years of Experience
+              </p>
+              <p
+                data-translate="metric_experience_detail"
+                class="metric-card__detail"
+              >
+                In software quality assurance, since May 2022.
               </p>
             </article>
           </div>
@@ -246,21 +280,23 @@
                     implemented.
                   </li>
                 </ul>
-                <a
-                  class="text-link"
-                  href="https://github.com/AndersonACP25/qaTestGE"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-translate="qa_source"
-                  >Explore qaTestGE code ↗</a
-                ><a
-                  class="text-link"
-                  href="https://github.com/AndersonACP25/qaTestGE/blob/main/docs/TESTING.md"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-translate="testing_docs"
-                  >Read testing documentation ↗</a
-                >
+                <div class="project-card__actions">
+                  <a
+                    class="project-link"
+                    href="https://github.com/AndersonACP25/qaTestGE"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-translate="qa_source"
+                    >Explore qaTestGE code ↗</a
+                  ><a
+                    class="project-link"
+                    href="https://github.com/AndersonACP25/qaTestGE/blob/main/docs/TESTING.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-translate="testing_docs"
+                    >Read testing documentation ↗</a
+                  >
+                </div>
               </div>
             </article>
             <article class="project-card">
@@ -290,14 +326,68 @@
                     receipts in the README.
                   </li>
                 </ul>
-                <a
-                  class="text-link"
-                  href="https://github.com/AndersonACP25/ProyectoFinalRemesa-CASHFAST"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-translate="cash_source"
-                  >Explore CASHFAST code and screens ↗</a
-                >
+                <div class="project-card__actions">
+                  <a
+                    class="project-link"
+                    href="https://github.com/AndersonACP25/ProyectoFinalRemesa-CASHFAST"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-translate="cash_source"
+                    >Explore CASHFAST code and screens ↗</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div
+                class="project-card__visual project-card__visual--ars"
+                aria-hidden="true"
+              >
+                <span>03 / FULL-STACK DEVELOPMENT</span
+                ><strong>ARSFuturo</strong
+                ><span>React · Express · Prisma · PostgreSQL</span>
+              </div>
+              <div class="project-card__body">
+                <p data-translate="team_project" class="eyebrow">
+                  Collaborative academic project
+                </p>
+                <h3>ARSFuturo</h3>
+                <p data-translate="ars_description">
+                  Full-stack application for managing a health insurance
+                  administrator (ARS), developed as part of Software Engineering
+                  II at UASD.
+                </p>
+                <ul class="project-card__details">
+                  <li data-translate="ars_role">
+                    My role: Full-Stack Developer and repository collaborator
+                    within a four-person team.
+                  </li>
+                  <li data-translate="ars_scope">
+                    Stack: React, TypeScript, Vite and Tailwind CSS; Express API
+                    with Prisma and PostgreSQL.
+                  </li>
+                  <li data-translate="ars_evidence">
+                    Repository evidence: backend/frontend documentation, UML
+                    diagrams and k6 test scripts.
+                  </li>
+                </ul>
+                <div class="project-card__actions">
+                  <a
+                    data-translate="ars_source"
+                    class="project-link"
+                    href="https://github.com/kleibergpm/INF-5250-arsfuturo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Explore ARSFuturo code ↗</a
+                  ><a
+                    data-translate="ars_docs"
+                    class="project-link"
+                    href="https://github.com/kleibergpm/INF-5250-arsfuturo#documentación-por-módulo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Read project documentation ↗</a
+                  >
+                </div>
               </div>
             </article>
           </div>
@@ -334,24 +424,53 @@
                 >May 2022 – Present</span
               >
             </div>
+            <h4
+              data-translate="responsibilities"
+              class="experience-card__subtitle"
+            >
+              Responsibilities
+            </h4>
             <ul class="experience-card__list">
               <li data-translate="exp_automation">
-                Web test automation with Playwright and TypeScript.
+                Develop and maintain web test automation with Playwright and
+                TypeScript.
               </li>
               <li data-translate="exp_api">
-                API validation using Postman and Swagger.
-              </li>
-              <li data-translate="exp_sql">
-                SQL queries to validate application data.
+                Validate APIs with Postman and Swagger and check data using SQL.
               </li>
               <li data-translate="exp_regression">
-                Smoke and regression testing for software changes.
+                Design and execute manual, functional, smoke and regression
+                tests; document results and follow up on defects.
               </li>
-              <li data-translate="exp_planning">
-                Test planning and documentation of test scenarios.
+              <li data-translate="exp_suites">
+                Organize test suites and shared test steps to reuse scenarios
+                and simplify test maintenance.
               </li>
-              <li data-translate="exp_defects">
-                Defect identification and reporting.
+              <li data-translate="exp_certification">
+                Prepare user story validation documents with test results and
+                evidence.
+              </li>
+            </ul>
+            <h4 data-translate="achievements" class="experience-card__subtitle">
+              Selected achievements
+            </h4>
+            <ul
+              class="experience-card__list experience-card__list--achievements"
+            >
+              <li data-translate="achievement_regression">
+                Reduced regression testing from 10 to 5 days by automating
+                modules, helping shorten delivery cycles.
+              </li>
+              <li data-translate="achievement_cases">
+                Personally automated 400+ test cases over two years.
+              </li>
+              <li data-translate="achievement_bugs">
+                Reported 1,200+ bugs during my QA career, confirmed through an
+                Azure DevOps query.
+              </li>
+              <li data-translate="achievement_sql">
+                Created and documented reusable SQL queries for QA validation,
+                reducing repetitive work and improving data checks.
               </li>
             </ul>
           </article>
@@ -582,6 +701,9 @@ Utils/
       <section id="contact" class="section">
         <div class="section__container">
           <h2 class="section__title" data-translate="contact_title">Contact</h2>
+          <p data-translate="availability" class="section__text contact__intro">
+            Seeking remote opportunities in Manual QA and Test Automation.
+          </p>
 
           <div class="contact">
             <a href="mailto:anderson250514@gmail.com" class="contact-card">
