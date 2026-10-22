@@ -1,35 +1,86 @@
 class LanguageManager {
   constructor() {
     this.selector = document.querySelector(".header__language-selector");
+    this.cache = new Map();
+    this.request = 0;
+    this.current = "en";
+    // Capture the readable HTML as the offline fallback and source language.
+    this.fallback = {};
+    document.querySelectorAll("[data-translate]").forEach((element) => {
+      this.fallback[element.dataset.translate] = element.textContent.trim();
+    });
+    document.querySelectorAll("[data-translate-aria]").forEach((element) => {
+      this.fallback[element.dataset.translateAria] =
+        element.getAttribute("aria-label");
+    });
     let language = "en";
     try {
-      language = localStorage.getItem("language") || "en";
+      language = localStorage.getItem("language") || navigator.language;
     } catch {
       /* Storage is optional. */
     }
+    this.selector.addEventListener("change", () =>
+      this.translate(this.selector.value),
+    );
     this.translate(language);
-    this.selector.addEventListener("change", () => {
-      this.translate(this.selector.value);
-      try {
-        localStorage.setItem("language", this.selector.value);
-      } catch {
-        /* Keep translation usable. */
-      }
-    });
   }
-  translate(language) {
-    const selected = Object.hasOwn(translations, language) ? language : "en";
-    const dictionary = translations[selected];
-    this.selector.value = selected;
-    document.documentElement.lang = selected;
+
+  async load(language) {
+    if (!this.cache.has(language)) {
+      const response = await fetch(
+        new URL(
+          `../locales/${language}.json`,
+          document.querySelector('script[src$="language-manager.js"]').src,
+        ),
+      );
+      if (!response.ok) throw new Error("Language unavailable");
+      const dictionary = await response.json();
+      if (
+        !dictionary ||
+        typeof dictionary !== "object" ||
+        Array.isArray(dictionary)
+      )
+        throw new Error("Invalid language data");
+      this.cache.set(language, dictionary);
+    }
+    return this.cache.get(language);
+  }
+
+  async translate(language) {
+    const selected =
+      typeof language === "string" && language.toLowerCase().startsWith("es")
+        ? "es"
+        : "en";
+    const request = ++this.request;
+    let dictionary;
+    try {
+      dictionary = await this.load(selected);
+    } catch {
+      // Keep the previous readable language and allow a later retry.
+      if (request === this.request) this.selector.value = this.current;
+      return;
+    }
+    if (request !== this.request) return;
+    const textFor = (key) =>
+      typeof dictionary[key] === "string" && dictionary[key]
+        ? dictionary[key]
+        : this.fallback[key];
     document.querySelectorAll("[data-translate]").forEach((element) => {
-      const text = dictionary[element.dataset.translate];
+      const text = textFor(element.dataset.translate);
       if (text) element.textContent = text;
     });
     document.querySelectorAll("[data-translate-aria]").forEach((element) => {
-      const text = dictionary[element.dataset.translateAria];
+      const text = textFor(element.dataset.translateAria);
       if (text) element.setAttribute("aria-label", text);
     });
+    this.current = selected;
+    this.selector.value = selected;
+    document.documentElement.lang = selected;
+    try {
+      localStorage.setItem("language", selected);
+    } catch {
+      /* Storage is optional. */
+    }
   }
 }
 
