@@ -566,6 +566,52 @@
           </details>
         </div>
       </section>
+      <section class="section section--surface" id="case-study-sql">
+        <div class="section__container">
+          <p data-translate="sql_case_eyebrow" class="eyebrow">CASE STUDY · DATA VALIDATION</p>
+          <h2 data-translate="sql_case_title" class="section__title">Reusable SQL: from scattered checks to a shared Wiki</h2>
+          <p data-translate="sql_case_intro" class="section__text">I built and documented a reusable query catalogue so QA, developers and the Product Owner could retrieve the data needed for recurring use cases without rebuilding each query from scratch.</p>
+          <div class="sql-comparison">
+            <div class="sql-comparison__item">
+              <h3 data-translate="sql_case_before_title">Before: scattered investigation</h3>
+              <p data-translate="sql_case_before">Multiple application tabs and endpoint responses had to be compared to find the required values.</p>
+            </div>
+            <div class="sql-comparison__item">
+              <h3 data-translate="sql_case_after_title">After: a reusable team reference</h3>
+              <p data-translate="sql_case_after">A shared Azure DevOps Wiki documented queries, their purpose, usage conditions and alternatives.</p>
+            </div>
+          </div>
+          <details class="case-details">
+            <summary data-translate="sql_case_read">Explore the SQL case study</summary>
+            <div class="case-body">
+              <div class="case-block">
+                <h3 data-translate="sql_case_context_title">Context &amp; recurring problem</h3>
+                <p data-translate="sql_case_context">The application had more than 120 pages and many related database tables. Data validation across maintenance screens required joins, filtering, grouping and ordering. Working in SQL Server Management Studio (SSMS), I needed to retrieve related values more directly instead of repeatedly comparing screens and API responses.</p>
+              </div>
+              <div class="case-block">
+                <h3 data-translate="sql_case_method_title">Building the query catalogue</h3>
+                <ol>
+                  <li data-translate="sql_case_map">For each maintenance screen, identify the base table and its relationships, using my knowledge of the application flow. This investigation and documentation took several weeks.</li>
+                  <li data-translate="sql_case_queries">Combine JOIN and WHERE clauses with GROUP BY, HAVING and ORDER BY as required by the use case, so the result presented the values needed for validation.</li>
+                  <li data-translate="sql_case_validate">Test queries locally before publishing. Split long queries into smaller parts, check each part, then add joins progressively and verify that the returned data and WHERE conditions matched the intended scenario.</li>
+                  <li data-translate="sql_case_document">Publish each query in the Azure DevOps Wiki with a short explanation of why it existed, the specific cases where it applied and alternatives. Team members could access and update the documentation.</li>
+                  <li data-translate="sql_case_procedures">Document stored procedures used within specific workflows so their execution context was available alongside the queries.</li>
+                </ol>
+              </div>
+              <div class="case-block">
+                <h3 data-translate="sql_case_result_title">Observed impact</h3>
+                <p data-translate="sql_case_result">The catalogue supported user story validation, certification testing, regression and production release activities. It reduced the need to recreate queries and made recurring data lookups more accessible to QA, developers and the Product Owner.</p>
+                <p data-translate="sql_case_measurement">This was a qualitative improvement in reuse and access to knowledge; I did not record a time-saving percentage or database performance benchmark.</p>
+              </div>
+              <div class="case-block">
+                <h3 data-translate="sql_case_learning_title">What this work demonstrates</h3>
+                <p data-translate="sql_case_learning">Investigating table relationships, checking intermediate results and documenting query intent turned individual troubleshooting into a shared team resource. Reuse was supported by understanding when a query applied, rather than treating every query as interchangeable.</p>
+              </div>
+              <p data-translate="sql_case_note" class="case-note">The Wiki and queries are internal. This anonymized account describes the method and observed benefits without publishing table names, records or execution instructions.</p>
+            </div>
+          </details>
+        </div>
+      </section>
       <section id="about" class="section">
         <div class="section__container">
           <h2 class="section__title" data-translate="about_title">How I work</h2>
@@ -629,6 +675,12 @@
               class="project-link"
               href="#case-study-regression"
               >Explore the regression case study</a
+            >
+            <a
+              data-translate="sql_case_link"
+              class="project-link"
+              href="#case-study-sql"
+              >Read the reusable SQL case study</a
             >
           </article>
         </div>

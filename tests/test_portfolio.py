@@ -67,6 +67,18 @@ class PortfolioTests(unittest.TestCase):
                 self.assertTrue((ROOT / 'assets/projects' / f'{name}.webp').is_file())
                 self.assertIn(f'./assets/projects/{name}.webp', page)
 
+    def test_sql_case_is_linked_and_translated(self):
+        for language, filename in [('en', 'index.html'), ('es', 'es.html')]:
+            text = json.loads((ROOT / 'locales' / f'{language}.json').read_text())
+            page = (ROOT / filename).read_text()
+            self.assertIn('id="case-study-sql"', page)
+            self.assertIn('href="#case-study-sql"', page)
+            self.assertIn(text['sql_case_title'], page)
+            self.assertIn(text['sql_case_measurement'], page)
+            self.assertIn('SSMS', text['sql_case_context'])
+            for clause in ['JOIN', 'WHERE', 'GROUP BY', 'HAVING', 'ORDER BY']:
+                self.assertIn(clause, text['sql_case_queries'])
+
     def test_renderer_rejects_placeholder_nodes(self):
         with tempfile.TemporaryDirectory() as directory:
             destination = Path(directory)

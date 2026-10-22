@@ -566,6 +566,52 @@
           </details>
         </div>
       </section>
+      <section class="section section--surface" id="case-study-sql">
+        <div class="section__container">
+          <p data-translate="sql_case_eyebrow" class="eyebrow">CASO DE ESTUDIO · VALIDACIÓN DE DATOS</p>
+          <h2 data-translate="sql_case_title" class="section__title">SQL reutilizable: de validaciones dispersas a una Wiki compartida</h2>
+          <p data-translate="sql_case_intro" class="section__text">Construí y documenté un catálogo de consultas reutilizables para que QA, desarrollo y el Product Owner pudieran obtener los datos necesarios para casos de uso recurrentes sin reconstruir cada consulta desde cero.</p>
+          <div class="sql-comparison">
+            <div class="sql-comparison__item">
+              <h3 data-translate="sql_case_before_title">Antes: investigación dispersa</h3>
+              <p data-translate="sql_case_before">Había que comparar varias pestañas de la aplicación y respuestas de endpoints para encontrar los valores necesarios.</p>
+            </div>
+            <div class="sql-comparison__item">
+              <h3 data-translate="sql_case_after_title">Después: una referencia reutilizable</h3>
+              <p data-translate="sql_case_after">Una Wiki compartida de Azure DevOps documentaba consultas, propósito, condiciones de uso y alternativas.</p>
+            </div>
+          </div>
+          <details class="case-details">
+            <summary data-translate="sql_case_read">Explorar el caso de consultas SQL</summary>
+            <div class="case-body">
+              <div class="case-block">
+                <h3 data-translate="sql_case_context_title">Contexto y problema recurrente</h3>
+                <p data-translate="sql_case_context">La aplicación tenía más de 120 páginas y numerosas tablas relacionadas. La validación de datos entre pantallas de mantenimiento requería uniones, filtros, agrupaciones y ordenamientos. Trabajando en SQL Server Management Studio (SSMS), necesitaba obtener los valores relacionados de forma más directa, en lugar de comparar repetidamente pantallas y respuestas de API.</p>
+              </div>
+              <div class="case-block">
+                <h3 data-translate="sql_case_method_title">Construcción del catálogo de consultas</h3>
+                <ol>
+                  <li data-translate="sql_case_map">Identificar para cada mantenimiento la tabla base y sus relaciones, aprovechando mi conocimiento del flujo de la aplicación. La investigación y documentación tomó varias semanas.</li>
+                  <li data-translate="sql_case_queries">Combinar JOIN y WHERE con GROUP BY, HAVING y ORDER BY según el caso de uso, para obtener los valores necesarios para la validación.</li>
+                  <li data-translate="sql_case_validate">Probar las consultas localmente antes de publicarlas. Dividir las consultas largas en partes, comprobarlas por separado y añadir progresivamente los JOIN, verificando que los datos devueltos y las condiciones WHERE correspondieran al escenario buscado.</li>
+                  <li data-translate="sql_case_document">Publicar cada consulta en la Wiki de Azure DevOps con una explicación breve de su propósito, los casos específicos donde aplicaba y las alternativas. Los integrantes del equipo podían consultar y actualizar la documentación.</li>
+                  <li data-translate="sql_case_procedures">Documentar los procedimientos almacenados utilizados en flujos específicos, dejando su contexto de ejecución disponible junto a las consultas.</li>
+                </ol>
+              </div>
+              <div class="case-block">
+                <h3 data-translate="sql_case_result_title">Impacto observado</h3>
+                <p data-translate="sql_case_result">El catálogo apoyó la validación de historias de usuario, pruebas de certificación, regresión y actividades de pases a producción. Redujo la necesidad de rehacer consultas y facilitó la búsqueda recurrente de datos para QA, desarrollo y el Product Owner.</p>
+                <p data-translate="sql_case_measurement">Fue una mejora cualitativa de reutilización y acceso al conocimiento; no registré un porcentaje de ahorro de tiempo ni un benchmark de rendimiento de la base de datos.</p>
+              </div>
+              <div class="case-block">
+                <h3 data-translate="sql_case_learning_title">Qué demuestra este trabajo</h3>
+                <p data-translate="sql_case_learning">Investigar relaciones entre tablas, comprobar resultados intermedios y documentar la intención de cada consulta convirtió la investigación individual en un recurso compartido. La reutilización se apoyaba en comprender cuándo aplicaba cada consulta, sin tratarlas como intercambiables.</p>
+              </div>
+              <p data-translate="sql_case_note" class="case-note">La Wiki y las consultas son internas. Este relato anónimo describe el método y los beneficios observados sin publicar nombres de tablas, registros ni instrucciones de ejecución.</p>
+            </div>
+          </details>
+        </div>
+      </section>
       <section id="about" class="section">
         <div class="section__container">
           <h2 class="section__title" data-translate="about_title">Cómo trabajo</h2>
@@ -629,6 +675,12 @@
               class="project-link"
               href="#case-study-regression"
               >Explorar el caso de regresión</a
+            >
+            <a
+              data-translate="sql_case_link"
+              class="project-link"
+              href="#case-study-sql"
+              >Ver el caso de consultas SQL reutilizables</a
             >
           </article>
         </div>
