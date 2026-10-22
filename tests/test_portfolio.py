@@ -37,16 +37,21 @@ class PortfolioTests(unittest.TestCase):
                 self.assertEqual(len(parser.dates), 26)
 
     def test_manual_metric_and_case_study(self):
-        for language, filename, label in [('en', 'index.html', 'Manual test cases'), ('es', 'es.html', 'Casos de prueba manuales')]:
+        for language, filename, label in [('en', 'index.html', 'Automated tests'), ('es', 'es.html', 'Pruebas automatizadas')]:
             dictionary = json.loads((ROOT / 'locales' / f'{language}.json').read_text())
             self.assertEqual(dictionary['metric_cases'], label)
-            self.assertIn('manual', dictionary['achievement_cases'].lower())
+            self.assertIn('400', dictionary['achievement_cases'])
+            self.assertIn('350', dictionary['achievement_manual'])
+            for topic in ['edu_programming', 'edu_logic', 'edu_design', 'edu_environments', 'edu_computing', 'edu_tools']:
+                self.assertTrue(dictionary[topic + '_text'])
+            self.assertIn('manual', dictionary['achievement_manual'].lower())
             page = (ROOT / filename).read_text()
             self.assertIn('id="case-study-regression"', page)
             self.assertIn('href="#case-study-regression"', page)
             self.assertIn(dictionary['case_title'], page)
             self.assertIn(dictionary['case_role'], page)
-        self.assertNotIn('400 casos de prueba automatizados', (ROOT / 'README.md').read_text())
+        self.assertIn('350 casos de prueba manuales', (ROOT / 'README.md').read_text())
+        self.assertIn('400 pruebas automatizadas', (ROOT / 'README.md').read_text())
 
     def test_renderer_rejects_placeholder_nodes(self):
         with tempfile.TemporaryDirectory() as directory:

@@ -10,7 +10,8 @@ Trabajo como QA Automation Engineer en XpertCode desde mayo de 2022. Mi experien
 
 Entre mis resultados destacan:
 
-- Más de **400 casos de prueba manuales documentados en Azure DevOps**.
+- Más de **350 casos de prueba manuales documentados en Azure DevOps**.
+- Más de **400 pruebas automatizadas escritas en código**.
 - Más de **1200 bugs reportados** durante mi trayectoria laboral, con el conteo confirmado mediante una consulta en Azure DevOps.
 - Reducción de la regresión de **10 a 5 días** mediante automatización de módulos.
 - Creación de consultas SQL documentadas y reutilizables para agilizar las validaciones de QA.
@@ -35,7 +36,7 @@ También exploro metodologías como RAG y la organización de conocimiento media
 
 ## Formación y objetivos
 
-Estudio Licenciatura en Informática en la Universidad Autónoma de Santo Domingo, con graduación estimada en 2028. Continúo formándome en calidad de software, desarrollo e inteligencia artificial aplicada.
+Estudio Licenciatura en Informática en la Universidad Autónoma de Santo Domingo, con graduación estimada en 2028. Durante la carrera he abordado programación web y lenguajes como Java, C# y C++; SQL y modelado relacional; lógica y algoritmos; análisis y diseño de sistemas con SDD, MVC y diagramas; hardware y software; WSL, máquinas virtuales, proxy y terminales; Git/GitHub y uso de API con Postman y Swagger. Continúo formándome en calidad de software, desarrollo e inteligencia artificial aplicada.
 
 Busco oportunidades de trabajo remoto en **QA Manual y QA Automation**, donde pueda aportar mi experiencia y seguir creciendo profesionalmente.
 
