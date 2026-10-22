@@ -1035,3 +1035,63 @@ html {
     grid-template-columns: 1fr;
   }
 }
+
+/* Local technology icons and a curated learning catalogue. */
+#skills .skill-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+.skill-tag img {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  object-fit: contain;
+}
+.certification-card__icon {
+  padding: 0.55rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.certification-card__year {
+  display: block;
+}
+.courses-summary {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+}
+.courses-heading {
+  margin-top: 2rem;
+  font-size: 1.15rem;
+}
+.courses-more {
+  margin-top: 2rem;
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 1.25rem;
+}
+.courses-more summary {
+  cursor: pointer;
+  color: var(--color-primary-light);
+  font-weight: 600;
+  min-height: 44px;
+  align-content: center;
+}
+.courses-more .certifications-grid {
+  margin-top: 1rem;
+}
+.course-note {
+  color: var(--color-muted);
+  font-size: 0.8rem;
+  margin-top: 0.75rem;
+}
+.language-links {
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  color: var(--color-primary-light);
+}
