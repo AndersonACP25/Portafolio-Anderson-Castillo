@@ -1,211 +1,557 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="canonical"
+      href="https://andersonacp25.github.io/Portafolio-Anderson-Castillo/"
+    />
+    <meta name="author" content="Anderson Castillo" />
+    <meta
+      name="keywords"
+      content="QA Automation Engineer, Playwright, TypeScript, Software Testing, QA Portfolio"
+    />
+    <meta
+      property="og:title"
+      content="Anderson Castillo | QA Automation Engineer"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Anderson Castillo">
-    <meta name="keywords" content="QA Automation Engineer, Playwright, TypeScript, Software Testing, QA Portfolio">
-    <meta property="og:title" content="Anderson Castillo | QA Automation Engineer">
-
-    <meta property="og:description"
-        content="QA Automation Engineer specialized in Playwright, TypeScript, API Testing and Software Quality Assurance.">
-    <meta property="og:type" content="website">
-    <meta name="description"
-        content="QA Automation Engineer specialized in Playwright, TypeScript, API Testing and Software Quality Assurance.">
+    <meta
+      property="og:description"
+      content="QA Automation Engineer specialized in Playwright, TypeScript, API Testing and Software Quality Assurance."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      name="description"
+      content="QA Automation Engineer specialized in Playwright, TypeScript, API Testing and Software Quality Assurance."
+    />
     <title>Anderson Castillo | QA Automation Engineer</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/variables.css">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="icon" href="./assets/icons/favicon.svg" type="image/x-icon">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml" />
+  </head>
 
-<body>
+  <body>
+    <a class="skip-link" href="#main" data-translate="skip">Skip to content</a>
     <!-- HEADER -->
     <header class="header">
-        <div class="header__container">
-            <a href="#hero" class="header__logo">Anderson Castillo</a>
-            <nav class="header__navigation">
-                <a href="#about" class="header__link" data-translate="nav_about"></a>
-                <a href="#experience" class="header__link" data-translate="nav_experience"></a>
-                <a href="#skills" class="header__link" data-translate="nav_skills"></a>
-                <a href="#framework" class="header__link" data-translate="nav_framework"></a>
-                <a href="#certifications" class="header__link" data-translate="nav_certifications"></a>
-                <a href="#contact" class="header__link" data-translate="nav_contact"></a>
-            </nav>
-            <select class="header__language-selector">
-                <option value="en">English</option>
-                <option value="es">Español</option>
-            </select>
-        </div>
+      <div class="header__container">
+        <a href="#hero" class="header__logo">Anderson Castillo</a>
+        <button
+          class="header__menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="main-navigation"
+          data-translate="menu"
+        >
+          Menu
+        </button>
+        <nav
+          id="main-navigation"
+          class="header__navigation"
+          aria-label="Main navigation"
+          data-translate-aria="navigation"
+        >
+          <a href="#projects" class="header__link" data-translate="nav_projects"
+            >Projects</a
+          >
+          <a href="#about" class="header__link" data-translate="nav_about"
+            >About</a
+          >
+          <a
+            href="#experience"
+            class="header__link"
+            data-translate="nav_experience"
+            >Experience</a
+          >
+          <a href="#skills" class="header__link" data-translate="nav_skills"
+            >Skills</a
+          >
+          <a
+            href="#framework"
+            class="header__link"
+            data-translate="nav_framework"
+            >Framework</a
+          >
+          <a
+            href="#certifications"
+            class="header__link"
+            data-translate="nav_certifications"
+            >Certifications</a
+          >
+          <a href="#contact" class="header__link" data-translate="nav_contact"
+            >Contact</a
+          >
+        </nav>
+        <select
+          class="header__language-selector"
+          aria-label="Language"
+          data-translate-aria="language"
+        >
+          <option value="en">English</option>
+          <option value="es">Español</option>
+        </select>
+      </div>
     </header>
 
-    <main>
-        <!-- HERO -->
-        <section id="hero" class="hero">
-            <div class="hero__container">
-                <div class="hero__content">
-                    <span class="hero__greeting" data-translate="hero_greeting"></span>
-                    <h1 class="hero__name">Anderson Castillo</h1>
-                    <h2 class="hero__title" data-translate="hero_title"></h2>
-                    <p class="hero__description" data-translate="hero_description"></p>
-                    <div class="hero__actions">
-                        <a download href="./assets/cv/CV-Anderson-Castillo.pdf"
-                            class="button button--primary">Resume</a>
-                        <a href="https://www.linkedin.com/in/anderson-castillo-8ba0a021a/" target="_blank"
-                            class="button button--secondary">LinkedIn</a>
-                        <a href="https://github.com/AndersonACP25" target="_blank"
-                            class="button button--secondary">GitHub</a>
-                    </div>
-                    <div class="hero__tech-stack">
+    <main id="main" tabindex="-1">
+      <!-- HERO -->
+      <section id="hero" class="hero">
+        <div class="hero__container">
+          <div class="hero__content">
+            <span class="hero__greeting" data-translate="hero_greeting"
+              >Hello, I'm</span
+            >
+            <h1 class="hero__name">Anderson Castillo</h1>
+            <h2 class="hero__title" data-translate="hero_title">
+              QA Automation Engineer
+            </h2>
+            <p class="hero__description" data-translate="hero_description">
+              QA Automation Engineer with over 4 years of experience ensuring
+              software quality through manual and automated testing. Specialized
+              in Playwright, TypeScript, API Testing and SQL validation.
+            </p>
+            <p data-translate="availability" class="hero__availability">
+              Seeking remote opportunities in Manual QA and Test Automation.
+            </p>
+            <div class="hero__actions">
+              <a
+                href="#projects"
+                class="button button--primary"
+                data-translate="view_projects"
+                >View projects</a
+              >
+              <a
+                download=""
+                href="./assets/cv/cv-anderson-castillo.pdf"
+                class="button button--secondary"
+                data-translate="resume"
+                >Download CV</a
+              >
+              <a
+                href="https://www.linkedin.com/in/anderson-castillo-8ba0a021a/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button button--secondary"
+                >LinkedIn</a
+              >
+              <a
+                href="https://github.com/AndersonACP25"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button button--secondary"
+                >GitHub</a
+              >
+            </div>
+            <div class="hero__tech-stack">
+              <div class="tech-badge">
+                <img src="./assets/icons/playwright.svg" alt="Playwright" />
+                <span>Playwright</span>
+              </div>
 
-                        <div class="tech-badge">
-                            <img src="./assets/icons/playwright.svg" alt="Playwright">
-                            <span>Playwright</span>
-                        </div>
+              <div class="tech-badge">
+                <img src="./assets/icons/typescript.svg" alt="TypeScript" />
+                <span>TypeScript</span>
+              </div>
 
-                        <div class="tech-badge">
-                            <img src="./assets/icons/typescript.svg" alt="TypeScript">
-                            <span>TypeScript</span>
-                        </div>
+              <div class="tech-badge">
+                <img src="./assets/icons/mysql.svg" alt="MySQL" />
+                <span>MySQL</span>
+              </div>
 
-                        <div class="tech-badge">
-                            <img src="./assets/icons/mysql.svg" alt="MySQL">
-                            <span>MySQL</span>
-                        </div>
+              <div class="tech-badge">
+                <img src="./assets/icons/postman.svg" alt="Postman" />
+                <span>Postman</span>
+              </div>
 
-                        <div class="tech-badge">
-                            <img src="./assets/icons/postman.svg" alt="Postman">
-                            <span>Postman</span>
-                        </div>
+              <div class="tech-badge">
+                <img src="./assets/icons/azuredevops.svg" alt="Azure DevOps" />
+                <span>Azure DevOps</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                        <div class="tech-badge">
-                            <img src="./assets/icons/azuredevops.svg" alt="Azure DevOps">
-                            <span>Azure DevOps</span>
-                        </div>
+      <!-- METRICS -->
+      <section class="section">
+        <div class="section__container">
+          <h2 class="section__title" data-translate="metrics_title">
+            Impact at a glance
+          </h2>
+          <div class="metrics">
+            <article class="metric-card">
+              <h3 class="metric-card__value">400+</h3>
+              <p class="metric-card__label" data-translate="metric_cases">
+                Test cases automated
+              </p>
+              <p
+                data-translate="metric_cases_detail"
+                class="metric-card__detail"
+              >
+                Personally automated over two years in my current role.
+              </p>
+            </article>
+            <article class="metric-card">
+              <h3 class="metric-card__value">1200+</h3>
+              <p data-translate="metric_bugs" class="metric-card__label">
+                Bugs reported
+              </p>
+              <p
+                data-translate="metric_bugs_detail"
+                class="metric-card__detail"
+              >
+                Throughout my QA career; count confirmed through an Azure DevOps
+                query.
+              </p>
+            </article>
+            <article class="metric-card">
+              <h3 class="metric-card__value">50%</h3>
+              <p class="metric-card__label" data-translate="metric_regression">
+                Regression Time Reduction
+              </p>
+              <p
+                data-translate="metric_regression_detail"
+                class="metric-card__detail"
+              >
+                Regression reduced from 10 days to 5 through module automation.
+              </p>
+            </article>
+            <article class="metric-card">
+              <h3 class="metric-card__value">4+</h3>
+              <p class="metric-card__label" data-translate="metric_experience">
+                Years of Experience
+              </p>
+              <p
+                data-translate="metric_experience_detail"
+                class="metric-card__detail"
+              >
+                In software quality assurance, since May 2022.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-                    </div>
+      <section id="projects" class="section section--surface">
+        <div class="section__container">
+          <p class="eyebrow" data-translate="projects_eyebrow">SELECTED WORK</p>
+          <h2 class="section__title" data-translate="projects_title">
+            From quality strategy to working software
+          </h2>
+          <p class="section__text" data-translate="projects_intro">
+            Explore public projects, their scope and the code behind them.
+          </p>
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-card__visual" aria-hidden="true">
+                <span>01 / QA ENGINEERING</span><strong>qaTestGE</strong
+                ><span>React · TypeScript · PostgreSQL</span>
+              </div>
+              <div class="project-card__body">
+                <p class="eyebrow" data-translate="personal_project">
+                  Personal project
+                </p>
+                <h3>qaTestGE</h3>
+                <p data-translate="project_qa">
+                  Web platform for managing bugs, test cases, manual test runs
+                  and evidence within QA projects.
+                </p>
+                <ul class="project-card__details">
+                  <li data-translate="qa_scope">
+                    Scope: authenticated API, test steps, attachments and
+                    PDF/Excel exports.
+                  </li>
+                  <li data-translate="qa_quality">
+                    Quality: Vitest tests and CI checks for formatting, lint,
+                    types and builds.
+                  </li>
+                  <li data-translate="qa_status">
+                    Status: implemented web application; AI integration is not
+                    implemented.
+                  </li>
+                </ul>
+                <div class="project-card__actions">
+                  <a
+                    class="project-link"
+                    href="https://github.com/AndersonACP25/qaTestGE"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-translate="qa_source"
+                    >Explore qaTestGE code ↗</a
+                  ><a
+                    class="project-link"
+                    href="https://github.com/AndersonACP25/qaTestGE/blob/main/docs/TESTING.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-translate="testing_docs"
+                    >Read testing documentation ↗</a
+                  >
                 </div>
-            </div>
-        </section>
-
-        <!-- METRICS -->
-        <section class="section">
-            <div class="section__container">
-                <h2 class="section__title">Metrics</h2>
-                <div class="metrics">
-                    <article class="metric-card">
-                        <h3 class="metric-card__value">400+</h3>
-                        <p class="metric-card__label" data-translate="metric_cases"></p>
-                    </article>
-                    <article class="metric-card">
-                        <h3 class="metric-card__value">50%</h3>
-                        <p class="metric-card__label" data-translate="metric_regression"></p>
-                    </article>
-                    <article class="metric-card">
-                        <h3 class="metric-card__value">4+</h3>
-                        <p class="metric-card__label" data-translate="metric_experience"></p>
-                    </article>
-                    <article class="metric-card">
-                        <h3 class="metric-card__value">QA</h3>
-                        <p class="metric-card__label" data-translate="metric_quality"></p>
-                    </article>
+              </div>
+            </article>
+            <article class="project-card">
+              <div
+                class="project-card__visual project-card__visual--alt"
+                aria-hidden="true"
+              >
+                <span>02 / SOFTWARE DEVELOPMENT</span><strong>CASHFAST</strong
+                ><span>Java · Desktop</span>
+              </div>
+              <div class="project-card__body">
+                <p class="eyebrow" data-translate="academic_project">
+                  Academic project
+                </p>
+                <h3>CASHFAST</h3>
+                <p data-translate="project_cash">
+                  Java final project focused on remittance management, with
+                  desktop screens documented in the repository.
+                </p>
+                <ul class="project-card__details">
+                  <li data-translate="cash_scope">
+                    Scope: login, registration, remittance queries and exchange
+                    rates.
+                  </li>
+                  <li data-translate="cash_evidence">
+                    Evidence: interface screenshots, reports and remittance
+                    receipts in the README.
+                  </li>
+                </ul>
+                <div class="project-card__actions">
+                  <a
+                    class="project-link"
+                    href="https://github.com/AndersonACP25/ProyectoFinalRemesa-CASHFAST"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-translate="cash_source"
+                    >Explore CASHFAST code and screens ↗</a
+                  >
                 </div>
-            </div>
-        </section>
-
-        <!-- ABOUT -->
-        <section id="about" class="section">
-            <div class="section__container">
-                <h2 class="section__title" data-translate="about_title"></h2>
-                <p class="section__text" data-translate="about_text"></p>
-            </div>
-        </section>
-
-        <!-- EXPERIENCE -->
-        <section id="experience" class="section">
-            <div class="section__container">
-                <h2 class="section__title" data-translate="experience_title"></h2>
-                <article class="experience-card">
-                    <div class="experience-card__header">
-                        <div>
-                            <h3 class="experience-card__position">QA Automation Engineer</h3>
-                            <p class="experience-card__company">XpertCode</p>
-                        </div>
-                        <span class="experience-card__period">May 2022 - Present</span>
-                    </div>
-                    <ul class="experience-card__list">
-                        <li>Playwright + TypeScript Automation</li>
-                        <li>API Testing using Postman & Swagger</li>
-                        <li>SQL Data Validation</li>
-                        <li>Smoke & Regression Testing</li>
-                        <li>Test Planning & Documentation</li>
-                        <li>Early Defect Detection</li>
-                    </ul>
-                </article>
-            </div>
-        </section>
-
-        <!-- SKILLS -->
-        <section id="skills" class="section">
-            <div class="section__container">
-                <h2 class="section__title" data-translate="skills_title"></h2>
-                <div class="skills-categories">
-                    <article class="skill-group">
-                        <h3 class="skill-group__title">Testing</h3>
-                        <div class="skill-group__items">
-                            <span class="skill-tag">QA Manual</span>
-                            <span class="skill-tag">QA Automation</span>
-                            <span class="skill-tag">Smoke Testing</span>
-                            <span class="skill-tag">Regression Testing</span>
-                            <span class="skill-tag">API Testing</span>
-                        </div>
-                    </article>
-                    <article class="skill-group">
-                        <h3 class="skill-group__title">Automation</h3>
-                        <div class="skill-group__items">
-
-                            <span class="skill-tag">Playwright</span>
-                        </div>
-                    </article>
-                    <article class="skill-group">
-                        <h3 class="skill-group__title">Development</h3>
-                        <div class="skill-group__items">
-                            <span class="skill-tag">TypeScript</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">Java</span>
-                            <span class="skill-tag">C#</span>
-                            <span class="skill-tag">SQL</span>
-                            <span class="skill-tag">HTML</span>
-                            <span class="skill-tag">CSS</span> 
-                        </div>
-                    </article>
-                    <article class="skill-group">
-                        <h3 class="skill-group__title">Tools</h3>
-                        <div class="skill-group__items">
-                            <span class="skill-tag">Azure DevOps</span>
-                            <span class="skill-tag">Postman</span>
-                            <span class="skill-tag">Swagger</span>
-                            <span class="skill-tag">Git</span>
-                            <span class="skill-tag">GitHub</span>
-                            <span class="skill-tag">Google DevTools</span>
-                        </div>
-                    </article>
+              </div>
+            </article>
+            <article class="project-card">
+              <div
+                class="project-card__visual project-card__visual--ars"
+                aria-hidden="true"
+              >
+                <span>03 / FULL-STACK DEVELOPMENT</span
+                ><strong>ARSFuturo</strong
+                ><span>React · Express · Prisma · PostgreSQL</span>
+              </div>
+              <div class="project-card__body">
+                <p data-translate="team_project" class="eyebrow">
+                  Collaborative academic project
+                </p>
+                <h3>ARSFuturo</h3>
+                <p data-translate="ars_description">
+                  Full-stack application for managing a health insurance
+                  administrator (ARS), developed as part of Software Engineering
+                  II at UASD.
+                </p>
+                <ul class="project-card__details">
+                  <li data-translate="ars_role">
+                    My role: Full-Stack Developer and repository collaborator
+                    within a four-person team.
+                  </li>
+                  <li data-translate="ars_scope">
+                    Stack: React, TypeScript, Vite and Tailwind CSS; Express API
+                    with Prisma and PostgreSQL.
+                  </li>
+                  <li data-translate="ars_evidence">
+                    Repository evidence: backend/frontend documentation, UML
+                    diagrams and k6 test scripts.
+                  </li>
+                </ul>
+                <div class="project-card__actions">
+                  <a
+                    data-translate="ars_source"
+                    class="project-link"
+                    href="https://github.com/kleibergpm/INF-5250-arsfuturo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Explore ARSFuturo code ↗</a
+                  ><a
+                    data-translate="ars_docs"
+                    class="project-link"
+                    href="https://github.com/kleibergpm/INF-5250-arsfuturo#documentación-por-módulo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Read project documentation ↗</a
+                  >
                 </div>
-            </div>
-        </section>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <div class="section__container">
+          <h2 class="section__title" data-translate="about_title">About Me</h2>
+          <p class="section__text" data-translate="about_text">
+            I combine manual testing, web automation, API validation and SQL to
+            investigate issues and build maintainable test coverage. My public
+            projects also explore the development of tools that support
+            day-to-day QA work.
+          </p>
+        </div>
+      </section>
 
-        <!-- FRAMEWORK -->
-        <section id="framework" class="section">
-            <div class="section__container">
-                <h2 class="section__title" data-translate="framework_title"></h2>
-                <div class="framework-card">
-                    <pre class="framework-card__tree">
+      <!-- EXPERIENCE -->
+      <section id="experience" class="section">
+        <div class="section__container">
+          <h2 class="section__title" data-translate="experience_title">
+            Experience
+          </h2>
+          <article class="experience-card">
+            <div class="experience-card__header">
+              <div>
+                <h3 class="experience-card__position">
+                  QA Automation Engineer
+                </h3>
+                <p class="experience-card__company">XpertCode</p>
+              </div>
+              <span class="experience-card__period" data-translate="period"
+                >May 2022 – Present</span
+              >
+            </div>
+            <h4
+              data-translate="responsibilities"
+              class="experience-card__subtitle"
+            >
+              Responsibilities
+            </h4>
+            <ul class="experience-card__list">
+              <li data-translate="exp_automation">
+                Develop and maintain web test automation with Playwright and
+                TypeScript.
+              </li>
+              <li data-translate="exp_api">
+                Validate APIs with Postman and Swagger and check data using SQL.
+              </li>
+              <li data-translate="exp_regression">
+                Design and execute manual, functional, smoke and regression
+                tests; document results and follow up on defects.
+              </li>
+              <li data-translate="exp_suites">
+                Organize test suites and shared test steps to reuse scenarios
+                and simplify test maintenance.
+              </li>
+              <li data-translate="exp_certification">
+                Prepare user story validation documents with test results and
+                evidence.
+              </li>
+            </ul>
+            <h4 data-translate="achievements" class="experience-card__subtitle">
+              Selected achievements
+            </h4>
+            <ul
+              class="experience-card__list experience-card__list--achievements"
+            >
+              <li data-translate="achievement_regression">
+                Reduced regression testing from 10 to 5 days by automating
+                modules, helping shorten delivery cycles.
+              </li>
+              <li data-translate="achievement_cases">
+                Personally automated 400+ test cases over two years.
+              </li>
+              <li data-translate="achievement_bugs">
+                Reported 1,200+ bugs during my QA career, confirmed through an
+                Azure DevOps query.
+              </li>
+              <li data-translate="achievement_sql">
+                Created and documented reusable SQL queries for QA validation,
+                reducing repetitive work and improving data checks.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="section">
+        <div class="section__container">
+          <h2 class="section__title" data-translate="skills_title">Skills</h2>
+          <div class="skills-categories">
+            <article class="skill-group">
+              <h3 class="skill-group__title" data-translate="testing">
+                Testing
+              </h3>
+              <div class="skill-group__items">
+                <span class="skill-tag" data-translate="manual"
+                  >Manual testing</span
+                >
+                <span class="skill-tag" data-translate="automated"
+                  >Test automation</span
+                >
+                <span class="skill-tag">Smoke Testing</span>
+                <span class="skill-tag">Regression Testing</span>
+                <span class="skill-tag">API Testing</span>
+              </div>
+            </article>
+            <article class="skill-group">
+              <h3 class="skill-group__title" data-translate="automation">
+                Automation
+              </h3>
+              <div class="skill-group__items">
+                <span class="skill-tag">Playwright</span>
+              </div>
+            </article>
+            <article class="skill-group">
+              <h3 class="skill-group__title" data-translate="development">
+                Development
+              </h3>
+              <div class="skill-group__items">
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">C#</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+              </div>
+            </article>
+            <article class="skill-group">
+              <h3 class="skill-group__title" data-translate="tools">Tools</h3>
+              <div class="skill-group__items">
+                <span class="skill-tag">Azure DevOps</span>
+                <span class="skill-tag">Postman</span>
+                <span class="skill-tag">Swagger</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">GitHub</span>
+                <span class="skill-tag">Google DevTools</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- FRAMEWORK -->
+      <section id="framework" class="section">
+        <div class="section__container">
+          <h2 class="section__title" data-translate="framework_title">
+            Automation Framework
+          </h2>
+          <p class="section__text" data-translate="framework_intro">
+            A modular approach to web automation: page objects isolate interface
+            changes, helpers centralize repeated interactions and data stays
+            separate from test logic.
+          </p>
+          <div class="framework-card">
+            <div>
+              <p class="eyebrow" data-translate="framework_structure">
+                Framework structure
+              </p>
+              <pre class="framework-card__tree">
 Pages/
 Selectors/
 Tests/
@@ -216,134 +562,213 @@ Data/
 Routes/
 Table/
 Utils/
-                    </pre>
-                    <div class="framework-card__features">
-                        <span>✓ Page Object Model</span>
-                        <span>✓ Reusable Helpers</span>
-                        <span>✓ Environment Variables</span>
-                        <span>✓ Modular Architecture</span>
-                    </div>
-                </div>
+                    </pre
+              >
             </div>
-        </section>
+            <div class="framework-card__features">
+              <h3 data-translate="framework_value">
+                Built for maintainability
+              </h3>
+              <p data-translate="framework_example">
+                For example, a reusable table helper can centralize pagination
+                and sorting checks, while a page object keeps selectors in one
+                place.
+              </p>
+              <span>✓ Page Object Model</span>
+              <span data-translate="feature_helpers">✓ Reusable helpers</span>
+              <span data-translate="feature_env">✓ Environment variables</span>
+              <span data-translate="feature_modular"
+                >✓ Modular architecture</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!-- CERTIFICATIONS -->
-        <section id="certifications" class="section">
-            <div class="section__container">
-                <h2 class="section__title" data-translate="certifications_title"></h2>
-                <div class="certifications">
+      <!-- CERTIFICATIONS -->
+      <section id="certifications" class="section">
+        <div class="section__container">
+          <h2 class="section__title" data-translate="certifications_title">
+            Courses &amp; credentials
+          </h2>
+          <p class="section__text" data-translate="credentials_intro">
+            Selected courses and learning credentials.
+          </p>
+          <div class="certifications-grid">
+            <article class="certification-card">
+              <img
+                src="./assets/icons/mysql.svg"
+                alt="MySQL"
+                class="certification-card__icon"
+              />
+              <h3 class="certification-card__title">Joining Data in SQL</h3>
+              <p class="certification-card__issuer">DataCamp</p>
+              <span class="certification-card__year">Jun. 2026</span>
+            </article>
 
-                    <article class="certification-card">
-                        <img src="./assets/icons/mysql.svg" alt="MySQL" class="certification-card__icon">
-                        <h3 class="certification-card__title">Joining Data in SQL</h3>
-                        <p class="certification-card__issuer">DataCamp</p>
-                        <span class="certification-card__year">Jun. 2026</span>
-                    </article>
-                    
-                    <article class="certification-card">
-                        <img src="./assets/icons/mysql.svg" alt="MySQL" class="certification-card__icon">
-                        <h3 class="certification-card__title">MySQL desde 0 hasta SUPABASE: Domina las bases de datos</h3>
-                        <p class="certification-card__issuer">Udemy</p>
-                        <span class="certification-card__year">Ago. 2025</span>
-                    </article>
+            <article class="certification-card">
+              <img
+                src="./assets/icons/mysql.svg"
+                alt="MySQL"
+                class="certification-card__icon"
+              />
+              <h3 class="certification-card__title">
+                MySQL desde 0 hasta SUPABASE: Domina las bases de datos
+              </h3>
+              <p class="certification-card__issuer">Udemy</p>
+              <span class="certification-card__year">Ago. 2025</span>
+            </article>
 
-                    <article class="certification-card">
-                        <img src="./assets/icons/playwright.svg" alt="Playwright" class="certification-card__icon">
-                        <h3 class="certification-card__title">Playwright Automation</h3>
-                        <p class="certification-card__issuer">Microsoft Learn</p>
-                        <span class="certification-card__year">Dec. 2024</span>
-                    </article>
+            <article class="certification-card">
+              <img
+                src="./assets/icons/playwright.svg"
+                alt="Playwright"
+                class="certification-card__icon"
+              />
+              <h3 class="certification-card__title">Playwright Automation</h3>
+              <p class="certification-card__issuer">Microsoft Learn</p>
+              <span class="certification-card__year">Dec. 2024</span>
+            </article>
 
-                    <article class="certification-card">
-                        <img src="./assets/icons/postman.svg" alt="Postman" class="certification-card__icon">
-                        <h3 class="certification-card__title">Postman API Fundamentals</h3>
-                        <p class="certification-card__issuer">Postman Academy</p>
-                        <span class="certification-card__year">Jul. 2024</span>
-                    </article>
+            <article class="certification-card">
+              <img
+                src="./assets/icons/postman.svg"
+                alt="Postman"
+                class="certification-card__icon"
+              />
+              <h3 class="certification-card__title">
+                Postman API Fundamentals
+              </h3>
+              <p class="certification-card__issuer">Postman Academy</p>
+              <span class="certification-card__year">Jul. 2024</span>
+            </article>
 
-                    <article class="certification-card">
-                        <img src="./assets/icons/javascript.svg" alt="JavaScript" class="certification-card__icon">
-                        <h3 class="certification-card__title">JavaScript Algorithms and Data Structures</h3>
-                        <p class="certification-card__issuer">FreeCodeCamp</p>
-                        <span class="certification-card__year">Oct. 2024</span>
-                    </article>
+            <article class="certification-card">
+              <img
+                src="./assets/icons/javascript.svg"
+                alt="JavaScript"
+                class="certification-card__icon"
+              />
+              <h3 class="certification-card__title">
+                JavaScript Algorithms and Data Structures
+              </h3>
+              <p class="certification-card__issuer">FreeCodeCamp</p>
+              <span class="certification-card__year">Oct. 2024</span>
+            </article>
 
-                    <article class="certification-card">
-                        <img src="./assets/icons/mysql.svg" alt="MySQL" class="certification-card__icon">
-                        <h3 class="certification-card__title">MySQL Intermediate</h3>
-                        <p class="certification-card__issuer">Sololearn</p>
-                        <span class="certification-card__year">Jun. 2024</span>
-                    </article>
+            <article class="certification-card">
+              <img
+                src="./assets/icons/mysql.svg"
+                alt="MySQL"
+                class="certification-card__icon"
+              />
+              <h3 class="certification-card__title">MySQL Intermediate</h3>
+              <p class="certification-card__issuer">Sololearn</p>
+              <span class="certification-card__year">Jun. 2024</span>
+            </article>
 
-                    <article class="certification-card">
-                        <img src="./assets/icons/javascript.svg" alt="JavaScript" class="certification-card__icon">
-                        <h3 class="certification-card__title">Response Web Design</h3>
-                        <p class="certification-card__issuer">FreeCodeCamp</p>
-                        <span class="certification-card__year">Feb. 2022</span>
-                    </article>
+            <article class="certification-card">
+              <img
+                src="./assets/icons/javascript.svg"
+                alt="JavaScript"
+                class="certification-card__icon"
+              />
+              <h3 class="certification-card__title">Responsive Web Design</h3>
+              <p class="certification-card__issuer">FreeCodeCamp</p>
+              <span class="certification-card__year">Feb. 2022</span>
+            </article>
+          </div>
+        </div>
+      </section>
 
-                    <!-- EDUCATION -->
-                    <section class="section">
-                        <div class="section__container">
-                            <h2 class="section__title" data-translate="education_title"></h2>
-                            <div class="education-card">
-                                <h3>Universidad Autónoma de Santo Domingo</h3>
-                                <p>Licenciatura en Informática</p>
-                                <span>Expected Graduation: 2028</span>
-                            </div>
-                        </div>
-                    </section>
+      <!-- EDUCATION -->
+      <section class="section">
+        <div class="section__container">
+          <h2 class="section__title" data-translate="education_title">
+            Education
+          </h2>
+          <div class="education-card">
+            <h3>Universidad Autónoma de Santo Domingo</h3>
+            <p data-translate="degree">
+              Bachelor’s degree in Computer Science (in progress)
+            </p>
+            <span data-translate="graduation">Expected graduation: 2028</span>
+          </div>
+        </div>
+      </section>
 
-                    <!-- CONTACT -->
-                    <section id="contact" class="section">
-                        <div class="section__container">
-                            <h2 class="section__title" data-translate="contact_title"></h2>
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <div class="section__container">
+          <h2 class="section__title" data-translate="contact_title">Contact</h2>
+          <p data-translate="availability" class="section__text contact__intro">
+            Seeking remote opportunities in Manual QA and Test Automation.
+          </p>
 
-                            <div class="contact">
-                                <a href="mailto:anderson250514@gmail.com" class="contact-card">
+          <div class="contact">
+            <a href="mailto:anderson250514@gmail.com" class="contact-card">
+              <img
+                src="./assets/icons/gmail.svg"
+                alt="Email"
+                class="contact-card__icon"
+              />
+              <div class="contact-card__content">
+                <h3>Email</h3>
+                <p>anderson250514@gmail.com</p>
+              </div>
+            </a>
 
-                                    <img src="./assets/icons/gmail.svg" alt="Email" class="contact-card__icon">
-                                    <div class="contact-card__content">
-                                        <h3>Email</h3>
-                                        <p>anderson250514@gmail.com</p>
-                                    </div>
-                                </a>
+            <a
+              href="https://www.linkedin.com/in/anderson-castillo-8ba0a021a/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-card"
+            >
+              <img
+                src="./assets/icons/linkedin.svg"
+                alt="LinkedIn"
+                class="contact-card__icon"
+              />
 
-                                <a href="https://www.linkedin.com/in/anderson-castillo-8ba0a021a/" target="_blank"
-                                    class="contact-card">
+              <div class="contact-card__content">
+                <h3>LinkedIn</h3>
+                <p data-translate="professional_profile">
+                  Professional profile
+                </p>
+              </div>
+            </a>
 
-                                    <img src="./assets/icons/linkedin.svg" alt="LinkedIn" class="contact-card__icon">
+            <a
+              href="https://github.com/AndersonACP25"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-card"
+            >
+              <img
+                src="./assets/icons/github.svg"
+                alt="GitHub"
+                class="contact-card__icon"
+              />
 
-                                    <div class="contact-card__content">
-                                        <h3>LinkedIn</h3>
-                                        <p>Professional Profile</p>
-                                    </div>
-                                </a>
-
-                                <a href="https://github.com/AndersonACP25" target="_blank" class="contact-card">
-
-                                    <img src="./assets/icons/github.svg" alt="GitHub" class="contact-card__icon">
-
-                                    <div class="contact-card__content">
-                                        <h3>GitHub</h3>
-                                        <p>Automation Projects</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </section>
+              <div class="contact-card__content">
+                <h3>GitHub</h3>
+                <p data-translate="automation_projects">Public projects</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <div class="footer__container">
-            <h3>Anderson Castillo</h3>
-            <p>QA Automation Engineer</p>
-            <span>© 2026</span>
-        </div>
+      <div class="footer__container">
+        <h3>Anderson Castillo</h3>
+        <p>QA Automation Engineer</p>
+        <span>© 2026</span>
+      </div>
     </footer>
 
     <script src="./js/translations.js"></script>
     <script src="./js/language-manager.js"></script>
-</body>
-
+  </body>
 </html>
