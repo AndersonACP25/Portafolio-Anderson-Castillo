@@ -3,7 +3,7 @@ class LanguageManager {
     this.selector = document.querySelector(".header__language-selector");
     this.cache = new Map();
     this.request = 0;
-    this.current = "en";
+    this.current = document.documentElement.lang === "es" ? "es" : "en";
     // Capture the readable HTML as the offline fallback and source language.
     this.fallback = {};
     document.querySelectorAll("[data-translate]").forEach((element) => {
@@ -13,12 +13,8 @@ class LanguageManager {
       this.fallback[element.dataset.translateAria] =
         element.getAttribute("aria-label");
     });
-    let language = "en";
-    try {
-      language = localStorage.getItem("language") || navigator.language;
-    } catch {
-      /* Storage is optional. */
-    }
+    // Each crawlable URL owns its language; stored preferences never override it.
+    const language = this.current;
     this.selector.addEventListener("change", () =>
       this.translate(this.selector.value),
     );
@@ -76,6 +72,34 @@ class LanguageManager {
     this.current = selected;
     this.selector.value = selected;
     document.documentElement.lang = selected;
+    const alternate = document.querySelector(`link[hreflang="${selected}"]`);
+    const canonical = alternate.href;
+    document.querySelector('link[rel="canonical"]').href = canonical;
+    for (const selector of [
+      'meta[name="description"]',
+      'meta[property="og:description"]',
+      'meta[name="twitter:description"]',
+    ]) {
+      document.querySelector(selector).content = dictionary.seo_description;
+    }
+    document.querySelector('meta[property="og:url"]').content = canonical;
+    document.querySelector('meta[property="og:locale"]').content =
+      selected === "es" ? "es_DO" : "en_US";
+    document.querySelector('meta[property="og:locale:alternate"]').content =
+      selected === "es" ? "en_US" : "es_DO";
+    const schema = document.querySelector("#profile-schema");
+    const profile = JSON.parse(schema.textContent);
+    profile.url = canonical;
+    profile.inLanguage = selected;
+    profile.mainEntity.description = dictionary.seo_description;
+    schema.textContent = JSON.stringify(profile);
+    const page = new URL(
+      selected === "es" ? "../es.html" : "../",
+      document.querySelector('script[src$="language-manager.js"]').src,
+    );
+    // Preserve anchors while keeping the selected language linkable and reloadable.
+    history.replaceState(null, "", page.pathname + location.hash);
+
     try {
       localStorage.setItem("language", selected);
     } catch {
