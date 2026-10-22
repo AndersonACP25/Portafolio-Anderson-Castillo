@@ -1,117 +1,169 @@
 const translations = {
-
-    en: {
-        nav_about: "About",
-
-        nav_experience: "Experience",
-
-        nav_skills: "Skills",
-
-        nav_framework: "Framework",
-
-        nav_certifications: "Certifications",
-
-        nav_contact: "Contact",
-
-        hero_greeting: "Hello, I'm",
-
-        hero_title: "QA Automation Engineer",
-
-        hero_description:
-            "QA Automation Engineer with over 4 years of experience ensuring software quality through manual and automated testing. Specialized in Playwright, TypeScript, API Testing and SQL validation.",
-
-        metric_cases:
-            "Automated Test Cases",
-
-        metric_regression:
-            "Regression Time Reduction",
-
-        metric_experience:
-            "Years of Experience",
-
-        metric_quality:
-            "Early Defect Detection",
-
-        about_title:
-            "About Me",
-
-        about_text:
-            "QA Automation Engineer with over 4 years of experience in software quality assurance. Specialized in web test automation using Playwright and TypeScript, creating maintainable frameworks and improving software quality through efficient validation processes.",
-
-        experience_title:
-            "Experience",
-
-        skills_title:
-            "Skills",
-
-        framework_title:
-            "Automation Framework",
-
-        certifications_title:
-            "Certifications",
-
-        education_title:
-            "Education",
-
-        contact_title:
-            "Contact"
-
-    },
-
-    es: {
-        nav_about: "Sobre Mí",
-
-        nav_experience: "Experiencia",
-
-        nav_skills: "Habilidades",
-
-        nav_framework: "Framework",
-
-        nav_certifications: "Certificaciones",
-
-        nav_contact: "Contacto",
-
-        hero_greeting: "Hola, soy",
-
-        hero_title: "QA Automation Engineer",
-
-        hero_description:
-            "QA Automation Engineer con más de 4 años de experiencia asegurando la calidad del software mediante pruebas manuales y automatizadas. Especializado en Playwright, TypeScript, pruebas API y validación de datos mediante SQL.",
-
-        metric_cases:
-            "Casos Automatizados",
-
-        metric_regression:
-            "Reducción del Tiempo de Regresión",
-
-        metric_experience:
-            "Años de Experiencia",
-
-        metric_quality:
-            "Detección Temprana de Defectos",
-
-        about_title:
-            "Sobre Mí",
-
-        about_text:
-            "QA Automation Engineer con más de 4 años de experiencia en aseguramiento de calidad de software. Especializado en automatización de pruebas web utilizando Playwright y TypeScript, diseño de frameworks mantenibles y mejora continua de procesos de validación.",
-
-        experience_title:
-            "Experiencia",
-
-        skills_title:
-            "Habilidades",
-
-        framework_title:
-            "Framework de Automatización",
-
-        certifications_title:
-            "Certificaciones",
-
-        education_title:
-            "Educación",
-
-        contact_title:
-            "Contacto"
-    }
+  en: {
+    nav_about: "About",
+    nav_experience: "Experience",
+    nav_skills: "Skills",
+    nav_framework: "Framework",
+    nav_certifications: "Certifications",
+    nav_contact: "Contact",
+    hero_greeting: "Hello, I'm",
+    hero_title: "QA Automation Engineer",
+    hero_description:
+      "QA Automation Engineer with over 4 years of experience ensuring software quality through manual and automated testing. Specialized in Playwright, TypeScript, API Testing and SQL validation.",
+    metric_cases: "Automated Test Cases",
+    metric_regression: "Regression Time Reduction",
+    metric_experience: "Years of Experience",
+    metric_quality: "Early Defect Detection",
+    about_title: "About Me",
+    about_text:
+      "I combine manual testing, web automation, API validation and SQL to investigate issues and build maintainable test coverage. My public projects also explore the development of tools that support day-to-day QA work.",
+    experience_title: "Experience",
+    skills_title: "Skills",
+    framework_title: "Automation Framework",
+    certifications_title: "Courses & credentials",
+    education_title: "Education",
+    contact_title: "Contact",
+    skip: "Skip to content",
+    menu: "Menu",
+    navigation: "Main navigation",
+    language: "Language",
+    nav_projects: "Projects",
+    view_projects: "View projects",
+    resume: "Download CV",
+    metrics_title: "Impact at a glance",
+    period: "May 2022 – Present",
+    exp_automation: "Web test automation with Playwright and TypeScript.",
+    exp_api: "API validation using Postman and Swagger.",
+    exp_sql: "SQL queries to validate application data.",
+    exp_regression: "Smoke and regression testing for software changes.",
+    exp_planning: "Test planning and documentation of test scenarios.",
+    exp_defects: "Defect identification and reporting.",
+    testing: "Testing",
+    automation: "Automation",
+    development: "Development",
+    tools: "Tools",
+    feature_helpers: "✓ Reusable helpers",
+    feature_env: "✓ Environment variables",
+    feature_modular: "✓ Modular architecture",
+    graduation: "Expected graduation: 2028",
+    professional_profile: "Professional profile",
+    automation_projects: "Public projects",
+    degree: "Bachelor’s degree in Computer Science (in progress)",
+    manual: "Manual testing",
+    automated: "Test automation",
+    projects_eyebrow: "SELECTED WORK",
+    projects_title: "From quality strategy to working software",
+    projects_intro:
+      "Explore public projects, their scope and the code behind them.",
+    personal_project: "Personal project",
+    academic_project: "Academic project",
+    project_qa:
+      "Web platform for managing bugs, test cases, manual test runs and evidence within QA projects.",
+    qa_scope:
+      "Scope: authenticated API, test steps, attachments and PDF/Excel exports.",
+    qa_quality:
+      "Quality: Vitest tests and CI checks for formatting, lint, types and builds.",
+    qa_status:
+      "Status: implemented web application; AI integration is not implemented.",
+    qa_source: "Explore qaTestGE code ↗",
+    testing_docs: "Read testing documentation ↗",
+    project_cash:
+      "Java final project focused on remittance management, with desktop screens documented in the repository.",
+    cash_scope:
+      "Scope: login, registration, remittance queries and exchange rates.",
+    cash_evidence:
+      "Evidence: interface screenshots, reports and remittance receipts in the README.",
+    cash_source: "Explore CASHFAST code and screens ↗",
+    framework_intro:
+      "A modular approach to web automation: page objects isolate interface changes, helpers centralize repeated interactions and data stays separate from test logic.",
+    framework_structure: "Framework structure",
+    framework_value: "Built for maintainability",
+    framework_example:
+      "For example, a reusable table helper can centralize pagination and sorting checks, while a page object keeps selectors in one place.",
+    credentials_intro: "Selected courses and learning credentials.",
+  },
+  es: {
+    nav_about: "Sobre Mí",
+    nav_experience: "Experiencia",
+    nav_skills: "Habilidades",
+    nav_framework: "Framework",
+    nav_certifications: "Certificaciones",
+    nav_contact: "Contacto",
+    hero_greeting: "Hola, soy",
+    hero_title: "QA Automation Engineer",
+    hero_description:
+      "QA Automation Engineer con más de 4 años de experiencia asegurando la calidad del software mediante pruebas manuales y automatizadas. Especializado en Playwright, TypeScript, pruebas API y validación de datos mediante SQL.",
+    metric_cases: "Casos Automatizados",
+    metric_regression: "Reducción del Tiempo de Regresión",
+    metric_experience: "Años de Experiencia",
+    metric_quality: "Detección Temprana de Defectos",
+    about_title: "Sobre Mí",
+    about_text:
+      "Combino pruebas manuales, automatización web, validación de API y SQL para investigar incidencias y crear pruebas mantenibles. En mis proyectos públicos también exploro el desarrollo de herramientas para el trabajo diario de QA.",
+    experience_title: "Experiencia",
+    skills_title: "Habilidades",
+    framework_title: "Framework de Automatización",
+    certifications_title: "Cursos y credenciales",
+    education_title: "Educación",
+    contact_title: "Contacto",
+    skip: "Saltar al contenido",
+    menu: "Menú",
+    navigation: "Navegación principal",
+    language: "Idioma",
+    nav_projects: "Proyectos",
+    view_projects: "Ver proyectos",
+    resume: "Descargar CV",
+    metrics_title: "Mi experiencia en cifras",
+    period: "Mayo 2022 – Actualidad",
+    exp_automation:
+      "Automatización de pruebas web con Playwright y TypeScript.",
+    exp_api: "Validación de API con Postman y Swagger.",
+    exp_sql: "Consultas SQL para validar los datos de la aplicación.",
+    exp_regression: "Pruebas de humo y regresión para cambios del software.",
+    exp_planning: "Planificación y documentación de escenarios de prueba.",
+    exp_defects: "Identificación y reporte de defectos.",
+    testing: "Pruebas",
+    automation: "Automatización",
+    development: "Desarrollo",
+    tools: "Herramientas",
+    feature_helpers: "✓ Helpers reutilizables",
+    feature_env: "✓ Variables de entorno",
+    feature_modular: "✓ Arquitectura modular",
+    graduation: "Graduación estimada: 2028",
+    professional_profile: "Perfil profesional",
+    automation_projects: "Proyectos públicos",
+    degree: "Licenciatura en Informática (en curso)",
+    manual: "Pruebas manuales",
+    automated: "Automatización de pruebas",
+    projects_eyebrow: "PROYECTOS DESTACADOS",
+    projects_title: "De la calidad al desarrollo de software",
+    projects_intro:
+      "Explora mis proyectos públicos, su alcance y el código que los respalda.",
+    personal_project: "Proyecto personal",
+    academic_project: "Proyecto académico",
+    project_qa:
+      "Plataforma web para gestionar bugs, casos de prueba, ejecuciones manuales y evidencias en proyectos QA.",
+    qa_scope:
+      "Alcance: API autenticada, pasos de prueba, adjuntos y exportaciones PDF/Excel.",
+    qa_quality:
+      "Calidad: pruebas con Vitest y validaciones CI de formato, lint, tipos y compilación.",
+    qa_status:
+      "Estado: aplicación web implementada; la integración de IA no está implementada.",
+    qa_source: "Explorar código de qaTestGE ↗",
+    testing_docs: "Ver documentación de pruebas ↗",
+    project_cash:
+      "Proyecto final de Java para la gestión de remesas, con pantallas de escritorio documentadas en el repositorio.",
+    cash_scope:
+      "Alcance: login, registro, consulta de remesas y tasas de cambio.",
+    cash_evidence:
+      "Evidencia: capturas de interfaz, reportes y recibos de remesas en el README.",
+    cash_source: "Explorar código y pantallas de CASHFAST ↗",
+    framework_intro:
+      "Un enfoque modular de automatización web: los objetos de página aíslan los cambios de interfaz, los helpers centralizan interacciones repetidas y los datos se separan de la lógica de prueba.",
+    framework_structure: "Estructura del framework",
+    framework_value: "Diseñado para facilitar el mantenimiento",
+    framework_example:
+      "Por ejemplo, un helper de tablas puede centralizar las validaciones de paginación y ordenamiento, mientras un objeto de página concentra los selectores.",
+    credentials_intro: "Selección de cursos y credenciales de formación.",
+  },
 };
