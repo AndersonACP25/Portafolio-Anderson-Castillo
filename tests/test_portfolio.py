@@ -36,6 +36,18 @@ class PortfolioTests(unittest.TestCase):
                 self.assertEqual(text.count('Tester Testarudo'), 4)
                 self.assertEqual(len(parser.dates), 26)
 
+    def test_manual_metric_and_case_study(self):
+        for language, filename, label in [('en', 'index.html', 'Manual test cases'), ('es', 'es.html', 'Casos de prueba manuales')]:
+            dictionary = json.loads((ROOT / 'locales' / f'{language}.json').read_text())
+            self.assertEqual(dictionary['metric_cases'], label)
+            self.assertIn('manual', dictionary['achievement_cases'].lower())
+            page = (ROOT / filename).read_text()
+            self.assertIn('id="case-study-regression"', page)
+            self.assertIn('href="#case-study-regression"', page)
+            self.assertIn(dictionary['case_title'], page)
+            self.assertIn(dictionary['case_role'], page)
+        self.assertNotIn('400 casos de prueba automatizados', (ROOT / 'README.md').read_text())
+
     def test_renderer_rejects_placeholder_nodes(self):
         with tempfile.TemporaryDirectory() as directory:
             destination = Path(directory)

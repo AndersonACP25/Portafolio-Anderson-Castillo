@@ -242,11 +242,11 @@
           <div class="metrics">
             <article class="metric-card">
               <h3 class="metric-card__value">400+</h3>
-              <p class="metric-card__label" data-translate="metric_cases">Casos de prueba automatizados</p>
+              <p class="metric-card__label" data-translate="metric_cases">Casos de prueba manuales</p>
               <p
                 data-translate="metric_cases_detail"
                 class="metric-card__detail"
-              >Automatizados por mí durante dos años en mi empleo.</p>
+              >Documentados en Azure DevOps; esta cifra no representa pruebas automatizadas.</p>
             </article>
             <article class="metric-card">
               <h3 class="metric-card__value">1200+</h3>
@@ -385,6 +385,64 @@
         </div>
       </section>
       <!-- ABOUT -->
+      <section class="section section--surface" id="case-study-regression">
+        <div class="section__container">
+          <p data-translate="case_eyebrow" class="eyebrow">CASO DE ESTUDIO PROFESIONAL</p>
+          <h2 data-translate="case_title" class="section__title">Regresión: de 10 a 5 días</h2>
+          <p data-translate="case_intro" class="section__text">La automatización por módulos ayudó a un equipo de dos QA a completar la regresión de más de 120 páginas, mientras continuaba validando el trabajo del sprint.</p>
+          <div class="case-metrics">
+            <div class="case-metric">
+              <strong data-translate="case_days_ten">10 días</strong
+              ><span data-translate="case_before"
+                >Antes: regresión manual</span
+              >
+            </div>
+            <div class="case-metric">
+              <strong data-translate="case_days_five">5 días</strong
+              ><span data-translate="case_after"
+                >Después: regresión combinada</span
+              >
+            </div>
+            <div class="case-metric">
+              <strong>50%</strong
+              ><span data-translate="case_reduction">Menos tiempo de regresión</span>
+            </div>
+          </div>
+          <details class="case-details">
+            <summary data-translate="case_read">Leer el caso de estudio</summary>
+            <div class="case-body">
+              <div class="case-block">
+                <h3 data-translate="case_context_title">Contexto y problema</h3>
+                <p data-translate="case_context">Una aplicación de gestión de equipos móviles permitía trabajar con precios regulares y de oferta, bundles y bonos para distintos proveedores y sucursales. La regresión exigía comprobaciones manuales en más de 120 páginas, incluyendo DevTools, solicitudes y respuestas de API y validación en base de datos.</p>
+                <p data-translate="case_problem">La regresión de diez días se ejecutaba en paralelo al sprint, afectaba la planificación de los pases a producción y dejaba menos tiempo para tareas QA, preparación de casos y documentos de certificación de historias de usuario.</p>
+              </div>
+              <div class="case-block">
+                <h3 data-translate="case_role_title">Mi contribución</h3>
+                <p data-translate="case_role">En un equipo de dos profesionales QA, asumí la mayor parte del diseño e implementación del framework con Playwright y TypeScript, incluyendo clases, interfaces, objetos de página y datos de prueba.</p>
+              </div>
+              <div class="case-block">
+                <h3 data-translate="case_strategy_title">Estrategia e implementación</h3>
+                <ol>
+                  <li data-translate="case_core">Comenzar por el core de la aplicación: preparar los equipos móviles para que estuvieran activos y habilitados para generar precios antes de ejecutar escenarios dependientes.</li>
+                  <li data-translate="case_structure">Separar cada ventana en selectores, datos de prueba, lógica de interacción de la página y especificaciones de prueba. Ejecutar las pruebas por módulo mediante scripts de package.json.</li>
+                  <li data-translate="case_angular">Tratar los modales de Angular y los componentes ng-select con helpers y utilidades reutilizables, esperas de componentes padres y opciones, comprobaciones del estado del input y seguimiento de si el selector estaba desplegado. Utilizar try-catch para manejar errores de interacción.</li>
+                  <li data-translate="case_review">Revisar las ejecuciones locales con la extensión de Playwright en VS Code y los reportes. Investigar los fallos manualmente: reportar los defectos confirmados en Azure DevOps o corregir la prueba automatizada cuando correspondiera.</li>
+                </ol>
+              </div>
+              <div class="case-block">
+                <h3 data-translate="case_result_title">Resultado y cobertura manual</h3>
+                <p data-translate="case_result">El ciclo completo de regresión disminuyó de diez a cinco días manteniendo la cobertura de todas las ventanas de la aplicación. La mejora se observó en regresiones sucesivas. Algunos módulos que antes requerían horas podían ejecutarse en minutos.</p>
+                <p data-translate="case_manual">El ciclo de cinco días combinaba ejecución automatizada, validación manual y revisión de fallos. El comportamiento crítico del core y las funcionalidades nuevas del sprint que todavía no estaban automatizadas continuaban validándose manualmente.</p>
+              </div>
+              <div class="case-block">
+                <h3 data-translate="case_lessons_title">Aprendizajes</h3>
+                <p data-translate="case_lessons">Aprendí a estructurar un proyecto de automatización mantenible y reforzaría antes mis fundamentos de Node.js al comenzar una implementación similar.</p>
+              </div>
+              <p data-translate="case_note" class="case-note">Relato anónimo basado en mi experiencia profesional. El resultado corresponde al ciclo completo de regresión, no a una reducción del 50% en cada prueba individual.</p>
+            </div>
+          </details>
+        </div>
+      </section>
       <section id="about" class="section">
         <div class="section__container">
           <h2 class="section__title" data-translate="about_title">Sobre Mí</h2>
@@ -424,10 +482,16 @@
               class="experience-card__list experience-card__list--achievements"
             >
               <li data-translate="achievement_regression">Reduje la regresión de 10 a 5 días mediante la automatización de módulos, contribuyendo a mejorar los tiempos de entrega.</li>
-              <li data-translate="achievement_cases">Automaticé personalmente más de 400 casos de prueba durante dos años.</li>
+              <li data-translate="achievement_cases">Documenté más de 400 casos de prueba manuales en Azure DevOps.</li>
               <li data-translate="achievement_bugs">Reporté más de 1,200 bugs durante mi trayectoria laboral, confirmados mediante una consulta en Azure DevOps.</li>
               <li data-translate="achievement_sql">Creé y documenté consultas SQL reutilizables para validaciones QA, reduciendo trabajo repetitivo y mejorando las comprobaciones de datos.</li>
             </ul>
+            <a
+              data-translate="case_link"
+              class="project-link"
+              href="#case-study-regression"
+              >Explorar el caso de regresión</a
+            >
           </article>
         </div>
       </section>

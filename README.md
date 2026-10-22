@@ -10,10 +10,16 @@ Trabajo como QA Automation Engineer en XpertCode desde mayo de 2022. Mi experien
 
 Entre mis resultados destacan:
 
-- Más de **400 casos de prueba automatizados personalmente durante dos años** en mi empleo.
+- Más de **400 casos de prueba manuales documentados en Azure DevOps**.
 - Más de **1200 bugs reportados** durante mi trayectoria laboral, con el conteo confirmado mediante una consulta en Azure DevOps.
 - Reducción de la regresión de **10 a 5 días** mediante automatización de módulos.
 - Creación de consultas SQL documentadas y reutilizables para agilizar las validaciones de QA.
+
+## Caso de estudio: regresión de 10 a 5 días
+
+En un equipo de dos QA, asumí la mayor parte del diseño e implementación de un framework de automatización con Playwright y TypeScript. La ejecución por módulos ayudó a reducir de diez a cinco días el ciclo completo de regresión de una aplicación con más de 120 páginas, manteniendo la cobertura de todas las ventanas y combinando automatización, validación manual y análisis de fallos. La mejora se observó en regresiones sucesivas.
+
+El portafolio presenta este caso de forma anónima, con el contexto, las decisiones técnicas, los resultados y los aprendizajes.
 
 ## Inteligencia artificial aplicada
 

@@ -242,11 +242,11 @@
           <div class="metrics">
             <article class="metric-card">
               <h3 class="metric-card__value">400+</h3>
-              <p class="metric-card__label" data-translate="metric_cases">Test cases automated</p>
+              <p class="metric-card__label" data-translate="metric_cases">Manual test cases</p>
               <p
                 data-translate="metric_cases_detail"
                 class="metric-card__detail"
-              >Personally automated over two years in my current role.</p>
+              >Documented in Azure DevOps; this figure does not count automated tests.</p>
             </article>
             <article class="metric-card">
               <h3 class="metric-card__value">1200+</h3>
@@ -385,6 +385,64 @@
         </div>
       </section>
       <!-- ABOUT -->
+      <section class="section section--surface" id="case-study-regression">
+        <div class="section__container">
+          <p data-translate="case_eyebrow" class="eyebrow">PROFESSIONAL CASE STUDY</p>
+          <h2 data-translate="case_title" class="section__title">Regression testing: from 10 days to 5</h2>
+          <p data-translate="case_intro" class="section__text">Module-based automation helped a two-person QA team complete regression across more than 120 application pages while continuing to test sprint work.</p>
+          <div class="case-metrics">
+            <div class="case-metric">
+              <strong data-translate="case_days_ten">10 days</strong
+              ><span data-translate="case_before"
+                >Before: manual regression</span
+              >
+            </div>
+            <div class="case-metric">
+              <strong data-translate="case_days_five">5 days</strong
+              ><span data-translate="case_after"
+                >After: combined regression</span
+              >
+            </div>
+            <div class="case-metric">
+              <strong>50%</strong
+              ><span data-translate="case_reduction">Less regression time</span>
+            </div>
+          </div>
+          <details class="case-details">
+            <summary data-translate="case_read">Read the case study</summary>
+            <div class="case-body">
+              <div class="case-block">
+                <h3 data-translate="case_context_title">Context &amp; challenge</h3>
+                <p data-translate="case_context">A mobile device management application supported regular and promotional pricing, bundles and bonuses across providers and branches. Regression required manual checks across more than 120 pages, including browser DevTools, API requests/responses and database validation.</p>
+                <p data-translate="case_problem">The ten-day regression ran alongside the sprint, affecting production release schedules and leaving less time for QA tasks, test case preparation and user story validation documents.</p>
+              </div>
+              <div class="case-block">
+                <h3 data-translate="case_role_title">My contribution</h3>
+                <p data-translate="case_role">Within a team of two QA professionals, I took on most of the framework design and implementation using Playwright and TypeScript, including classes, interfaces, page objects and test data.</p>
+              </div>
+              <div class="case-block">
+                <h3 data-translate="case_strategy_title">Strategy &amp; implementation</h3>
+                <ol>
+                  <li data-translate="case_core">Start with the application core: prepare mobile devices so they were active and enabled for price generation before running dependent scenarios.</li>
+                  <li data-translate="case_structure">Separate each window into selectors, test data, page interaction logic and test specifications. Run tests by module through package.json scripts.</li>
+                  <li data-translate="case_angular">Handle Angular modals and ng-select components with reusable helpers/utilities, waits for parent and option components, input-state checks and tracking of whether the selector was expanded. Use try-catch handling for interaction errors.</li>
+                  <li data-translate="case_review">Check executions locally with the Playwright VS Code extension and reports. Investigate failures manually: report confirmed application defects in Azure DevOps; otherwise correct the automated test.</li>
+                </ol>
+              </div>
+              <div class="case-block">
+                <h3 data-translate="case_result_title">Result &amp; remaining manual coverage</h3>
+                <p data-translate="case_result">The complete regression cycle decreased from ten to five days while continuing to cover all application windows. This improvement was observed in successive regression cycles. Some modules that previously required hours could be executed in minutes.</p>
+                <p data-translate="case_manual">The five-day cycle combined automated execution, manual validation and failure review. Critical core behavior and new sprint functionality that had not yet been automated continued to receive manual testing.</p>
+              </div>
+              <div class="case-block">
+                <h3 data-translate="case_lessons_title">What I learned</h3>
+                <p data-translate="case_lessons">I learned to structure a maintainable automation project and would strengthen my Node.js foundations earlier before starting a similar implementation.</p>
+              </div>
+              <p data-translate="case_note" class="case-note">Anonymized account based on my professional experience. The result describes the full regression cycle, not a 50% reduction in every individual test.</p>
+            </div>
+          </details>
+        </div>
+      </section>
       <section id="about" class="section">
         <div class="section__container">
           <h2 class="section__title" data-translate="about_title">About Me</h2>
@@ -424,10 +482,16 @@
               class="experience-card__list experience-card__list--achievements"
             >
               <li data-translate="achievement_regression">Reduced regression testing from 10 to 5 days by automating modules, helping shorten delivery cycles.</li>
-              <li data-translate="achievement_cases">Personally automated 400+ test cases over two years.</li>
+              <li data-translate="achievement_cases">Documented 400+ manual test cases in Azure DevOps.</li>
               <li data-translate="achievement_bugs">Reported 1,200+ bugs during my QA career, confirmed through an Azure DevOps query.</li>
               <li data-translate="achievement_sql">Created and documented reusable SQL queries for QA validation, reducing repetitive work and improving data checks.</li>
             </ul>
+            <a
+              data-translate="case_link"
+              class="project-link"
+              href="#case-study-regression"
+              >Explore the regression case study</a
+            >
           </article>
         </div>
       </section>
