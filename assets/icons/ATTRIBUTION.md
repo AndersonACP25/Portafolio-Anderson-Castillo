@@ -4,6 +4,6 @@ Full-color SVGs for React, Node.js, Vite, Prisma, PostgreSQL, MariaDB, MySQL, HT
 https://github.com/devicons/devicon/tree/master/icons
 Devicon MIT license is included in DEVICON-LICENSE.txt.
 
-Obsidian, Cursor, OpenCode, MCP and GitHub use Simple Icons 16.35.0 artwork (CC0). Obsidian retains its purple brand color. Monochrome brands use colored presentation accents to match the portfolio; these accents are not claimed as official brand palettes. Project license is included in SIMPLE-ICONS-LICENSE.txt. Individual brand rights remain with their respective owners.
+Obsidian, Cursor, OpenCode, MCP and GitHub use Simple Icons 16.35.0 artwork (CC0). Obsidian retains its purple brand color. GitHub uses white for the dark background. Monochrome brands use presentation accents; Prisma, MariaDB and MySQL use lighter fills for contrast on transparent backgrounds. These accents are not claimed as official brand palettes. Project license is included in SIMPLE-ICONS-LICENSE.txt. Individual brand rights remain with their respective owners.
 
 Generic AI and code symbols are original geometric SVG illustrations with purple and blue accents. Existing repository icons remain in use for Playwright, Postman, Java, C# and Azure DevOps.

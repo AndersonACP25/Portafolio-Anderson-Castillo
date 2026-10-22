@@ -1096,14 +1096,106 @@ html {
   color: var(--color-primary-light);
 }
 
-/* Full-color logos share a light tile so dark brand details stay visible. */
+/* Transparent logos preserve the surface of their surrounding component. */
 .skill-tag img,
-.tech-badge img {
-  background: #e8eef7;
-  border-radius: 4px;
-  padding: 2px;
+.tech-badge img,
+.certification-card__icon {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
 }
 .certification-card__icon {
-  background: #e8eef7;
-  border-color: #cbd5e1;
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+.header__menu {
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  flex-shrink: 0;
+}
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 22px;
+  height: 22px;
+}
+.hamburger > span {
+  width: 22px;
+  height: 2px;
+  background: currentColor;
+  border-radius: 2px;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+.header__menu[aria-expanded="true"] .hamburger > span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.header__menu[aria-expanded="true"] .hamburger > span:nth-child(2) {
+  opacity: 0;
+}
+.header__menu[aria-expanded="true"] .hamburger > span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+@media (max-width: 640px) {
+  .header__container {
+    gap: 0.5rem;
+  }
+  .header__logo {
+    font-size: 1rem;
+    min-width: 0;
+  }
+  .header__language-selector {
+    min-height: 44px;
+    max-width: 96px;
+    font-size: 0.85rem;
+  }
+  .header__navigation {
+    max-height: calc(100dvh - var(--header-height));
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+  .header__link {
+    min-height: 44px;
+  }
+  .section {
+    padding-inline: 1rem;
+  }
+  .hero {
+    padding-inline: 1rem;
+  }
+  .hero__name {
+    overflow-wrap: anywhere;
+  }
+  .project-card__visual {
+    padding: 1.25rem;
+  }
+  .contact-card {
+    padding: 1.25rem;
+  }
+  .section__container,
+  .hero__container {
+    min-width: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hamburger > span {
+    transition: none;
+  }
 }
