@@ -1,0 +1,72 @@
+"""Content regressions: run with python -m unittest discover -s tests."""
+from pathlib import Path
+from html.parser import HTMLParser
+from xml.etree import ElementTree
+import json
+import shutil
+import subprocess
+import sys
+import tempfile
+import unittest
+
+ROOT = Path(__file__).resolve().parents[1]
+
+class Content(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.text = []
+        self.dates = []
+    def handle_data(self, text):
+        self.text.append(text)
+    def handle_starttag(self, tag, attrs):
+        if tag == 'time':
+            self.dates.append(dict(attrs)['datetime'])
+
+class PortfolioTests(unittest.TestCase):
+    def test_course_content_in_both_languages(self):
+        for filename in ['index.html', 'es.html']:
+            with self.subTest(page=filename):
+                parser = Content()
+                parser.feed((ROOT / filename).read_text())
+                text = ' '.join(parser.text)
+                self.assertNotIn('undefined', text)
+                self.assertNotIn('TODOCODE', text)
+                self.assertNotIn('TESTARUDO', text)
+                self.assertEqual(text.count('Todo Code'), 4)
+                self.assertEqual(text.count('Tester Testarudo'), 4)
+                self.assertEqual(len(parser.dates), 26)
+
+    def test_renderer_rejects_placeholder_nodes(self):
+        with tempfile.TemporaryDirectory() as directory:
+            destination = Path(directory)
+            shutil.copytree(ROOT / 'scripts', destination / 'scripts')
+            shutil.copytree(ROOT / 'locales', destination / 'locales')
+            source = (ROOT / 'index.html').read_text().replace('</main>', 'undefinedundefined</main>')
+            (destination / 'index.html').write_text(source)
+            result = subprocess.run([sys.executable, str(destination / 'scripts/render-locales.py')], capture_output=True, text=True)
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn('Invalid placeholder', result.stderr)
+            self.assertFalse((destination / 'es.html').exists())
+
+    def test_renderer_rejects_missing_translations(self):
+        with tempfile.TemporaryDirectory() as directory:
+            destination = Path(directory)
+            shutil.copytree(ROOT / 'scripts', destination / 'scripts')
+            shutil.copytree(ROOT / 'locales', destination / 'locales')
+            shutil.copy(ROOT / 'index.html', destination / 'index.html')
+            path = destination / 'locales/en.json'
+            dictionary = json.loads(path.read_text())
+            del dictionary['courses_featured']
+            path.write_text(json.dumps(dictionary))
+            result = subprocess.run([sys.executable, str(destination / 'scripts/render-locales.py')], capture_output=True, text=True)
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn('Missing en translations', result.stderr)
+
+    def test_local_icons_have_no_previous_monochrome_fill(self):
+        for path in (ROOT / 'assets/icons').glob('*.svg'):
+            with self.subTest(icon=path.name):
+                ElementTree.parse(path)
+                self.assertNotIn('#cbd5e1', path.read_text().lower())
+
+if __name__ == '__main__':
+    unittest.main()

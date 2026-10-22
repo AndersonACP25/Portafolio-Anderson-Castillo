@@ -10,10 +10,17 @@ import re
 ROOT = Path(__file__).resolve().parents[1]
 BASE = 'https://andersonacp25.github.io/Portafolio-Anderson-Castillo/'
 source = (ROOT / 'index.html').read_text()
+# Never publish missing values or stray DOM placeholders in generated pages.
+if re.search(r'\b(?:(?:undefined)+|null|NaN)\b', source):
+    raise ValueError('Invalid placeholder in source HTML; correct it before rendering')
+keys = set(re.findall(r'data-translate(?:-aria)?="([^"]+)"', source))
 pattern = r'(<(?P<tag>\w+)\b[^>]*\bdata-translate="(?P<key>[^"]+)"[^>]*>)[^<]*(</(?P=tag)\s*>)'
 
 for lang, filename in [('en', 'index.html'), ('es', 'es.html')]:
     text = json.loads((ROOT / 'locales' / f'{lang}.json').read_text())
+    missing = sorted(key for key in keys if not isinstance(text.get(key), str) or not text[key].strip())
+    if missing:
+        raise ValueError(f'Missing {lang} translations: {missing}')
     page = re.sub(pattern, lambda m: m[1] + html.escape(text[m['key']]) + m[4], source)
     page = re.sub(r'(<[^>]+data-translate-aria="([^"]+)"[^>]*>)', lambda m: re.sub(r'aria-label="[^"]*"', 'aria-label="' + html.escape(text[m[2]], quote=True) + '"', m[1]), page)
     page = re.sub(r'<html lang="[^"]+"', f'<html lang="{lang}"', page)
