@@ -16,6 +16,8 @@ Entre mis resultados destacan:
 - Reducción de la regresión de **10 a 5 días** mediante automatización de módulos.
 - Creación de consultas SQL documentadas y reutilizables para agilizar las validaciones de QA.
 
+También gestiono el flujo de tres ramas del proyecto de automatización, integrando el trabajo de dos QA de equipos diferentes y posteriormente los cambios en master. Creo Test Plans, Test Suites y Test Cases en Azure DevOps, y preparo plantillas de bugs y QA Tasks para estandarizar los Work Items y agilizar mi trabajo.
+
 ## Caso de estudio: regresión de 10 a 5 días
 
 En un equipo de dos QA, asumí la mayor parte del diseño e implementación de un framework de automatización con Playwright y TypeScript. La ejecución por módulos ayudó a reducir de diez a cinco días el ciclo completo de regresión de una aplicación con más de 120 páginas, manteniendo la cobertura de todas las ventanas y combinando automatización, validación manual y análisis de fallos. La mejora se observó en regresiones sucesivas.
@@ -41,6 +43,8 @@ Actualmente amplío mi experiencia práctica en desarrollo asistido por IA. Util
 También exploro metodologías como RAG y la organización de conocimiento mediante un segundo cerebro en Obsidian. Mi enfoque combina aprendizaje continuo, contexto estructurado, revisión de los cambios y validación de los resultados.
 
 ## Proyectos destacados
+
+- **bitZoneeStore:** tienda online académica de Teoría de Programación III, con HTML, CSS, JavaScript, JSON, PHP y MySQL. Práctica con Ubuntu/WSL, Apache, NGINX como proxy, SSH, PuTTY y ngrok; según el servidor, despliegue de la tienda o una API Python con Flask. Repositorio privado, sin enlace público.
 
 - **[FlowSaldo](https://github.com/AndersonACP25/FlowSaldo):** app de finanzas personales para Android y web, con gestión de movimientos, revisión previa de importaciones y arquitectura orientada a datos confiables.
 

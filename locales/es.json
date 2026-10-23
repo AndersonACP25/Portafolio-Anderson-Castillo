@@ -50,7 +50,7 @@
   "automated": "Automatización de pruebas",
   "projects_eyebrow": "PROYECTOS DESTACADOS",
   "projects_title": "De la calidad al desarrollo de software",
-  "projects_intro": "Explora mis proyectos públicos, su alcance y el código que los respalda.",
+  "projects_intro": "Explora mis proyectos personales y académicos, su alcance, aprendizajes y el código disponible.",
   "personal_project": "Proyecto personal",
   "academic_project": "Proyecto académico",
   "project_qa": "Plataforma web para gestionar bugs, casos de prueba, ejecuciones manuales y evidencias en proyectos QA.",
@@ -279,5 +279,16 @@
   "flow_next": "Conectar Gmail y Outlook mediante OAuth, ampliar el análisis de correos por entidad bancaria, habilitar cuentas reales e incorporar clasificación asistida. Estos hitos amplían el flujo actual de revisión previa y siguen siendo capacidades previstas.",
   "flow_read": "Explorar la implementación y la visión del producto",
   "exp_overview_title": "Mi trabajo en general",
-  "exp_overview": "Ayudo al equipo a entregar software confiable conectando requisitos, diseño de pruebas y validación técnica. Combino pruebas exploratorias y manuales con automatización mantenible, investigo fallos en la interfaz, las API y los datos, y comunico los hallazgos para que el equipo pueda priorizar correcciones y tomar decisiones informadas sobre las entregas."
+  "exp_overview": "Ayudo al equipo a entregar software confiable conectando requisitos, diseño de pruebas y validación técnica. Combino pruebas exploratorias y manuales con automatización mantenible, investigo fallos en la interfaz, las API y los datos, y comunico los hallazgos para que el equipo pueda priorizar correcciones y tomar decisiones informadas sobre las entregas.",
+  "bit_label": "05 / DESARROLLO WEB",
+  "bit_description": "Tienda online académica desarrollada para la asignatura Teoría de Programación III, combinando desarrollo web y práctica de administración de servidores.",
+  "bit_stack": "Desarrollo: HTML, CSS, JavaScript y JSON; PHP y MySQL para el backend y la persistencia de datos.",
+  "bit_servers": "Entorno: Ubuntu en WSL, Apache y MySQL; NGINX como servidor proxy.",
+  "bit_access": "Herramientas: acceso por SSH desde WSL y PuTTY, junto con ngrok para exponer el servidor durante las prácticas.",
+  "bit_private": "Proyecto académico · Repositorio privado",
+  "bit_read": "Explorar lo que aprendí",
+  "bit_learning": "Este proyecto me permitió conectar la interfaz de una tienda con su backend y su entorno de ejecución. Practiqué con servicios en Ubuntu sobre WSL, acceso remoto por SSH y configuración de un proxy con NGINX. Según el servidor utilizado en las prácticas, desplegaba la tienda online o una API de Python con Flask.",
+  "exp_branches": "Gestiono un flujo de tres ramas del proyecto de automatización: coordino la integración del trabajo de dos QA pertenecientes a equipos distintos, realizo los merges entre sus ramas y posteriormente integro los cambios en master.",
+  "exp_plans": "Creo y organizo Test Plans, Test Suites y Test Cases en Azure DevOps para estructurar la planificación y ejecución de pruebas.",
+  "exp_templates": "Diseño plantillas de bugs y QA Tasks en Azure DevOps para estandarizar la creación de Work Items, mantener información consistente y agilizar mi trabajo diario."
 }
