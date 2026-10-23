@@ -34,7 +34,7 @@ class PortfolioTests(unittest.TestCase):
                 self.assertNotIn('TESTARUDO', text)
                 self.assertEqual(text.count('Todo Code'), 4)
                 self.assertEqual(text.count('Tester Testarudo'), 4)
-                self.assertEqual(len(parser.dates), 26)
+                self.assertEqual(len(parser.dates), 24)
 
     def test_manual_metric_and_case_study(self):
         for language, filename, label in [('en', 'index.html', 'Automated tests'), ('es', 'es.html', 'Pruebas automatizadas')]:

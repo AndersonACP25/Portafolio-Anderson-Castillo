@@ -123,8 +123,7 @@
   "work_tools": "Daily workflow",
   "courses_featured": "Featured training",
   "courses_more": "Explore additional training",
-  "courses_repeat": "Two certificates with different completion dates",
-  "courses_summary": "26 course certificates across 24 course titles in this selection.",
+  "courses_summary": "24 course certificates across 24 course titles in this selection.",
   "courses_testing": "Testing & automation",
   "courses_data": "Data & databases",
   "courses_dev": "Development fundamentals",
@@ -278,5 +277,7 @@
   "flow_ai": "Provider-neutral instructions coordinate architecture, implementation, QA and review. Dedicated language and export guardian profiles support consistent copy and deliverables; the project also includes automated checks for pluralization patterns and tabular exports.",
   "flow_next_title": "Product vision · next milestones",
   "flow_next": "Connect Gmail and Outlook through OAuth, expand bank-specific parsing, enable real user accounts and introduce assisted classification. These milestones extend the current review-first workflow and remain planned capabilities.",
-  "flow_read": "Explore implementation and product vision"
+  "flow_read": "Explore implementation and product vision",
+  "exp_overview_title": "My role at a glance",
+  "exp_overview": "I help the team deliver reliable software by connecting requirements, test design and technical validation. I combine exploratory and manual testing with maintainable automation, investigate failures across the interface, APIs and data, and communicate findings so the team can prioritize fixes and make informed release decisions."
 }

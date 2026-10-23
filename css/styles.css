@@ -1482,3 +1482,69 @@ html {
   .button--primary { background: ButtonFace; color: ButtonText; border: 1px solid ButtonText; }
   .section__title::after { background: CanvasText; }
 }
+
+/* Each project has its own palette, including its title and visual cover. */
+.project-card { --project-title: #7dd3fc; }
+.project-card:has(.project-card__visual--alt) { --project-title: #c4b5fd; }
+.project-card:has(.project-card__visual--ars) { --project-title: #6ee7b7; }
+.project-card--flow { --project-title: #fcd34d; }
+.project-card__visual {
+  background: radial-gradient(ellipse at top right, #164e63, transparent 80%), #0b172b;
+}
+.project-card__visual--alt {
+  background: radial-gradient(ellipse at top right, #4c3673, transparent 80%), #151025;
+}
+.project-card__visual--ars {
+  background: radial-gradient(ellipse at top right, #115e4b, transparent 80%), #0b211e;
+}
+.project-card__visual--flow {
+  background: radial-gradient(ellipse at top right, #78350f, transparent 80%),
+    linear-gradient(125deg, #26170d, #251b2a);
+}
+.project-card__visual strong,
+.project-card h3 { color: var(--project-title); }
+
+.experience-overview {
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.75rem;
+  border-left: 3px solid #67e8f9;
+  border-radius: 0 12px 12px 0;
+  background: linear-gradient(110deg, rgba(56, 189, 248, .09), rgba(167, 139, 250, .04));
+}
+.experience-overview p { color: #cbd5e1; max-width: 85ch; }
+.experience-overview .experience-card__subtitle { margin-top: 0; }
+.certification-card,
+#skills .skill-group,
+#skills .skill-tag {
+  transition: background-color .2s ease, border-color .2s ease,
+    box-shadow .2s ease, transform .2s ease, color .2s ease;
+}
+@media (hover: hover) {
+  .certification-card:hover {
+    background: linear-gradient(135deg, rgba(56, 189, 248, .16), rgba(167, 139, 250, .1)), var(--color-card);
+    border-color: #7dd3fc;
+    box-shadow: 0 12px 30px rgba(2, 6, 23, .3);
+    transform: translateY(-4px);
+  }
+  .certification-card:hover .certification-card__title { color: #bae6fd; }
+  #skills .skill-group:hover {
+    background: linear-gradient(140deg, rgba(56, 189, 248, .1), rgba(167, 139, 250, .06)), var(--color-card);
+    border-color: #7dd3fc;
+    box-shadow: 0 8px 28px rgba(14, 165, 233, .1);
+    transform: translateY(-3px);
+  }
+  #skills .skill-tag:hover {
+    background: #164e63;
+    border-color: #67e8f9;
+    color: #ecfeff;
+    transform: translateY(-2px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .certification-card,
+  #skills .skill-group,
+  #skills .skill-tag { transition: none; }
+  .certification-card:hover,
+  #skills .skill-group:hover,
+  #skills .skill-tag:hover { transform: none; }
+}

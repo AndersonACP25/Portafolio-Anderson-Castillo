@@ -123,8 +123,7 @@
   "work_tools": "Trabajo diario",
   "courses_featured": "Formación destacada",
   "courses_more": "Explorar formación adicional",
-  "courses_repeat": "Dos certificados con fechas de finalización distintas",
-  "courses_summary": "26 certificados de cursos correspondientes a 24 títulos en esta selección.",
+  "courses_summary": "24 certificados de cursos correspondientes a 24 títulos en esta selección.",
   "courses_testing": "Pruebas y automatización",
   "courses_data": "Datos y bases de datos",
   "courses_dev": "Fundamentos de desarrollo",
@@ -278,5 +277,7 @@
   "flow_ai": "Las instrucciones independientes del proveedor coordinan arquitectura, implementación, QA y revisión. Los perfiles de revisión lingüística y guardián de exportaciones apoyan la consistencia de textos y entregables; el proyecto también incluye verificaciones automáticas de patrones de pluralización y exportaciones tabulares.",
   "flow_next_title": "Visión del producto · próximos hitos",
   "flow_next": "Conectar Gmail y Outlook mediante OAuth, ampliar el análisis de correos por entidad bancaria, habilitar cuentas reales e incorporar clasificación asistida. Estos hitos amplían el flujo actual de revisión previa y siguen siendo capacidades previstas.",
-  "flow_read": "Explorar la implementación y la visión del producto"
+  "flow_read": "Explorar la implementación y la visión del producto",
+  "exp_overview_title": "Mi trabajo en general",
+  "exp_overview": "Ayudo al equipo a entregar software confiable conectando requisitos, diseño de pruebas y validación técnica. Combino pruebas exploratorias y manuales con automatización mantenible, investigo fallos en la interfaz, las API y los datos, y comunico los hallazgos para que el equipo pueda priorizar correcciones y tomar decisiones informadas sobre las entregas."
 }
