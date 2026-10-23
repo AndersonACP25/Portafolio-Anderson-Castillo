@@ -42,9 +42,15 @@ También exploro metodologías como RAG y la organización de conocimiento media
 
 ## Proyectos destacados
 
+- **[FlowSaldo](https://github.com/AndersonACP25/FlowSaldo):** app de finanzas personales para Android y web, con gestión de movimientos, revisión previa de importaciones y arquitectura orientada a datos confiables.
+
 - **[qaTestGE](https://github.com/AndersonACP25/qaTestGE):** plataforma para organizar bugs, casos de prueba, ejecuciones manuales y evidencias. Desarrollada con soporte estructurado de IA; esa asistencia forma parte de su proceso de desarrollo.
 - **[ARSFuturo](https://github.com/kleibergpm/INF-5250-arsfuturo):** proyecto académico en equipo para la gestión de una Administradora de Riesgos de Salud, en el que participo como desarrollador Full-Stack.
 - **[CASHFAST](https://github.com/AndersonACP25/ProyectoFinalRemesa-CASHFAST):** proyecto académico orientado a la gestión de remesas.
+
+## FlowSaldo: móvil, web y calidad de datos
+
+FlowSaldo combina gestión de movimientos, revisión de correos sintéticos, presupuestos y visualización financiera en DOP y USD. Su arquitectura separa la app Expo/React Native, la API Express y el worker de importaciones con PostgreSQL/Prisma en un monorepo pnpm. Incluye preferencias de cuenta, pantallas visuales de acceso y validación de exportaciones. Las conexiones reales a Gmail/Outlook, las cuentas autenticadas y la clasificación asistida forman parte del roadmap.
 
 ## Formación y objetivos
 
