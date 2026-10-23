@@ -1548,3 +1548,28 @@ html {
   #skills .skill-group:hover,
   #skills .skill-tag:hover { transform: none; }
 }
+
+/* Academic store: rose palette distinct from the other four projects. */
+.project-card--bitzone { --project-title: #fda4af; }
+.project-card__visual--bitzone {
+  background: radial-gradient(ellipse at top right, #831843, transparent 80%),
+    linear-gradient(125deg, #291321, #1e172d);
+}
+.project-private { color: #fda4af; font-size: .85rem; }
+.bitzone-details {
+  margin-top: 1rem;
+  border-top: 1px solid var(--color-border);
+  padding-top: 1rem;
+}
+.bitzone-details summary {
+  cursor: pointer;
+  color: #fda4af;
+  font-weight: 600;
+}
+.bitzone-details summary:hover { color: #ffe4e6; }
+.bitzone-details summary:focus-visible {
+  outline: 2px solid #fda4af;
+  outline-offset: 5px;
+  border-radius: 4px;
+}
+.bitzone-details p { margin-top: 1rem; }

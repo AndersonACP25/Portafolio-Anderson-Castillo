@@ -50,7 +50,7 @@
   "automated": "Test automation",
   "projects_eyebrow": "SELECTED WORK",
   "projects_title": "From quality strategy to working software",
-  "projects_intro": "Explore public projects, their scope and the code behind them.",
+  "projects_intro": "Explore my personal and academic projects, their scope, lessons learned and available source code.",
   "personal_project": "Personal project",
   "academic_project": "Academic project",
   "project_qa": "Web platform for managing bugs, test cases, manual test runs and evidence within QA projects.",
@@ -279,5 +279,16 @@
   "flow_next": "Connect Gmail and Outlook through OAuth, expand bank-specific parsing, enable real user accounts and introduce assisted classification. These milestones extend the current review-first workflow and remain planned capabilities.",
   "flow_read": "Explore implementation and product vision",
   "exp_overview_title": "My role at a glance",
-  "exp_overview": "I help the team deliver reliable software by connecting requirements, test design and technical validation. I combine exploratory and manual testing with maintainable automation, investigate failures across the interface, APIs and data, and communicate findings so the team can prioritize fixes and make informed release decisions."
+  "exp_overview": "I help the team deliver reliable software by connecting requirements, test design and technical validation. I combine exploratory and manual testing with maintainable automation, investigate failures across the interface, APIs and data, and communicate findings so the team can prioritize fixes and make informed release decisions.",
+  "bit_label": "05 / WEB DEVELOPMENT",
+  "bit_description": "Academic online store built for the Teoría de Programación III course, combining web development with hands-on server administration.",
+  "bit_stack": "Development: HTML, CSS, JavaScript and JSON; PHP and MySQL for backend logic and data persistence.",
+  "bit_servers": "Environment: Ubuntu on WSL, Apache and MySQL; NGINX as a proxy server.",
+  "bit_access": "Tools: SSH access from WSL and PuTTY, alongside ngrok to expose the server during coursework.",
+  "bit_private": "Academic project · Private repository",
+  "bit_read": "Explore what I learned",
+  "bit_learning": "This project helped me connect an online store interface with its backend and runtime environment. I practiced running services on Ubuntu through WSL, remote access through SSH and proxy configuration with NGINX. Depending on the server used in the exercises, I deployed either the online store or a Python API built with Flask.",
+  "exp_branches": "Manage a three-branch workflow for the automation project: coordinate contributions from two QA engineers on different teams, merge their branches and subsequently integrate changes into master.",
+  "exp_plans": "Create and organize Test Plans, Test Suites and Test Cases in Azure DevOps to structure test planning and execution.",
+  "exp_templates": "Design bug and QA Task templates in Azure DevOps to standardize Work Item creation, keep information consistent and streamline my daily workflow."
 }
