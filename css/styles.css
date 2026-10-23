@@ -1424,3 +1424,61 @@ html {
     margin-left: 0;
   }
 }
+
+/* Shared gradient accents: keep long-form copy on quiet, dark surfaces. */
+.button--primary,
+.button--primary:hover {
+  background: var(--gradient-action);
+  color: #020617;
+}
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .hero__name,
+  .metric-card__value {
+    background: var(--gradient-highlight);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+.metric-card,
+.contact-card {
+  background: var(--gradient-card), var(--color-card);
+}
+.section__title::after {
+  content: "";
+  display: block;
+  width: 4rem;
+  height: 3px;
+  margin-top: 1rem;
+  border-radius: 999px;
+  background: var(--gradient-action);
+}
+.project-card {
+  background: linear-gradient(155deg, rgba(56, 189, 248, .04), transparent 50%), var(--color-card);
+}
+.project-card__visual--flow {
+  background: radial-gradient(ellipse at top right, #115e59, transparent 75%),
+    linear-gradient(125deg, #09232c, #10243c);
+}
+.project-card__visual--flow strong {
+  color: #a7f3d0;
+}
+.flow-status {
+  border-left: 2px solid #6ee7b7;
+  padding-left: .85rem;
+  font-size: .85rem;
+  margin-top: 1.25rem;
+}
+.flow-case {
+  background: radial-gradient(ellipse at top right, rgba(16, 185, 129, .07), transparent 60%);
+}
+.project-link:hover,
+.tech-badge:hover {
+  background: linear-gradient(110deg, rgba(56, 189, 248, .13), rgba(167, 139, 250, .1));
+}
+@media (forced-colors: active) {
+  .hero__name,
+  .metric-card__value { background: none; color: CanvasText; }
+  .button--primary { background: ButtonFace; color: ButtonText; border: 1px solid ButtonText; }
+  .section__title::after { background: CanvasText; }
+}

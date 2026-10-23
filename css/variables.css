@@ -30,3 +30,8 @@
     /* TRANSITIONS */
     --transition-default:all .25s ease;
 }
+:root {
+    --gradient-action: linear-gradient(115deg, #7dd3fc, #67e8f9);
+    --gradient-highlight: linear-gradient(110deg, #bae6fd, #67e8f9 55%, #c4b5fd);
+    --gradient-card: linear-gradient(135deg, rgba(56, 189, 248, .09), rgba(167, 139, 250, .04) 55%, transparent);
+}
