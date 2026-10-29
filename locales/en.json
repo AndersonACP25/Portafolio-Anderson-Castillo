@@ -122,7 +122,7 @@
   "frameworks": "Frameworks & runtime",
   "work_tools": "Daily workflow",
   "courses_featured": "Featured training",
-  "courses_more": "Explore additional training",
+  "courses_more": "Explore 21 additional courses",
   "courses_summary": "24 course certificates across 24 course titles in this selection.",
   "courses_testing": "Testing & automation",
   "courses_data": "Data & databases",
@@ -184,7 +184,7 @@
   "metric_manual": "Documented manual test cases",
   "metric_manual_detail": "Recorded in Azure DevOps for manual test execution.",
   "achievement_manual": "Documented 350+ manual test cases in Azure DevOps.",
-  "education_intro": "My university studies provide foundations in programming, systems analysis, computing environments and data. These are topics I have studied during the degree, which is still in progress.",
+  "education_intro": "Academic foundations in programming, data and systems analysis, applied to my QA work.",
   "edu_programming": "Programming & web development",
   "edu_programming_text": "Practice with HTML, CSS, JavaScript and PHP, alongside Java, C# and C++. These foundations connect interface construction, program logic and the implementation of application behavior.",
   "edu_logic": "Logic & algorithms",
@@ -312,5 +312,6 @@
   "footer_location": "Dominican Republic · Remote work",
   "footer_explore": "Explore my work",
   "footer_connect": "Let’s connect",
-  "back_top": "Back to top ↑"
+  "back_top": "Back to top ↑",
+  "education_more": "Explore degree topics"
 }

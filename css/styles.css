@@ -1606,3 +1606,54 @@ html {
   .regression-chart { padding: 1rem; }
   .regression-chart__row { grid-template-columns: 1fr; gap: .5rem; }
 }
+
+/* Compact training overview; full content remains available without JavaScript. */
+.education-details { margin-top: 1.25rem; }
+.education-details summary,
+.courses-more summary,
+.case-details summary,
+.bitzone-details summary {
+  min-height: 48px;
+  padding-block: .65rem;
+  cursor: pointer;
+  color: #7dd3fc;
+  font-weight: 600;
+}
+.education-details .education-topics { margin-top: 1rem; }
+.section--education .education-intro { margin-top: 1rem; max-width: 65ch; }
+#certifications .courses-heading { margin-top: 1.25rem; }
+#certifications .courses-more { margin-top: 1.25rem; }
+a, button, select, summary { -webkit-tap-highlight-color: rgba(125, 211, 252, .25); }
+:focus-visible { outline: 3px solid #7dd3fc; outline-offset: 3px; }
+summary { scroll-margin-top: calc(var(--header-height) + 24px); }
+.footer a { display: inline-flex; align-items: center; min-height: 44px; }
+@media (max-width: 640px) {
+  /* Covers Mobile M (375 px), Mobile L (425 px), and text enlargement. */
+  .header__container { column-gap: .5rem; }
+  .header__logo { flex: 1 1 130px; line-height: 1.4; min-height: 48px; display: flex; align-items: center; }
+  .header__menu { min-width: 48px; min-height: 48px; flex-shrink: 0; }
+  .header__language-selector { min-height: 48px; font-size: 1rem; max-width: 106px; }
+  .header__navigation { max-height: calc(100dvh - 112px); }
+  .header__link { min-height: 48px; display: flex; align-items: center; }
+  .button { min-height: 48px; display: inline-flex; justify-content: center; align-items: center; white-space: normal; }
+  .project-link { display: inline-flex; align-items: center; min-height: 48px; padding-block: .65rem; }
+  .project-card__actions { gap: .75rem; }
+  .section__title { font-size: clamp(1.75rem, 7.5vw, 2rem); line-height: 1.3; overflow-wrap: anywhere; }
+  .education-card h3, .certification-card__title { overflow-wrap: anywhere; line-height: 1.5; }
+  .education-card, .certification-card, .case-details, .courses-more { min-width: 0; }
+  .section--education { padding-block: 2rem; }
+  .section--education .section__title { margin-bottom: 1rem; }
+  .education-card { padding: 1.25rem; }
+  .education-card p, .education-card span, .certification-card__issuer,
+  .certification-card__year, .courses-summary, .course-note { font-size: 1rem; line-height: 1.65; }
+  .certification-card { padding: 1rem; }
+  .education-topics { gap: 1rem; }
+  .education-topic p { font-size: 1rem; }
+  .contact-card { min-height: 64px; gap: .75rem; }
+  .contact-card__icon { flex-shrink: 0; }
+  .contact-card__content p { font-size: 1rem; }
+  .footer__container { gap: 1.5rem; }
+  .footer__links { gap: .5rem; }
+  pre { max-width: 100%; overflow-x: auto; }
+  .regression-chart__bar strong { white-space: nowrap; }
+}

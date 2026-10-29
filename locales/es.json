@@ -122,7 +122,7 @@
   "frameworks": "Frameworks y entorno",
   "work_tools": "Trabajo diario",
   "courses_featured": "Formación destacada",
-  "courses_more": "Explorar formación adicional",
+  "courses_more": "Ver los 21 cursos adicionales",
   "courses_summary": "24 certificados de cursos correspondientes a 24 títulos en esta selección.",
   "courses_testing": "Pruebas y automatización",
   "courses_data": "Datos y bases de datos",
@@ -184,7 +184,7 @@
   "metric_manual": "Casos manuales documentados",
   "metric_manual_detail": "Registrados en Azure DevOps para la ejecución de pruebas manuales.",
   "achievement_manual": "Documenté más de 350 casos de prueba manuales en Azure DevOps.",
-  "education_intro": "Mi formación universitaria aporta bases en programación, análisis de sistemas, entornos informáticos y datos. Estos son temas que he abordado durante la carrera, que continúa en curso.",
+  "education_intro": "Base académica en programación, datos y análisis de sistemas, aplicada a mi trabajo en QA.",
   "edu_programming": "Programación y desarrollo web",
   "edu_programming_text": "Práctica con HTML, CSS, JavaScript y PHP, junto con Java, C# y C++. Estas bases conectan la construcción de interfaces, la lógica de programación y la implementación del comportamiento de una aplicación.",
   "edu_logic": "Lógica y algoritmos",
@@ -312,5 +312,6 @@
   "footer_location": "República Dominicana · Trabajo remoto",
   "footer_explore": "Explora mi trabajo",
   "footer_connect": "Conversemos",
-  "back_top": "Volver arriba ↑"
+  "back_top": "Volver arriba ↑",
+  "education_more": "Ver temas de la carrera"
 }
