@@ -68,3 +68,13 @@ Busco oportunidades de trabajo remoto en **QA Manual y QA Automation**, donde pu
 - [LinkedIn](https://www.linkedin.com/in/anderson-castillo-8ba0a021a/)
 - [GitHub](https://github.com/AndersonACP25)
 - [Contacto por correo](mailto:anderson250514@gmail.com)
+
+## Organización del frontend
+
+El HTML compartido está en `index.html`; `scripts/render-locales.py` genera las páginas EN/ES con los diccionarios de `locales/`. Después de editar contenido, ejecutar `python scripts/render-locales.py`.
+
+Los tokens viven en `css/variables.css`. `css/styles.css` se organiza por componente, seguido de un bloque por breakpoint y las preferencias de accesibilidad. Modificar la regla del componente o breakpoint existente para evitar cadenas de sobrescrituras.
+
+Los casos personales se despliegan dentro de sus tarjetas; el caso SQL pertenece a Experiencia. Los enlaces con fragmentos abren sus contenedores mediante `revealLinkedContent`, incluyendo enlaces directos y navegación del historial. Los desplegables nativos también funcionan sin JavaScript.
+
+Verificación local: `python -m unittest discover -s tests` y `node --check js/language-manager.js`.

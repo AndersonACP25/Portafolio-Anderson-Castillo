@@ -141,3 +141,32 @@ document.addEventListener("DOMContentLoaded", () => {
     .matchMedia("(min-width: 1001px)")
     .addEventListener("change", closeMenu);
 });
+
+// Reveal nested evidence when following or loading a link to a case study.
+// Native details remain usable when JavaScript is unavailable.
+function revealLinkedContent() {
+  let id;
+  try {
+    id = decodeURIComponent(location.hash.slice(1));
+  } catch {
+    return;
+  }
+  const target = document.getElementById(id);
+  if (!target) return;
+  let current = target;
+  let revealed = false;
+  while (current) {
+    if (current.tagName === "DETAILS" && !current.open) {
+      current.open = true;
+      revealed = true;
+    }
+    current = current.parentElement;
+  }
+  if (revealed) requestAnimationFrame(() => target.scrollIntoView({ block: "start" }));
+}
+window.addEventListener("hashchange", revealLinkedContent);
+document.addEventListener("DOMContentLoaded", revealLinkedContent);
+document.addEventListener("click", (event) => {
+  const link = event.target.closest('a[href^="#"]');
+  if (link) requestAnimationFrame(revealLinkedContent);
+});
