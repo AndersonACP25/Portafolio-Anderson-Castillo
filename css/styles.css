@@ -1573,3 +1573,87 @@ html {
   border-radius: 4px;
 }
 .bitzone-details p { margin-top: 1rem; }
+
+/* Recruiter scan: impact, experience, evidence, then personal projects. */
+.hero__impact { color: #a5f3fc; font-weight: 700; margin: 1.25rem 0; max-width: 48ch; }
+.metrics { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.metric-card--featured { border: 2px solid #67e8f9; background: linear-gradient(135deg, #12354a, #17213b); }
+.metric-card--featured .metric-card__value { font-size: 3.5rem; }
+.case-summary { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+.case-summary > div { border-top: 2px solid #38bdf8; padding-top: 1rem; min-width: 0; }
+.case-summary h3 { color: #a5f3fc; margin-bottom: .65rem; font-size: 1.1rem; }
+.case-summary p { color: #cbd5e1; line-height: 1.7; max-width: 48ch; }
+.case-body p, .case-body li { max-width: 78ch; }
+.regression-chart { margin: 2rem 0; padding: 1.5rem; background: #0b172b; border: 1px solid var(--color-border); border-radius: 16px; }
+.regression-chart figcaption { color: #e2e8f0; font-weight: 600; margin-bottom: 1.25rem; }
+.regression-chart__row { display: grid; grid-template-columns: minmax(140px, 230px) minmax(0, 1fr); gap: 1rem; align-items: center; margin: 1rem 0; color: #cbd5e1; }
+.regression-chart__bar { padding: .75rem; border-radius: 6px; background: #475569; color: #fff; }
+.regression-chart__bar--after { width: 50%; background: #0e7490; }
+.contact__cta { margin-bottom: 2rem; }
+.footer__container { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 2rem; text-align: left; align-items: start; }
+.footer__brand { font-size: 1.2rem; font-weight: 700; color: #f8fafc; }
+.footer h3 { color: #e2e8f0; margin-bottom: .75rem; font-size: 1rem; }
+.footer__links { display: grid; gap: .75rem; }
+.footer a { color: #cbd5e1; text-decoration: none; overflow-wrap: anywhere; }
+.footer a:hover { color: #67e8f9; text-decoration: underline; }
+.footer__bottom { grid-column: 1 / -1; border-top: 1px solid var(--color-border); padding-top: 1.5rem; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+@media (max-width: 1100px) and (min-width: 641px) {
+  .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .metrics > :last-child { grid-column: auto; }
+}
+@media (max-width: 640px) {
+  .metrics, .case-summary, .footer__container { grid-template-columns: 1fr; }
+  .regression-chart { padding: 1rem; }
+  .regression-chart__row { grid-template-columns: 1fr; gap: .5rem; }
+}
+
+/* Compact training overview; full content remains available without JavaScript. */
+.education-details { margin-top: 1.25rem; }
+.education-details summary,
+.courses-more summary,
+.case-details summary,
+.bitzone-details summary {
+  min-height: 48px;
+  padding-block: .65rem;
+  cursor: pointer;
+  color: #7dd3fc;
+  font-weight: 600;
+}
+.education-details .education-topics { margin-top: 1rem; }
+.section--education .education-intro { margin-top: 1rem; max-width: 65ch; }
+#certifications .courses-heading { margin-top: 1.25rem; }
+#certifications .courses-more { margin-top: 1.25rem; }
+a, button, select, summary { -webkit-tap-highlight-color: rgba(125, 211, 252, .25); }
+:focus-visible { outline: 3px solid #7dd3fc; outline-offset: 3px; }
+summary { scroll-margin-top: calc(var(--header-height) + 24px); }
+.footer a { display: inline-flex; align-items: center; min-height: 44px; }
+@media (max-width: 640px) {
+  /* Covers Mobile M (375 px), Mobile L (425 px), and text enlargement. */
+  .header__container { column-gap: .5rem; }
+  .header__logo { flex: 1 1 130px; line-height: 1.4; min-height: 48px; display: flex; align-items: center; }
+  .header__menu { min-width: 48px; min-height: 48px; flex-shrink: 0; }
+  .header__language-selector { min-height: 48px; font-size: 1rem; max-width: 106px; }
+  .header__navigation { max-height: calc(100dvh - 112px); }
+  .header__link { min-height: 48px; display: flex; align-items: center; }
+  .button { min-height: 48px; display: inline-flex; justify-content: center; align-items: center; white-space: normal; }
+  .project-link { display: inline-flex; align-items: center; min-height: 48px; padding-block: .65rem; }
+  .project-card__actions { gap: .75rem; }
+  .section__title { font-size: clamp(1.75rem, 7.5vw, 2rem); line-height: 1.3; overflow-wrap: anywhere; }
+  .education-card h3, .certification-card__title { overflow-wrap: anywhere; line-height: 1.5; }
+  .education-card, .certification-card, .case-details, .courses-more { min-width: 0; }
+  .section--education { padding-block: 2rem; }
+  .section--education .section__title { margin-bottom: 1rem; }
+  .education-card { padding: 1.25rem; }
+  .education-card p, .education-card span, .certification-card__issuer,
+  .certification-card__year, .courses-summary, .course-note { font-size: 1rem; line-height: 1.65; }
+  .certification-card { padding: 1rem; }
+  .education-topics { gap: 1rem; }
+  .education-topic p { font-size: 1rem; }
+  .contact-card { min-height: 64px; gap: .75rem; }
+  .contact-card__icon { flex-shrink: 0; }
+  .contact-card__content p { font-size: 1rem; }
+  .footer__container { gap: 1.5rem; }
+  .footer__links { gap: .5rem; }
+  pre { max-width: 100%; overflow-x: auto; }
+  .regression-chart__bar strong { white-space: nowrap; }
+}

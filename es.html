@@ -115,38 +115,7 @@
           class="header__navigation"
           aria-label="Navegación principal"
           data-translate-aria="navigation"
-        >
-          <a href="#projects" class="header__link" data-translate="nav_projects"
-            >Proyectos</a
-          >
-          <a href="#about" class="header__link" data-translate="nav_about"
-            >Enfoque</a
-          >
-          <a
-            href="#experience"
-            class="header__link"
-            data-translate="nav_experience"
-            >Experiencia</a
-          >
-          <a href="#skills" class="header__link" data-translate="nav_skills"
-            >Habilidades</a
-          >
-          <a
-            href="#framework"
-            class="header__link"
-            data-translate="nav_framework"
-            >Framework</a
-          >
-          <a
-            href="#certifications"
-            class="header__link"
-            data-translate="nav_certifications"
-            >Certificaciones</a
-          >
-          <a href="#contact" class="header__link" data-translate="nav_contact"
-            >Contacto</a
-          >
-        </nav>
+        ><a class="header__link" href="#experience" data-translate="nav_experience">Experiencia</a><a class="header__link" href="#projects" data-translate="nav_projects">Proyectos</a><a class="header__link" href="#skills" data-translate="nav_skills">Habilidades</a><a class="header__link" href="#contact" data-translate="nav_contact">Contacto</a></nav>
         <select
           class="header__language-selector"
           aria-label="Idioma"
@@ -176,13 +145,8 @@
             <h2 class="hero__title" data-translate="hero_title">QA Automation Engineer</h2>
             <p class="hero__description" data-translate="hero_description">QA Automation Engineer con más de 4 años de experiencia asegurando la calidad del software mediante pruebas manuales y automatizadas. Especializado en Playwright, TypeScript, pruebas API y validación de datos mediante SQL.</p>
             <p data-translate="availability" class="hero__availability">Busco oportunidades remotas en QA Manual y Automatización de Pruebas.</p>
-            <div class="hero__actions">
-              <a
-                href="#projects"
-                class="button button--primary"
-                data-translate="view_projects"
-                >Ver proyectos</a
-              >
+            <p class="hero__impact" data-translate="hero_impact">Regresión de 10 a 5 días · 50% menos tiempo, misma cobertura</p><div class="hero__actions">
+              <a href="mailto:anderson250514@gmail.com" class="button button--primary" data-translate="write_me">Escríbeme</a>
               <a
                 download=""
                 href="./assets/cv/CV Anderson Castillo - QA Automation Engineer.pdf"
@@ -239,7 +203,14 @@
       <section class="section">
         <div class="section__container">
           <h2 class="section__title" data-translate="metrics_title">Mi experiencia en cifras</h2>
-          <div class="metrics">
+          <div class="metrics"><article class="metric-card metric-card--featured">
+              <h3 class="metric-card__value">50%</h3>
+              <p class="metric-card__label" data-translate="metric_regression">Reducción del Tiempo de Regresión</p>
+              <p
+                data-translate="metric_regression_detail"
+                class="metric-card__detail"
+              >Regresión reducida de 10 a 5 días mediante la automatización de módulos.</p>
+            </article>
             <article class="metric-card">
               <h3 class="metric-card__value">400+</h3>
               <p class="metric-card__label" data-translate="metric_cases">Pruebas automatizadas</p>
@@ -256,22 +227,8 @@
                 class="metric-card__detail"
               >Registrados en Azure DevOps para la ejecución de pruebas manuales.</p>
             </article>
-            <article class="metric-card">
-              <h3 class="metric-card__value">1200+</h3>
-              <p data-translate="metric_bugs" class="metric-card__label">Bugs reportados</p>
-              <p
-                data-translate="metric_bugs_detail"
-                class="metric-card__detail"
-              >Durante mi trayectoria laboral; cantidad confirmada mediante una consulta en Azure DevOps.</p>
-            </article>
-            <article class="metric-card">
-              <h3 class="metric-card__value">50%</h3>
-              <p class="metric-card__label" data-translate="metric_regression">Reducción del Tiempo de Regresión</p>
-              <p
-                data-translate="metric_regression_detail"
-                class="metric-card__detail"
-              >Regresión reducida de 10 a 5 días mediante la automatización de módulos.</p>
-            </article>
+
+
             <article class="metric-card">
               <h3 class="metric-card__value">4+</h3>
               <p class="metric-card__label" data-translate="metric_experience">Años de Experiencia</p>
@@ -284,7 +241,123 @@
         </div>
       </section>
 
-      <section id="projects" class="section section--surface">
+      <section id="experience" class="section">
+        <div class="section__container">
+          <h2 class="section__title" data-translate="experience_title">Experiencia</h2>
+          <article class="experience-card">
+            <div class="experience-card__header">
+              <div>
+                <h3 class="experience-card__position">
+                  QA Automation Engineer
+                </h3>
+                <p class="experience-card__company">XpertCode</p>
+              </div>
+              <span class="experience-card__period" data-translate="period"
+                >Mayo 2022 – Actualidad</span
+              >
+            </div>
+            <div class="experience-overview">
+              <h4 class="experience-card__subtitle" data-translate="exp_overview_title">Mi trabajo en general</h4>
+              <p data-translate="exp_overview">Ayudo al equipo a entregar software confiable conectando requisitos, diseño de pruebas y validación técnica. Combino pruebas exploratorias y manuales con automatización mantenible, investigo fallos en la interfaz, las API y los datos, y comunico los hallazgos para que el equipo pueda priorizar correcciones y tomar decisiones informadas sobre las entregas.</p>
+            </div>
+            <h4
+              data-translate="responsibilities"
+              class="experience-card__subtitle"
+            >Responsabilidades</h4>
+            <ul class="experience-card__list">
+              <li data-translate="exp_automation">Desarrollo y mantenimiento de pruebas automatizadas web con Playwright y TypeScript.</li>
+              <li data-translate="exp_api">Validación de API con Postman y Swagger y comprobación de datos mediante SQL.</li>
+              <li data-translate="exp_regression">Diseño y ejecución de pruebas manuales, funcionales, de humo y regresión; documentación de resultados y seguimiento de defectos.</li>
+              <li data-translate="exp_suites">Organización de suites y pasos compartidos para reutilizar escenarios y facilitar el mantenimiento de los casos de prueba.</li>
+              <li data-translate="exp_plans">Creo y organizo Test Plans, Test Suites y Test Cases en Azure DevOps para estructurar la planificación y ejecución de pruebas.</li>
+              <li data-translate="exp_branches">Gestiono un flujo de tres ramas del proyecto de automatización: coordino la integración del trabajo de dos QA pertenecientes a equipos distintos, realizo los merges entre sus ramas y posteriormente integro los cambios en master.</li>
+              <li data-translate="exp_templates">Diseño plantillas de bugs y QA Tasks en Azure DevOps para estandarizar la creación de Work Items, mantener información consistente y agilizar mi trabajo diario.</li>
+
+              <li data-translate="exp_certification">Elaboración de documentos de certificación de historias de usuario con resultados y evidencias de pruebas.</li>
+            </ul>
+            <h4 data-translate="achievements" class="experience-card__subtitle">Logros destacados</h4>
+            <ul
+              class="experience-card__list experience-card__list--achievements"
+            >
+              <li data-translate="achievement_regression">Reduje la regresión de 10 a 5 días mediante la automatización de módulos, contribuyendo a mejorar los tiempos de entrega.</li>
+              <li data-translate="achievement_cases">Desarrollé más de 400 pruebas automatizadas en código.</li>
+              <li data-translate="achievement_manual">Documenté más de 350 casos de prueba manuales en Azure DevOps.</li>
+              <li data-translate="achievement_sql">Creé y documenté consultas SQL reutilizables para validaciones QA, reduciendo trabajo repetitivo y mejorando las comprobaciones de datos.</li>
+            </ul>
+            <a
+              data-translate="case_link"
+              class="project-link"
+              href="#case-study-regression"
+              >Explorar el caso de regresión</a
+            >
+            <a
+              data-translate="sql_case_link"
+              class="project-link"
+              href="#case-study-sql"
+              >Ver el caso de consultas SQL reutilizables</a
+            >
+          </article>
+        </div>
+      </section>
+<section class="section section--surface" id="case-study-regression">
+        <div class="section__container">
+          <p data-translate="case_eyebrow" class="eyebrow">CASO DE ESTUDIO PROFESIONAL</p>
+          <h2 data-translate="case_title" class="section__title">Regresión: de 10 a 5 días</h2>
+          <p data-translate="case_intro" class="section__text">La automatización por módulos ayudó a un equipo de dos QA a completar la regresión de más de 120 páginas, mientras continuaba validando el trabajo del sprint.</p>
+          <figure class="regression-chart"><figcaption data-translate="chart_caption">Duración del ciclo completo de regresión · días</figcaption><div class="regression-chart__row"><span class="" data-translate="case_before">Antes: regresión manual</span><div class="regression-chart__bar regression-chart__bar--before"><strong class="" data-translate="case_days_ten">10 días</strong></div></div><div class="regression-chart__row"><span class="" data-translate="case_after">Después: regresión combinada</span><div class="regression-chart__bar regression-chart__bar--after"><strong class="" data-translate="case_days_five">5 días</strong></div></div></figure><div class="case-metrics">
+            <div class="case-metric">
+              <strong data-translate="case_days_ten">10 días</strong
+              ><span data-translate="case_before"
+                >Antes: regresión manual</span
+              >
+            </div>
+            <div class="case-metric">
+              <strong data-translate="case_days_five">5 días</strong
+              ><span data-translate="case_after"
+                >Después: regresión combinada</span
+              >
+            </div>
+            <div class="case-metric">
+              <strong>50%</strong
+              ><span data-translate="case_reduction">Menos tiempo de regresión</span>
+            </div>
+          </div>
+          <div class="case-summary"><div><h3 class="" data-translate="summary_problem">Problema</h3><p class="" data-translate="reg_summary_problem">Validar más de 120 páginas manualmente requería 10 días y competía con las pruebas del sprint.</p></div><div><h3 class="" data-translate="summary_action">Acción</h3><p class="" data-translate="reg_summary_action">Diseñé e implementé la mayor parte del framework Playwright + TypeScript y organicé la ejecución por módulos.</p></div><div><h3 class="" data-translate="summary_result">Resultado</h3><p class="" data-translate="reg_summary_result">Ciclo completo de 5 días con la misma cobertura, combinando automatización, pruebas manuales y análisis de fallos.</p></div></div><details class="case-details">
+            <summary data-translate="case_read">Ver más: decisiones y evidencia</summary>
+            <div class="case-body">
+              <div class="case-block">
+                <h3 data-translate="case_context_title">Contexto y problema</h3>
+                <p data-translate="case_context">Una aplicación de gestión de equipos móviles permitía trabajar con precios regulares y de oferta, bundles y bonos para distintos proveedores y sucursales. La regresión exigía comprobaciones manuales en más de 120 páginas, incluyendo DevTools, solicitudes y respuestas de API y validación en base de datos.</p>
+                <p data-translate="case_problem">La regresión de diez días se ejecutaba en paralelo al sprint, afectaba la planificación de los pases a producción y dejaba menos tiempo para tareas QA, preparación de casos y documentos de certificación de historias de usuario.</p>
+              </div>
+              <div class="case-block">
+                <h3 data-translate="case_role_title">Mi contribución</h3>
+                <p data-translate="case_role">En un equipo de dos profesionales QA, asumí la mayor parte del diseño e implementación del framework con Playwright y TypeScript, incluyendo clases, interfaces, objetos de página y datos de prueba.</p>
+              </div>
+              <div class="case-block">
+                <h3 data-translate="case_strategy_title">Estrategia e implementación</h3>
+                <ol>
+                  <li data-translate="case_core">Comenzar por el core de la aplicación: preparar los equipos móviles para que estuvieran activos y habilitados para generar precios antes de ejecutar escenarios dependientes.</li>
+                  <li data-translate="case_structure">Separar cada ventana en selectores, datos de prueba, lógica de interacción de la página y especificaciones de prueba. Ejecutar las pruebas por módulo mediante scripts de package.json.</li>
+                  <li data-translate="case_angular">Tratar los modales de Angular y los componentes ng-select con helpers y utilidades reutilizables, esperas de componentes padres y opciones, comprobaciones del estado del input y seguimiento de si el selector estaba desplegado. Utilizar try-catch para manejar errores de interacción.</li>
+                  <li data-translate="case_review">Revisar las ejecuciones locales con la extensión de Playwright en VS Code y los reportes. Investigar los fallos manualmente: reportar los defectos confirmados en Azure DevOps o corregir la prueba automatizada cuando correspondiera.</li>
+                </ol>
+              </div>
+              <div class="case-block">
+                <h3 data-translate="case_result_title">Resultado y cobertura manual</h3>
+                <p data-translate="case_result">El ciclo completo de regresión disminuyó de diez a cinco días manteniendo la cobertura de todas las ventanas de la aplicación. La mejora se observó en regresiones sucesivas. Algunos módulos que antes requerían horas podían ejecutarse en minutos.</p>
+                <p data-translate="case_manual">El ciclo de cinco días combinaba ejecución automatizada, validación manual y revisión de fallos. El comportamiento crítico del core y las funcionalidades nuevas del sprint que todavía no estaban automatizadas continuaban validándose manualmente.</p>
+              </div>
+              <div class="case-block">
+                <h3 data-translate="case_lessons_title">Aprendizajes</h3>
+                <p data-translate="case_lessons">Aprendí a estructurar un proyecto de automatización mantenible y reforzaría antes mis fundamentos de Node.js al comenzar una implementación similar.</p>
+              </div>
+              <p data-translate="case_note" class="case-note">Relato anónimo basado en mi experiencia profesional. El resultado corresponde al ciclo completo de regresión, no a una reducción del 50% en cada prueba individual.</p>
+            </div>
+          </details>
+        </div>
+      </section>
+<section id="projects" class="section section--surface">
         <div class="section__container">
           <p class="eyebrow" data-translate="projects_eyebrow">PROYECTOS DESTACADOS</p>
           <h2 class="section__title" data-translate="projects_title">De la calidad al desarrollo de software</h2>
@@ -426,64 +499,7 @@
         </div>
       </section>
       <!-- ABOUT -->
-      <section class="section section--surface" id="case-study-regression">
-        <div class="section__container">
-          <p data-translate="case_eyebrow" class="eyebrow">CASO DE ESTUDIO PROFESIONAL</p>
-          <h2 data-translate="case_title" class="section__title">Regresión: de 10 a 5 días</h2>
-          <p data-translate="case_intro" class="section__text">La automatización por módulos ayudó a un equipo de dos QA a completar la regresión de más de 120 páginas, mientras continuaba validando el trabajo del sprint.</p>
-          <div class="case-metrics">
-            <div class="case-metric">
-              <strong data-translate="case_days_ten">10 días</strong
-              ><span data-translate="case_before"
-                >Antes: regresión manual</span
-              >
-            </div>
-            <div class="case-metric">
-              <strong data-translate="case_days_five">5 días</strong
-              ><span data-translate="case_after"
-                >Después: regresión combinada</span
-              >
-            </div>
-            <div class="case-metric">
-              <strong>50%</strong
-              ><span data-translate="case_reduction">Menos tiempo de regresión</span>
-            </div>
-          </div>
-          <details class="case-details">
-            <summary data-translate="case_read">Leer el caso de estudio</summary>
-            <div class="case-body">
-              <div class="case-block">
-                <h3 data-translate="case_context_title">Contexto y problema</h3>
-                <p data-translate="case_context">Una aplicación de gestión de equipos móviles permitía trabajar con precios regulares y de oferta, bundles y bonos para distintos proveedores y sucursales. La regresión exigía comprobaciones manuales en más de 120 páginas, incluyendo DevTools, solicitudes y respuestas de API y validación en base de datos.</p>
-                <p data-translate="case_problem">La regresión de diez días se ejecutaba en paralelo al sprint, afectaba la planificación de los pases a producción y dejaba menos tiempo para tareas QA, preparación de casos y documentos de certificación de historias de usuario.</p>
-              </div>
-              <div class="case-block">
-                <h3 data-translate="case_role_title">Mi contribución</h3>
-                <p data-translate="case_role">En un equipo de dos profesionales QA, asumí la mayor parte del diseño e implementación del framework con Playwright y TypeScript, incluyendo clases, interfaces, objetos de página y datos de prueba.</p>
-              </div>
-              <div class="case-block">
-                <h3 data-translate="case_strategy_title">Estrategia e implementación</h3>
-                <ol>
-                  <li data-translate="case_core">Comenzar por el core de la aplicación: preparar los equipos móviles para que estuvieran activos y habilitados para generar precios antes de ejecutar escenarios dependientes.</li>
-                  <li data-translate="case_structure">Separar cada ventana en selectores, datos de prueba, lógica de interacción de la página y especificaciones de prueba. Ejecutar las pruebas por módulo mediante scripts de package.json.</li>
-                  <li data-translate="case_angular">Tratar los modales de Angular y los componentes ng-select con helpers y utilidades reutilizables, esperas de componentes padres y opciones, comprobaciones del estado del input y seguimiento de si el selector estaba desplegado. Utilizar try-catch para manejar errores de interacción.</li>
-                  <li data-translate="case_review">Revisar las ejecuciones locales con la extensión de Playwright en VS Code y los reportes. Investigar los fallos manualmente: reportar los defectos confirmados en Azure DevOps o corregir la prueba automatizada cuando correspondiera.</li>
-                </ol>
-              </div>
-              <div class="case-block">
-                <h3 data-translate="case_result_title">Resultado y cobertura manual</h3>
-                <p data-translate="case_result">El ciclo completo de regresión disminuyó de diez a cinco días manteniendo la cobertura de todas las ventanas de la aplicación. La mejora se observó en regresiones sucesivas. Algunos módulos que antes requerían horas podían ejecutarse en minutos.</p>
-                <p data-translate="case_manual">El ciclo de cinco días combinaba ejecución automatizada, validación manual y revisión de fallos. El comportamiento crítico del core y las funcionalidades nuevas del sprint que todavía no estaban automatizadas continuaban validándose manualmente.</p>
-              </div>
-              <div class="case-block">
-                <h3 data-translate="case_lessons_title">Aprendizajes</h3>
-                <p data-translate="case_lessons">Aprendí a estructurar un proyecto de automatización mantenible y reforzaría antes mis fundamentos de Node.js al comenzar una implementación similar.</p>
-              </div>
-              <p data-translate="case_note" class="case-note">Relato anónimo basado en mi experiencia profesional. El resultado corresponde al ciclo completo de regresión, no a una reducción del 50% en cada prueba individual.</p>
-            </div>
-          </details>
-        </div>
-      </section>
+
       <section class="section" id="case-study-qatestge">
         <div class="section__container">
           <p data-translate="qa_case_eyebrow" class="eyebrow">CASO DE ESTUDIO · PROYECTO PERSONAL</p>
@@ -495,8 +511,8 @@
             >
             <p data-translate="qa_case_fact">Dirección humana · Asistencia de IA · Validación QA</p>
           </div>
-          <details class="case-details">
-            <summary data-translate="qa_case_read">Explorar el caso de qaTestGE</summary>
+          <div class="case-summary"><div><h3 class="" data-translate="summary_problem">Problema</h3><p class="" data-translate="qa_summary_problem">Casos, bugs y ejecuciones estaban dispersos; los casos necesitaban múltiples pasos.</p></div><div><h3 class="" data-translate="summary_action">Acción</h3><p class="" data-translate="qa_summary_action">Defino requisitos, dirijo el desarrollo asistido por IA y valido flujos reales de trabajo QA.</p></div><div><h3 class="" data-translate="summary_result">Resultado</h3><p class="" data-translate="qa_summary_result">Gestión de casos con múltiples pasos, bugs, evidencias y exportaciones. Proyecto en desarrollo; generación con IA pendiente.</p></div></div><details class="case-details">
+            <summary data-translate="qa_case_read">Ver más: decisiones y evidencia</summary>
             <div class="case-body">
               <div class="case-block">
                 <h3 data-translate="qa_case_problem_title">Problema y usuarios</h3>
@@ -608,8 +624,8 @@
               <p data-translate="sql_case_after">Una Wiki compartida de Azure DevOps documentaba consultas, propósito, condiciones de uso y alternativas.</p>
             </div>
           </div>
-          <details class="case-details">
-            <summary data-translate="sql_case_read">Explorar el caso de consultas SQL</summary>
+          <div class="case-summary"><div><h3 class="" data-translate="summary_problem">Problema</h3><p class="" data-translate="sql_summary_problem">Las validaciones exigían comparar pantallas y respuestas API y reconstruir consultas.</p></div><div><h3 class="" data-translate="summary_action">Acción</h3><p class="" data-translate="sql_summary_action">Investigué relaciones, validé consultas por partes y documenté su uso en una Wiki compartida.</p></div><div><h3 class="" data-translate="summary_result">Resultado</h3><p class="" data-translate="sql_summary_result">Consultas reutilizables para QA, desarrollo y PO. Mejora cualitativa; sin porcentaje de ahorro medido.</p></div></div><details class="case-details">
+            <summary data-translate="sql_case_read">Ver más: decisiones y evidencia</summary>
             <div class="case-body">
               <div class="case-block">
                 <h3 data-translate="sql_case_context_title">Contexto y problema recurrente</h3>
@@ -639,7 +655,7 @@
           </details>
         </div>
       </section>
-<section class="section flow-case" id="case-study-flowsaldo"><div class="section__container"><p data-translate="flow_eyebrow" class="eyebrow">PROYECTO PERSONAL · MÓVIL + WEB</p><h2 data-translate="flow_title" class="section__title">FlowSaldo: de los movimientos financieros a la claridad</h2><p data-translate="flow_intro" class="section__text">Un espacio financiero que combina diseño de producto, arquitectura backend y QA. Defino los requisitos, dirijo el desarrollo asistido por IA y valido recorridos completos de uso.</p><details class="case-details"><summary data-translate="flow_read">Explorar la implementación y la visión del producto</summary><div class="case-body"><div class="case-block"><h3 data-translate="flow_ready_title">La experiencia actual</h3><p data-translate="flow_ready">Gestionar movimientos, revisar importaciones de correos sintéticos antes de confirmarlas, filtrar por mes y moneda y comprender los gastos mediante categorías, presupuestos y flujo de caja. La configuración permite elegir moneda y ocultar montos; el inicio de sesión y el registro muestran por ahora la experiencia visual.</p></div><div class="case-block"><h3 data-translate="flow_engine_title">Una base para datos confiables</h3><p data-translate="flow_engine">La API y el worker separan la importación del registro contable. La idempotencia evita importaciones duplicadas y la confirmación transaccional crea cada movimiento una sola vez. Las reglas de dominio permanecen separadas de la interfaz y la exportación CSV utiliza columnas explícitas y validación.</p></div><div class="case-block"><h3 data-translate="flow_ai_title">Desarrollo asistido por IA con estructura</h3><p data-translate="flow_ai">Las instrucciones independientes del proveedor coordinan arquitectura, implementación, QA y revisión. Los perfiles de revisión lingüística y guardián de exportaciones apoyan la consistencia de textos y entregables; el proyecto también incluye verificaciones automáticas de patrones de pluralización y exportaciones tabulares.</p></div><div class="case-block"><h3 data-translate="flow_next_title">Visión del producto · próximos hitos</h3><p data-translate="flow_next">Conectar Gmail y Outlook mediante OAuth, ampliar el análisis de correos por entidad bancaria, habilitar cuentas reales e incorporar clasificación asistida. Estos hitos amplían el flujo actual de revisión previa y siguen siendo capacidades previstas.</p></div></div></details></div></section>
+<section class="section flow-case" id="case-study-flowsaldo"><div class="section__container"><p data-translate="flow_eyebrow" class="eyebrow">PROYECTO PERSONAL · MÓVIL + WEB</p><h2 data-translate="flow_title" class="section__title">FlowSaldo: de los movimientos financieros a la claridad</h2><p data-translate="flow_intro" class="section__text">Un espacio financiero que combina diseño de producto, arquitectura backend y QA. Defino los requisitos, dirijo el desarrollo asistido por IA y valido recorridos completos de uso.</p><div class="case-summary"><div><h3 class="" data-translate="summary_problem">Problema</h3><p class="" data-translate="flow_summary_problem">Reunir movimientos y revisión de importaciones en una experiencia financiera clara.</p></div><div><h3 class="" data-translate="summary_action">Acción</h3><p class="" data-translate="flow_summary_action">Defino el producto y valido una arquitectura que separa importación, confirmación y movimientos.</p></div><div><h3 class="" data-translate="summary_result">Resultado</h3><p class="" data-translate="flow_summary_result">Gestión financiera y revisión de importaciones sintéticas. Conexión bancaria por correo y autenticación real pendientes.</p></div></div><details class="case-details"><summary data-translate="flow_read">Ver más: decisiones y evidencia</summary><div class="case-body"><div class="case-block"><h3 data-translate="flow_ready_title">La experiencia actual</h3><p data-translate="flow_ready">Gestionar movimientos, revisar importaciones de correos sintéticos antes de confirmarlas, filtrar por mes y moneda y comprender los gastos mediante categorías, presupuestos y flujo de caja. La configuración permite elegir moneda y ocultar montos; el inicio de sesión y el registro muestran por ahora la experiencia visual.</p></div><div class="case-block"><h3 data-translate="flow_engine_title">Una base para datos confiables</h3><p data-translate="flow_engine">La API y el worker separan la importación del registro contable. La idempotencia evita importaciones duplicadas y la confirmación transaccional crea cada movimiento una sola vez. Las reglas de dominio permanecen separadas de la interfaz y la exportación CSV utiliza columnas explícitas y validación.</p></div><div class="case-block"><h3 data-translate="flow_ai_title">Desarrollo asistido por IA con estructura</h3><p data-translate="flow_ai">Las instrucciones independientes del proveedor coordinan arquitectura, implementación, QA y revisión. Los perfiles de revisión lingüística y guardián de exportaciones apoyan la consistencia de textos y entregables; el proyecto también incluye verificaciones automáticas de patrones de pluralización y exportaciones tabulares.</p></div><div class="case-block"><h3 data-translate="flow_next_title">Visión del producto · próximos hitos</h3><p data-translate="flow_next">Conectar Gmail y Outlook mediante OAuth, ampliar el análisis de correos por entidad bancaria, habilitar cuentas reales e incorporar clasificación asistida. Estos hitos amplían el flujo actual de revisión previa y siguen siendo capacidades previstas.</p></div></div></details></div></section>
       <section id="about" class="section">
         <div class="section__container">
           <h2 class="section__title" data-translate="about_title">Cómo trabajo</h2>
@@ -662,65 +678,7 @@
       </section>
 
       <!-- EXPERIENCE -->
-      <section id="experience" class="section">
-        <div class="section__container">
-          <h2 class="section__title" data-translate="experience_title">Experiencia</h2>
-          <article class="experience-card">
-            <div class="experience-card__header">
-              <div>
-                <h3 class="experience-card__position">
-                  QA Automation Engineer
-                </h3>
-                <p class="experience-card__company">XpertCode</p>
-              </div>
-              <span class="experience-card__period" data-translate="period"
-                >Mayo 2022 – Actualidad</span
-              >
-            </div>
-            <div class="experience-overview">
-              <h4 class="experience-card__subtitle" data-translate="exp_overview_title">Mi trabajo en general</h4>
-              <p data-translate="exp_overview">Ayudo al equipo a entregar software confiable conectando requisitos, diseño de pruebas y validación técnica. Combino pruebas exploratorias y manuales con automatización mantenible, investigo fallos en la interfaz, las API y los datos, y comunico los hallazgos para que el equipo pueda priorizar correcciones y tomar decisiones informadas sobre las entregas.</p>
-            </div>
-            <h4
-              data-translate="responsibilities"
-              class="experience-card__subtitle"
-            >Responsabilidades</h4>
-            <ul class="experience-card__list">
-              <li data-translate="exp_automation">Desarrollo y mantenimiento de pruebas automatizadas web con Playwright y TypeScript.</li>
-              <li data-translate="exp_api">Validación de API con Postman y Swagger y comprobación de datos mediante SQL.</li>
-              <li data-translate="exp_regression">Diseño y ejecución de pruebas manuales, funcionales, de humo y regresión; documentación de resultados y seguimiento de defectos.</li>
-              <li data-translate="exp_suites">Organización de suites y pasos compartidos para reutilizar escenarios y facilitar el mantenimiento de los casos de prueba.</li>
-              <li data-translate="exp_plans">Creo y organizo Test Plans, Test Suites y Test Cases en Azure DevOps para estructurar la planificación y ejecución de pruebas.</li>
-              <li data-translate="exp_branches">Gestiono un flujo de tres ramas del proyecto de automatización: coordino la integración del trabajo de dos QA pertenecientes a equipos distintos, realizo los merges entre sus ramas y posteriormente integro los cambios en master.</li>
-              <li data-translate="exp_templates">Diseño plantillas de bugs y QA Tasks en Azure DevOps para estandarizar la creación de Work Items, mantener información consistente y agilizar mi trabajo diario.</li>
 
-              <li data-translate="exp_certification">Elaboración de documentos de certificación de historias de usuario con resultados y evidencias de pruebas.</li>
-            </ul>
-            <h4 data-translate="achievements" class="experience-card__subtitle">Logros destacados</h4>
-            <ul
-              class="experience-card__list experience-card__list--achievements"
-            >
-              <li data-translate="achievement_regression">Reduje la regresión de 10 a 5 días mediante la automatización de módulos, contribuyendo a mejorar los tiempos de entrega.</li>
-              <li data-translate="achievement_cases">Desarrollé más de 400 pruebas automatizadas en código.</li>
-              <li data-translate="achievement_manual">Documenté más de 350 casos de prueba manuales en Azure DevOps.</li>
-              <li data-translate="achievement_bugs">Reporté más de 1,200 bugs durante mi trayectoria laboral, confirmados mediante una consulta en Azure DevOps.</li>
-              <li data-translate="achievement_sql">Creé y documenté consultas SQL reutilizables para validaciones QA, reduciendo trabajo repetitivo y mejorando las comprobaciones de datos.</li>
-            </ul>
-            <a
-              data-translate="case_link"
-              class="project-link"
-              href="#case-study-regression"
-              >Explorar el caso de regresión</a
-            >
-            <a
-              data-translate="sql_case_link"
-              class="project-link"
-              href="#case-study-sql"
-              >Ver el caso de consultas SQL reutilizables</a
-            >
-          </article>
-        </div>
-      </section>
 
       <!-- SKILLS -->
       <section id="skills" class="section">
@@ -1128,7 +1086,7 @@ Utils/
           >24 certificados de cursos correspondientes a 24 títulos en esta selección.</p>
           <h3 data-translate="courses_featured" class="courses-heading">Formación destacada</h3>
           <div class="certifications-grid">
-            <article class="certification-card">
+<article class="certification-card">
               <img
                 src="./assets/icons/playwright.svg"
                 alt=""
@@ -1148,7 +1106,7 @@ Utils/
                 >15 de enero de 2026</time
               >
             </article>
-            <article class="certification-card">
+<article class="certification-card">
               <img
                 src="./assets/icons/postman.svg"
                 alt=""
@@ -1168,7 +1126,7 @@ Utils/
                 >15 de enero de 2024</time
               >
             </article>
-            <article class="certification-card">
+<article class="certification-card">
               <img
                 src="./assets/icons/typescript.svg"
                 alt=""
@@ -1186,7 +1144,11 @@ Utils/
                 >10 de enero de 2024</time
               >
             </article>
-            <article class="certification-card">
+</div>
+          <details class="courses-more">
+            <summary data-translate="courses_more">Ver los 21 cursos adicionales</summary>
+            <div class="certifications-grid">
+<article class="certification-card">
               <img
                 src="./assets/icons/ai.svg"
                 alt=""
@@ -1204,7 +1166,7 @@ Utils/
                 >2 de junio de 2025</time
               >
             </article>
-            <article class="certification-card">
+<article class="certification-card">
               <img
                 src="./assets/icons/ai.svg"
                 alt=""
@@ -1224,7 +1186,7 @@ Utils/
                 >7 de junio de 2025</time
               >
             </article>
-            <article class="certification-card">
+<article class="certification-card">
               <img
                 src="./assets/icons/ai.svg"
                 alt=""
@@ -1242,7 +1204,7 @@ Utils/
                 >20 de agosto de 2025</time
               >
             </article>
-            <article class="certification-card">
+<article class="certification-card">
               <img
                 src="./assets/icons/mysql.svg"
                 alt=""
@@ -1262,7 +1224,7 @@ Utils/
                 >24 de septiembre de 2025</time
               >
             </article>
-            <article class="certification-card">
+<article class="certification-card">
               <img
                 src="./assets/icons/react.svg"
                 alt=""
@@ -1280,10 +1242,6 @@ Utils/
                 >1 de diciembre de 2025</time
               >
             </article>
-          </div>
-          <details class="courses-more">
-            <summary data-translate="courses_more">Explorar formación adicional</summary>
-            <div class="certifications-grid">
               <article class="certification-card">
                 <img
                   src="./assets/icons/nodejs.svg"
@@ -1586,15 +1544,15 @@ Utils/
       </section>
 
       <!-- EDUCATION -->
-      <section class="section">
+      <section id="education" class="section section--education">
         <div class="section__container">
           <h2 class="section__title" data-translate="education_title">Educación</h2>
           <div class="education-card">
             <h3>Universidad Autónoma de Santo Domingo</h3>
             <p data-translate="degree">Licenciatura en Informática (en curso)</p>
             <span data-translate="graduation">Graduación estimada: 2028</span>
-            <p data-translate="education_intro" class="education-intro">Mi formación universitaria aporta bases en programación, análisis de sistemas, entornos informáticos y datos. Estos son temas que he abordado durante la carrera, que continúa en curso.</p>
-            <div class="education-topics">
+            <p data-translate="education_intro" class="education-intro">Base académica en programación, datos y análisis de sistemas, aplicada a mi trabajo en QA.</p>
+            <details class="education-details"><summary data-translate="education_more">Ver temas de la carrera</summary><div class="education-topics">
               <div class="education-topic">
                 <h4 data-translate="edu_programming">Programación y desarrollo web</h4>
                 <p data-translate="edu_programming_text">Práctica con HTML, CSS, JavaScript y PHP, junto con Java, C# y C++. Estas bases conectan la construcción de interfaces, la lógica de programación y la implementación del comportamiento de una aplicación.</p>
@@ -1620,6 +1578,7 @@ Utils/
                 <p data-translate="edu_tools_text">Git y GitHub para control de versiones y colaboración; Postman y Swagger para interactuar con API y comprender solicitudes, respuestas y operaciones documentadas.</p>
               </div>
             </div>
+          </details>
           </div>
         </div>
       </section>
@@ -1630,7 +1589,7 @@ Utils/
           <h2 class="section__title" data-translate="contact_title">Contacto</h2>
           <p data-translate="availability" class="section__text contact__intro">Busco oportunidades remotas en QA Manual y Automatización de Pruebas.</p>
 
-          <div class="contact">
+          <a href="mailto:anderson250514@gmail.com" class="button button--primary contact__cta" data-translate="write_me">Escríbeme</a><div class="contact">
             <a href="mailto:anderson250514@gmail.com" class="contact-card">
               <img
                 src="./assets/icons/gmail.svg"
@@ -1683,13 +1642,7 @@ Utils/
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="footer__container">
-        <h3>Anderson Castillo</h3>
-        <p>QA Automation Engineer</p>
-        <span>© 2026</span>
-      </div>
-    </footer>
+    <footer class="footer"><div class="footer__container"><div><a class="footer__brand" href="#hero">Anderson Castillo</a><p>QA Automation Engineer</p><p class="" data-translate="footer_location">República Dominicana · Trabajo remoto</p></div><div><h3 class="" data-translate="footer_explore">Explora mi trabajo</h3><div class="footer__links"><a href="#experience" data-translate="nav_experience">Experiencia</a><a href="#case-study-regression" data-translate="case_title">Regresión: de 10 a 5 días</a><a href="#framework" data-translate="nav_framework">Framework</a><a href="#certifications" data-translate="nav_certifications">Certificaciones</a></div></div><div><h3 class="" data-translate="footer_connect">Conversemos</h3><div class="footer__links"><a href="mailto:anderson250514@gmail.com" data-translate="write_me">Escríbeme</a><a href="https://www.linkedin.com/in/anderson-castillo-8ba0a021a/">LinkedIn ↗</a><a href="https://github.com/AndersonACP25">GitHub ↗</a></div></div><div class="footer__bottom"><span>© 2026 Anderson Castillo</span><a href="#hero" data-translate="back_top">Volver arriba ↑</a></div></div></footer>
 
     <script src="./js/language-manager.js"></script>
   </body>
