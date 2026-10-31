@@ -152,7 +152,7 @@ summary { -webkit-tap-highlight-color: rgba(125, 211, 252, .25); scroll-margin-t
   transition: color .2s ease, background-color .2s ease;
 }
 
-.content-details > summary:hover { color: #bae6fd; background-color: rgba(56, 189, 248, .07); }
+.content-details > summary:hover { color: #bae6fd; }
 
 .content-details[open] > summary { margin-bottom: 1.25rem; }
 
@@ -1032,7 +1032,7 @@ summary { -webkit-tap-highlight-color: rgba(125, 211, 252, .25); scroll-margin-t
 
 .education-details > summary:hover,
 .courses-more > summary:hover,
-.case-details > summary:hover { color: #bae6fd; background-color: rgba(56, 189, 248, .07); border-radius: 8px; }
+.case-details > summary:hover { color: #bae6fd; border-radius: 8px; }
 
 .education-details .education-topics { margin-top: 1rem; }
 
@@ -1414,7 +1414,9 @@ summary { -webkit-tap-highlight-color: rgba(125, 211, 252, .25); scroll-margin-t
 
 .footer a { text-underline-offset: 5px; }
 
-.footer a:not(.button):hover { color: #67e8f9; text-decoration: underline; }
+.footer a:not(.button):hover { color: #67e8f9; }
+
+.footer a:not(.button):not(.footer__email):hover { text-decoration: underline; }
 
 .footer__bottom {
   display: flex;
