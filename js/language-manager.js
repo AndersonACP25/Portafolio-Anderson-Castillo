@@ -1,6 +1,103 @@
+// Enhance the native select without removing its no-JavaScript fallback.
+class LanguagePicker {
+  constructor(select) {
+    this.select = select;
+    this.root = select.closest(".language-picker");
+    this.trigger = this.root.querySelector(".language-picker__trigger");
+    this.list = this.root.querySelector(".language-picker__options");
+    this.options = [...this.list.querySelectorAll('[role="option"]')];
+    this.status = this.root.querySelector('[role="status"]');
+    this.sync();
+    this.trigger.hidden = false;
+    select.hidden = true;
+    this.trigger.addEventListener("click", () => {
+      if (this.list.hidden) this.open();
+      else this.close();
+    });
+    this.trigger.addEventListener("keydown", (event) => {
+      if (["ArrowDown", "ArrowUp"].includes(event.key)) {
+        event.preventDefault();
+        this.open();
+      }
+    });
+    this.list.addEventListener("click", (event) => {
+      const option = event.target.closest('[role="option"]');
+      if (option) this.choose(option);
+    });
+    this.list.addEventListener("keydown", (event) => {
+      const index = this.options.indexOf(document.activeElement);
+      let next;
+      if (event.key === "ArrowDown") next = (index + 1) % this.options.length;
+      if (event.key === "ArrowUp") next = (index - 1 + this.options.length) % this.options.length;
+      if (event.key === "Home") next = 0;
+      if (event.key === "End") next = this.options.length - 1;
+      if (next !== undefined) {
+        event.preventDefault();
+        this.options[next].focus();
+      }
+      if (event.key === "Tab") {
+        // Let the browser move focus before hiding the focused option.
+        setTimeout(() => this.close(false), 0);
+      }
+      if (event.key.length === 1 && /[a-záéíóúñ]/i.test(event.key)) {
+        const now = Date.now();
+        this.search = now - (this.lastSearch || 0) < 700 ? this.search + event.key : event.key;
+        this.lastSearch = now;
+        const match = this.options.find((option) => option.children[1].textContent.toLowerCase().startsWith(this.search.toLowerCase()));
+        if (match) {
+          event.preventDefault();
+          match.focus();
+        }
+      }
+    });
+    this.root.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && !this.list.hidden) {
+        event.preventDefault();
+        event.stopPropagation();
+        this.close();
+      }
+    });
+    this.root.addEventListener("focusout", (event) => {
+      if (!this.root.contains(event.relatedTarget)) this.close(false);
+    });
+    document.addEventListener("pointerdown", (event) => {
+      if (!this.root.contains(event.target)) this.close(false);
+    });
+  }
+
+  open() {
+    this.list.hidden = false;
+    this.trigger.setAttribute("aria-expanded", "true");
+    this.options.find((option) => option.dataset.value === this.select.value).focus();
+  }
+
+  close(restoreFocus = true) {
+    const wasOpen = !this.list.hidden;
+    this.list.hidden = true;
+    this.trigger.setAttribute("aria-expanded", "false");
+    if (wasOpen && restoreFocus) this.trigger.focus();
+  }
+
+  choose(option) {
+    this.select.value = option.dataset.value;
+    this.close();
+    this.select.dispatchEvent(new Event("change", { bubbles: true }));
+  }
+
+  sync() {
+    const selected = this.select.selectedOptions[0];
+    this.root.querySelector(".language-picker__value").textContent = selected.textContent;
+    this.trigger.setAttribute("aria-label", `${this.select.getAttribute("aria-label")}: ${selected.textContent}`);
+    this.options.forEach((option) => {
+      option.setAttribute("aria-selected", String(option.dataset.value === this.select.value));
+    });
+  }
+}
+
 class LanguageManager {
   constructor() {
     this.selector = document.querySelector(".header__language-selector");
+    this.picker = new LanguagePicker(this.selector);
     this.cache = new Map();
     this.request = 0;
     this.current = document.documentElement.lang === "es" ? "es" : "en";
@@ -49,11 +146,20 @@ class LanguageManager {
         : "en";
     const request = ++this.request;
     let dictionary;
+    this.picker.status.textContent = "";
+    this.picker.root.setAttribute("aria-busy", "true");
     try {
       dictionary = await this.load(selected);
     } catch {
       // Keep the previous readable language and allow a later retry.
-      if (request === this.request) this.selector.value = this.current;
+      if (request === this.request) {
+        this.selector.value = this.current;
+        this.picker.sync();
+        this.picker.root.setAttribute("aria-busy", "false");
+        this.picker.status.textContent = this.current === "es"
+          ? "No se pudo cambiar el idioma. Inténtalo de nuevo."
+          : "Could not change language. Please try again.";
+      }
       return;
     }
     if (request !== this.request) return;
@@ -71,6 +177,8 @@ class LanguageManager {
     });
     this.current = selected;
     this.selector.value = selected;
+    this.picker.sync();
+    this.picker.root.setAttribute("aria-busy", "false");
     document.documentElement.lang = selected;
     const alternate = document.querySelector(`link[hreflang="${selected}"]`);
     const canonical = alternate.href;

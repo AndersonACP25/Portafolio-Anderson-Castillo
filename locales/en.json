@@ -183,7 +183,7 @@
   "case_note": "Anonymized account based on my professional experience. The result describes the full regression cycle, not a 50% reduction in every individual test.",
   "metric_manual": "Documented manual test cases",
   "metric_manual_detail": "Recorded in Azure DevOps for manual test execution.",
-  "achievement_manual": "Documented 350+ manual test cases in Azure DevOps.",
+  "achievement_manual": "Documented 750+ manual test cases in Azure DevOps.",
   "education_intro": "Academic foundations in programming, data and systems analysis, applied to my QA work.",
   "edu_programming": "Programming & web development",
   "edu_programming_text": "Practice with HTML, CSS, JavaScript and PHP, alongside Java, C# and C++. These foundations connect interface construction, program logic and the implementation of application behavior.",
@@ -325,5 +325,6 @@
   "footer_eyebrow": "NEXT STEP",
   "footer_headline": "Let’s talk quality.",
   "footer_pitch": "Looking for a QA engineer who connects testing, automation and data? Let’s talk about your team.",
-  "case_permalink": "Link to this case"
+  "case_permalink": "Link to this case",
+  "footer_email_label": "Direct email"
 }
