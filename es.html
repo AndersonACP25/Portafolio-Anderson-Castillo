@@ -68,10 +68,22 @@
           <span class="hamburger" aria-hidden="true"><span></span><span></span><span></span></span><span class="visually-hidden" data-translate="menu">Menú</span>
         </button>
         <nav id="main-navigation" class="header__navigation" aria-label="Navegación principal" data-translate-aria="navigation"><a class="header__link" href="#experience" data-translate="nav_experience">Experiencia</a><a class="header__link" href="#projects" data-translate="nav_projects">Proyectos</a><a class="header__link" href="#skills" data-translate="nav_skills">Habilidades</a><a class="header__link" href="#contact" data-translate="nav_contact">Contacto</a></nav>
-        <select class="header__language-selector" aria-label="Idioma" data-translate-aria="language">
-          <option value="en">English</option>
-          <option value="es" selected>Español</option>
-        </select>
+        <div class="language-picker">
+          <select class="header__language-selector" aria-label="Idioma" data-translate-aria="language">
+            <option value="en">English</option>
+            <option value="es" selected>Español</option>
+          </select>
+          <button class="language-picker__trigger" type="button" hidden aria-haspopup="listbox" aria-expanded="false" aria-controls="language-options" aria-label="Idioma" data-translate-aria="language">
+            <svg class="language-picker__globe" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></svg>
+            <span class="language-picker__value">English</span>
+            <svg class="language-picker__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <ul class="language-picker__options" id="language-options" role="listbox" hidden aria-label="Idioma" data-translate-aria="language">
+            <li role="none"><button class="language-picker__option" type="button" role="option" tabindex="-1" data-value="en" aria-selected="true" lang="en"><span class="language-picker__code" aria-hidden="true">EN</span><span>English</span><span class="language-picker__check" aria-hidden="true">✓</span></button></li>
+            <li role="none"><button class="language-picker__option" type="button" role="option" tabindex="-1" data-value="es" aria-selected="false" lang="es"><span class="language-picker__code" aria-hidden="true">ES</span><span>Español</span><span class="language-picker__check" aria-hidden="true">✓</span></button></li>
+          </ul>
+          <p class="language-picker__status visually-hidden" role="status"></p>
+        </div>
       </div>
     </header>
     <noscript><div class="language-links">
@@ -139,7 +151,7 @@
               <p data-translate="metric_cases_detail" class="metric-card__detail">Escritas en código y mantenidas en Visual Studio Code.</p>
             </article>
             <article class="metric-card">
-              <h3 class="metric-card__value">350+</h3>
+              <h3 class="metric-card__value">750+</h3>
               <p data-translate="metric_manual" class="metric-card__label">Casos manuales documentados</p>
               <p data-translate="metric_manual_detail" class="metric-card__detail">Registrados en Azure DevOps para la ejecución de pruebas manuales.</p>
             </article>
@@ -181,7 +193,7 @@
             <ul class="experience-card__list experience-card__list--achievements">
               <li data-translate="achievement_regression">Reduje la regresión de 10 a 5 días mediante la automatización de módulos, contribuyendo a mejorar los tiempos de entrega.</li>
               <li data-translate="achievement_cases">Desarrollé más de 400 pruebas automatizadas en código.</li>
-              <li data-translate="achievement_manual">Documenté más de 350 casos de prueba manuales en Azure DevOps.</li>
+              <li data-translate="achievement_manual">Documenté más de 750 casos de prueba manuales en Azure DevOps.</li>
               </ul>
             <details class="content-details"><summary data-translate="experience_more">Ver responsabilidades y aportes adicionales</summary><ul class="experience-card__list">
 <li data-translate="exp_suites">Organización de suites y pasos compartidos para reutilizar escenarios y facilitar el mantenimiento de los casos de prueba.</li>
@@ -918,7 +930,7 @@ Utils/
           <h2 class="section__title" data-translate="contact_title">Contacto</h2>
           <p data-translate="availability" class="section__text contact__intro">Busco oportunidades remotas en QA Manual y Automatización de Pruebas.</p>
 
-          <a href="mailto:anderson250514@gmail.com" class="button button--primary contact__cta" data-translate="write_me">Escríbeme</a><div class="contact">
+          <div class="contact">
             <a href="mailto:anderson250514@gmail.com" class="contact-card">
               <img src="./assets/icons/gmail.svg" alt="Email" class="contact-card__icon">
               <div class="contact-card__content">
@@ -955,8 +967,11 @@ Utils/
     <p class="eyebrow" data-translate="footer_eyebrow">SIGUIENTE PASO</p>
     <h2 class="footer__headline" data-translate="footer_headline">Hablemos de calidad.</h2>
     <p class="footer__pitch" data-translate="footer_pitch">¿Buscas un QA que conecte pruebas, automatización y datos? Conversemos sobre tu equipo.</p>
-    <a class="button button--primary footer__cta" href="mailto:anderson250514@gmail.com"><span data-translate="write_me">Escríbeme</span><span aria-hidden="true">↗</span></a>
-    <a class="footer__email" href="mailto:anderson250514@gmail.com">anderson250514@gmail.com</a>
+    <a class="footer__email" href="mailto:anderson250514@gmail.com">
+      <svg class="footer__email-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m3 7 9 6 9-6"/></svg>
+      <span class="footer__email-content"><span class="footer__email-label" data-translate="footer_email_label">Correo directo</span><span class="footer__email-address">anderson250514@gmail.com</span></span>
+      <span class="footer__email-arrow" aria-hidden="true">↗</span>
+    </a>
   </div>
   <div class="footer__navigation">
     <div class="footer__identity">

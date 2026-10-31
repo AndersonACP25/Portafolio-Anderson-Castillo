@@ -10,7 +10,7 @@ Trabajo como QA Automation Engineer en XpertCode desde mayo de 2022. Mi experien
 
 Entre mis resultados destacan:
 
-- Más de **350 casos de prueba manuales documentados en Azure DevOps**.
+- Más de **750 casos de prueba manuales documentados en Azure DevOps**.
 - Más de **400 pruebas automatizadas escritas en código**.
 - Más de **1200 bugs reportados** durante mi trayectoria laboral, con el conteo confirmado mediante una consulta en Azure DevOps.
 - Reducción de la regresión de **10 a 5 días** mediante automatización de módulos.
@@ -76,5 +76,7 @@ El HTML compartido está en `index.html`; `scripts/render-locales.py` genera las
 Los tokens viven en `css/variables.css`. `css/styles.css` se organiza por componente, seguido de un bloque por breakpoint y las preferencias de accesibilidad. Modificar la regla del componente o breakpoint existente para evitar cadenas de sobrescrituras.
 
 Los casos personales se despliegan dentro de sus tarjetas; el caso SQL pertenece a Experiencia. Los enlaces con fragmentos abren sus contenedores mediante `revealLinkedContent`, incluyendo enlaces directos y navegación del historial. Los desplegables nativos también funcionan sin JavaScript.
+
+El selector de idioma añade un desplegable con opciones estilizadas, selección visible y navegación con flechas, Inicio/Fin, Enter, Escape y Tab. Sin JavaScript se conserva el select nativo y los enlaces EN/ES; ante un fallo de traducción se mantiene el contenido anterior y se anuncia el error. Los estados hover y foco respetan movimiento reducido. Los casos de FlowSaldo y qaTestGE reservan separación respecto a sus acciones; Contacto conserva una única tarjeta de correo y el footer presenta la dirección en un bloque propio adaptable.
 
 Verificación local: `python -m unittest discover -s tests` y `node --check js/language-manager.js`.

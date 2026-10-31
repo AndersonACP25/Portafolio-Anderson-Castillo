@@ -183,7 +183,7 @@
   "case_note": "Relato anónimo basado en mi experiencia profesional. El resultado corresponde al ciclo completo de regresión, no a una reducción del 50% en cada prueba individual.",
   "metric_manual": "Casos manuales documentados",
   "metric_manual_detail": "Registrados en Azure DevOps para la ejecución de pruebas manuales.",
-  "achievement_manual": "Documenté más de 350 casos de prueba manuales en Azure DevOps.",
+  "achievement_manual": "Documenté más de 750 casos de prueba manuales en Azure DevOps.",
   "education_intro": "Base académica en programación, datos y análisis de sistemas, aplicada a mi trabajo en QA.",
   "edu_programming": "Programación y desarrollo web",
   "edu_programming_text": "Práctica con HTML, CSS, JavaScript y PHP, junto con Java, C# y C++. Estas bases conectan la construcción de interfaces, la lógica de programación y la implementación del comportamiento de una aplicación.",
@@ -325,5 +325,6 @@
   "footer_eyebrow": "SIGUIENTE PASO",
   "footer_headline": "Hablemos de calidad.",
   "footer_pitch": "¿Buscas un QA que conecte pruebas, automatización y datos? Conversemos sobre tu equipo.",
-  "case_permalink": "Enlace a este caso"
+  "case_permalink": "Enlace a este caso",
+  "footer_email_label": "Correo directo"
 }
