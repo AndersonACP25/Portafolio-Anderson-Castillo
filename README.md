@@ -26,9 +26,9 @@ El portafolio presenta este caso de forma anónima, con el contexto, las decisio
 
 ## Caso de estudio: qaTestGE con asistencia de IA
 
-qaTestGE es un proyecto personal en desarrollo que busca reunir la gestión de casos, bugs, tags, ejecuciones manuales y exportaciones en un mismo espacio. Defino requisitos y arquitectura, dirijo asistentes especializados y valido la implementación mediante pruebas y recorridos de uso. Un hallazgo concreto fue corregir el diseñador para que los casos admitieran múltiples pasos, en lugar de uno solo.
+qaTestGE es una plataforma personal de gestión QA con casos versionados, Test Plans, ejecuciones, evidencias y trazabilidad entre requisitos, casos y bugs. Incluye flujos de bugs configurables, roles por proyecto, auditoría y métricas de preparación de release.
 
-El portafolio incluye capturas del diseñador y del acceso, enlaces a evidencia pública y una explicación de los límites actuales. La IA apoya el desarrollo; la conexión a proveedores para generar casos dentro del producto sigue pendiente.
+Defino requisitos y arquitectura, dirijo asistentes especializados y valido los cambios con pruebas y recorridos de uso. El stack reúne React, TypeScript y Vite con una API Node.js/Express y PostgreSQL. El [piloto de Gemini](https://github.com/AndersonACP25/qaTestGE/blob/main/docs/AI_INTEGRATION.md) propone borradores revisables de casos, bugs y resúmenes de ejecución. El [piloto de Playwright](https://github.com/AndersonACP25/qaTestGE/blob/main/docs/PLAYWRIGHT_PILOT.md) importa resultados de suites ejecutadas en GitHub Actions.
 
 ## Caso de estudio: consultas SQL reutilizables
 

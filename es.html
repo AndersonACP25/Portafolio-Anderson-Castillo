@@ -339,17 +339,17 @@
           <div class="project-grid">
             <article class="project-card project-card--featured" id="project-qatestge">
               <div class="project-card__visual" aria-hidden="true">
-                <span>01 / QA ENGINEERING</span><strong>qaTestGE</strong><span>React · TypeScript · PostgreSQL</span>
+                <span>01 / QA ENGINEERING</span><strong>qaTestGE</strong><span>QA Management · Gemini · Playwright</span>
               </div>
               <div class="project-card__body">
                 <p class="eyebrow" data-translate="personal_project">Proyecto personal</p>
                 <h3>qaTestGE</h3>
-                <p data-translate="project_qa">Plataforma web para gestionar bugs, casos de prueba, ejecuciones manuales y evidencias en proyectos QA.</p>
+                <p data-translate="project_qa">Plataforma QA que conecta requisitos, casos de prueba versionados, ejecuciones, bugs y evidencias por proyecto.</p>
                 <ul class="project-card__details">
-                  <li data-translate="qa_scope">Alcance: API autenticada, pasos de prueba, adjuntos y exportaciones PDF/Excel.</li>
-                  <li data-translate="qa_quality">Calidad: pruebas con Vitest y validaciones CI de formato, lint, tipos y compilación.</li>
-                  <li data-translate="qa_ai">Enfoque de desarrollo: defino funcionalidades y arquitectura, dirijo roles especializados de IA y valido la implementación.</li>
-                  <li data-translate="qa_status">Estado: proyecto personal en desarrollo activo. El diseñador utiliza ejemplos editables; la conexión a proveedores de IA sigue pendiente.</li>
+                  <li data-translate="qa_scope">Test Plans, flujos de bugs configurables, roles por proyecto e historial de auditoría.</li>
+                  <li data-translate="qa_quality">Dashboard de preparación de release con resultados manuales, resultados de Playwright y bugs críticos vinculados.</li>
+                  <li data-translate="qa_ai">Gemini propone borradores de casos de prueba, reportes de bugs y resúmenes de Test Runs para revisión.</li>
+                  <li data-translate="qa_status">Stack · React, TypeScript, Vite, Node.js, Express y PostgreSQL.</li>
                 </ul>
                 <div class="project-card__actions">
                   <a class="project-link" href="https://github.com/AndersonACP25/qaTestGE" target="_blank" rel="noopener noreferrer" data-translate="qa_source">Explorar código de qaTestGE ↗</a><a class="project-link" href="https://github.com/AndersonACP25/qaTestGE/blob/main/docs/TESTING.md" target="_blank" rel="noopener noreferrer" data-translate="testing_docs">Ver documentación de pruebas ↗</a>
@@ -372,13 +372,13 @@
 </div>
 <div>
 <h5 data-translate="summary_result">Resultado</h5>
-<p data-translate="qa_summary_result">Gestión de casos con múltiples pasos, bugs, evidencias y exportaciones. Proyecto en desarrollo; generación con IA pendiente.</p>
+<p data-translate="qa_summary_result">Un flujo trazable desde la cobertura de requisitos hasta los resultados y bugs vinculados, con asistencia opcional de Gemini.</p>
 </div>
 </div>
 <div class="case-body">
               <div class="case-block">
                 <h5 data-translate="qa_case_problem_title">Problema y usuarios</h5>
-                <p data-translate="qa_case_problem">Utilizaba asistentes separados para preparar casos límite, UAT, sanity y otras categorías de prueba. Mi objetivo es reunir diseño de casos, bugs, tags, ejecuciones manuales y exportaciones en un espacio para profesionales QA. La generación asistida por IA y el feedback más rápido son objetivos del producto, no capacidades ya entregadas.</p>
+                <p data-translate="qa_case_problem">Utilizaba asistentes separados para preparar casos límite, UAT, sanity y otras categorías de prueba. Creé un espacio de trabajo QA para diseñar casos y darles seguimiento durante la ejecución, el registro de evidencias y la resolución de defectos.</p>
               </div>
               <div class="case-block">
                 <h5 data-translate="qa_case_role_title">Mi rol y la colaboración con IA</h5>
@@ -392,36 +392,37 @@
               <div class="case-block">
                 <h5 data-translate="qa_case_defect_title">Una corrección real: los casos necesitan múltiples pasos</h5>
                 <p data-translate="qa_case_defect">El primer diseñador trataba cada caso como un único paso. Durante un recorrido local de extremo a extremo detecté que eso no representaba un procedimiento de prueba QA. Aclaré el requisito mediante un prompt más preciso y corregí el diseño para admitir una secuencia de acciones y resultados esperados.</p>
-                <p data-translate="qa_case_defect_result">El repositorio actual modela los pasos como una lista con acción y resultado esperado y documenta hasta 100 pasos por caso guardado. La captura muestra ejemplos editables y guardado explícito; no demuestra generación mediante IA.</p>
+                <p data-translate="qa_case_defect_result">Cada paso tiene una acción y un resultado esperado. La captura del diseñador original muestra cómo editar esos pasos antes de guardar.</p>
               </div>
               <div class="case-block">
                 <h5 data-translate="qa_case_validation_title">Arquitectura y validación</h5>
-                <p data-translate="qa_case_validation">La implementación actual utiliza React, TypeScript y Vite, con API Express y PostgreSQL mediante pg, siguiendo una separación de estilo MVC. Utilizo ESLint y Prettier para consistencia y pruebas unitarias antes de aceptar cambios. El repositorio también contiene pruebas de API con Vitest/Supertest y validaciones CI.</p>
+                <p data-translate="qa_case_validation">Un workspace pnpm conecta el frontend en React, TypeScript y Vite con una API en Node.js y Express. PostgreSQL se integra mediante pg, Zod valida los contratos de datos y Swagger UI documenta la API. Vitest, Supertest y Playwright cubren reglas del núcleo, comportamiento de la API y flujos de navegador. GitHub Actions valida lint, formato, tipos y compilación.</p>
                 <p data-translate="qa_case_validation_flow">Para validar manualmente simulo el trabajo diario de QA: crear un bug y comprobar que el flujo sea comprensible, accesible desde el workspace y coherente con el caso de uso. El linting y el formato favorecen la mantenibilidad; por sí solos no garantizan seguridad.</p>
               </div>
               <div class="case-block">
                 <h5 data-translate="qa_case_current_title">Implementado actualmente</h5>
-                <p data-translate="qa_case_current">Gestión de bugs, casos con múltiples pasos, evidencias y tags; ejecuciones manuales; registro/login y configuración de cuenta. Los bugs y casos individuales se exportan a PDF, Excel y Markdown, mientras el diseñador exporta sus ejemplos editables a Excel/PDF. ExcelJS, jsPDF y SwaggerUI apoyan las exportaciones y la documentación de API.</p>
+                <p data-translate="qa_case_current">Los equipos QA pueden versionar casos con múltiples pasos, agruparlos en Test Plans, clonar ejecuciones o reejecutar los fallidos y crear bugs vinculados a partir de fallos con evidencias. Una matriz conecta requisitos, casos y bugs. Los reportes muestran tendencias de aprobación, fallos frecuentes y preparación de release.</p>
+                <p data-translate="qa_case_collaboration">Los proyectos y equipos permiten asignar responsables, configurar estados de bugs, comentar, mencionar usuarios y consultar la auditoría según los roles del proyecto. Los casos, bugs y tags se pueden importar desde hojas de cálculo con vista previa. Las exportaciones incluyen PDF, Excel y Markdown según el registro.</p>
               </div>
               <div class="case-block">
-                <h5 data-translate="qa_case_limits_title">Límites y próximos pasos</h5>
-                <p data-translate="qa_case_limits">La conexión a proveedores de IA mediante API keys no está implementada. El diseñador no analiza la descripción ni genera propuestas con IA, y las ejecuciones son registros manuales, no un motor de ejecución automatizada. La configuración de cuenta no equivale a un módulo de administración de equipos/usuarios.</p>
-                <p data-translate="qa_case_next">Mis prioridades actuales son las suites y la gestión de usuarios/proyectos. SonarQube y las pruebas de rendimiento con k6 son mejoras previstas; no las presento como controles completados ni atribuyo todavía una mejora de productividad medida.</p>
+                <h5 data-translate="qa_case_limits_title">Pilotos de Gemini y Playwright</h5>
+                <p data-translate="qa_case_limits">El piloto de Gemini usa una clave personal o del servidor para proponer casos, bugs y resúmenes de Test Runs. El usuario da su consentimiento y revisa los borradores antes de guardar.</p>
+                <p data-translate="qa_case_next">El piloto de Playwright importa resultados de suites ejecutadas en GitHub Actions. Preparación de release reúne esos resultados con las ejecuciones manuales, los requisitos y los bugs críticos vinculados.</p>
               </div>
               <div class="case-block">
                 <h5 data-translate="qa_case_evidence_title">Capturas y evidencia pública</h5>
                 <div class="case-gallery">
                   <figure class="case-figure">
                     <a href="./assets/projects/qatestge-designer.webp" target="_blank" rel="noopener noreferrer" data-translate-aria="qa_designer_open" aria-label="Abrir la captura del diseñador de casos"><img src="./assets/projects/qatestge-designer.webp" alt="" width="1440" height="810" loading="lazy"></a>
-                    <figcaption data-translate="qa_designer_caption">Diseñador de casos: ejemplos editables, múltiples pasos y aviso visible de que la IA no está conectada. Abre la captura para examinarla.</figcaption>
+                    <figcaption data-translate="qa_designer_caption">Diseñador original de casos de prueba con ejemplos editables y múltiples pasos.</figcaption>
                   </figure>
                   <figure class="case-figure">
                     <a href="./assets/projects/qatestge-login.webp" target="_blank" rel="noopener noreferrer" data-translate-aria="qa_login_open" aria-label="Abrir la captura de inicio de sesión"><img src="./assets/projects/qatestge-login.webp" alt="" width="1440" height="661" loading="lazy"></a>
-                    <figcaption data-translate="qa_login_caption">Pantalla actual de acceso con login y registro. Captura proporcionada por el autor del proyecto.</figcaption>
+                    <figcaption data-translate="qa_login_caption">Pantalla de inicio de sesión y registro del proyecto.</figcaption>
                   </figure>
                 </div>
                 <div class="project-card__actions">
-                  <a data-translate="qa_case_model" class="project-link" href="https://github.com/AndersonACP25/qaTestGE/blob/main/backend/src/models/test-case.model.ts" target="_blank" rel="noopener noreferrer">Ver el modelo de casos con múltiples pasos ↗</a><a data-translate="qa_case_docs" class="project-link" href="https://github.com/AndersonACP25/qaTestGE" target="_blank" rel="noopener noreferrer">Ver funcionalidades y límites actuales ↗</a><a data-translate="qa_case_testing" class="project-link" href="https://github.com/AndersonACP25/qaTestGE/blob/main/docs/TESTING.md" target="_blank" rel="noopener noreferrer">Ver documentación de pruebas ↗</a>
+                  <a data-translate="qa_case_model" class="project-link" href="https://github.com/AndersonACP25/qaTestGE/blob/main/backend/src/models/test-case.model.ts" target="_blank" rel="noopener noreferrer">Ver el modelo de casos con múltiples pasos ↗</a><a data-translate="qa_case_docs" class="project-link" href="https://github.com/AndersonACP25/qaTestGE/blob/main/docs/USER_GUIDE.md" target="_blank" rel="noopener noreferrer">Ver la guía de uso ↗</a><a data-translate="qa_case_gemini_docs" class="project-link" href="https://github.com/AndersonACP25/qaTestGE/blob/main/docs/AI_INTEGRATION.md" target="_blank" rel="noopener noreferrer">Ver el piloto de Gemini ↗</a><a data-translate="qa_case_playwright_docs" class="project-link" href="https://github.com/AndersonACP25/qaTestGE/blob/main/docs/PLAYWRIGHT_PILOT.md" target="_blank" rel="noopener noreferrer">Ver el piloto de Playwright ↗</a><a data-translate="qa_case_testing" class="project-link" href="https://github.com/AndersonACP25/qaTestGE/blob/main/docs/TESTING.md" target="_blank" rel="noopener noreferrer">Ver documentación de pruebas ↗</a>
                 </div>
               </div>
             </div>
